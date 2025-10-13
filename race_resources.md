@@ -8,7 +8,7 @@ section: race
 All necessary information about the race e.g. rules, scoring system,
 simulation environments and track data will be displayed here.
 
-- [Rules]({% link rules.md %})
+- [Rules]({% link roboracer_rules/README.md %})
 - [Orientation 1 Meeting Slides](https://docs.google.com/presentation/d/13qvGy5pfm_0QBHf0XBrN4sV6DapqGsKuQTJthMKfUP0/edit?usp=sharing)
 - [Orientation 1 Recording](https://drive.google.com/file/d/1NPwpT34QsSq5F9mkxZSFrNEhz1UwuKgb/view?usp=sharing)
 - [Orientation 2 Meeting Slides](https://docs.google.com/presentation/d/1FQN6S3JxaUCFNNfyQCXNVY7j_EY02m-aEiDt_VCxxmw/edit?usp=sharing)
