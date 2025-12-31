@@ -1,5 +1,5 @@
 ---
-title: Roboracer ICRA 2025 Live Stream
+title: Roboracer ICRA 2026 Live Stream
 short_title: Live Stream
 layout: page
 section: stream

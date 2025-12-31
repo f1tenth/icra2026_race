@@ -1,0 +1,15 @@
+[project]
+name = "icra2026-race"
+version = "0.1.0"
+description = "Roboracer Race Event Management - Tools for managing autonomous racing competition websites"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "tkcalendar>=1.6.1",
+    "ttkthemes>=3.2.2",
+]
+
+[project.scripts]
+event-manager = "Utils.event_manager:main"

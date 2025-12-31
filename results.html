@@ -8,7 +8,7 @@
 <html>
 
 <head>
-	<title>Roboracer ICRA 2025| Results</title>
+	<title>Roboracer <!-- PAGE_TITLE -->ICRA 2026<!-- /PAGE_TITLE --></title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -43,8 +43,8 @@
 							class="label">Twitter</span></a></li>
 				<li><a href="https://roboracer.ai/" class="icon solid solo fa-home"><span
 							class="label">Website</span></a></li>
-				<li><a href="mailto:roboracer2026icra@tuwien.ac.at" class="icon solid solo fa-envelope"><span
-							class="label">Email</span></a></li>
+			<!-- NAV_EMAIL_LINK --><li><a href="mailto:roboracer2026icra@tuwien.ac.at" class="icon solid solo fa-envelope"><span
+						class="label">Email</span></a></li><!-- /NAV_EMAIL_LINK -->
 				<li><a href="https://join.slack.com/t/robo-racer/shared_invite/zt-2sfu4qr7p-3oe27mCnH98muwRR9uEAbg"
 						class="icon brands alt fa-slack"><span class="label">Slack</span></a></li>
 				<li><a href="https://github.com/f1tenth" class="icon brands alt fa-github"><span
@@ -69,14 +69,16 @@
 							channel: "roboracer_ai",
 							// video: "<video ID>",
 							// collection: "<collection ID>",
-							parent: ["icra2025-race.f1tenth.org", "localhost"]
+							parent: <!-- TWITCH_PARENTS -->["icra2026-race.f1tenth.org", "localhost"]<!-- /TWITCH_PARENTS -->
 						};
 						var player = new Twitch.Player("1", options);
 						player.setVolume(0.5);
 					</script>
+					<!-- STREAM_PLACEHOLDER --><p style="color: #888; font-style: italic;">Live stream will appear here during the event.</p><!-- /STREAM_PLACEHOLDER -->
 
 					<center>
 						<h2 id="virtual-results"> RESULTS </h2>
+						<!-- RESULTS_PLACEHOLDER --><p style="color: #888; font-style: italic;">Results will be posted after the competition.</p><!-- /RESULTS_PLACEHOLDER -->
 						<!-- <h3 style="text-align: left;">CEREMONY</h3>
 								<table>
 									<tr>
@@ -105,16 +107,9 @@
 										<td>DDRX</td>
 									</tr>
 								</table> -->
-						<br>
-						<h3 style="text-align: left;">TIME TRIAL</h3>
-						<!-- <a href="https://docs.google.com/spreadsheets/d/13wPyNOKdNq6__ZBC0aYYdjTemWOw9A0cU4XnUoPLf5E/edit?usp=sharing" class="button">Mapping Schedule, Qualification</a> -->
-						<a class="button">General timeline and group slots for the race</a>
+						<!-- TIME_TRIAL_SECTION --><!-- /TIME_TRIAL_SECTION -->
 
-						<br>
-						<br>
-						<h3 style="text-align: left;">HEAD TO HEAD RACE BRACKET</h3>
-						<!-- <a href="https://challonge.com/ko/s8roys2y" class="button">TOURNAMENT</a> -->
-						<a class="button">TOURNAMENT</a>
+						<!-- BRACKET_SECTION --><!-- /BRACKET_SECTION -->
 
 
 					</center>

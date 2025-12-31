@@ -1,0 +1,65 @@
+{
+    "event": {
+        "conference_name": "ICRA",
+        "conference_full_name": "IEEE Conference on Robotics and Automation",
+        "race_number": "27TH",
+        "year": "2026",
+        "venue_name": "VIECON - Vienna Congress & Convention Center",
+        "location": "Wien, Vienna, Austria",
+        "venue_url": "https://www.gwcca.org/georgia-world-congress-center",
+        "conference_url": "https://2026.ieee-icra.org/",
+        "conference_logo": "images/ICRA2026.png",
+        "contact_email": "roboracer2026icra@tuwien.ac.at",
+        "cname": "icra2026-race.roboracer.ai",
+        "conference_dates_display": "June 1st - 5th"
+    },
+    "dates": {
+        "race_day": "2026-06-04",
+        "offsets": {
+            "qualification": -1,
+            "team_training": -2,
+            "track_setup": -3,
+            "orientation_2": -38,
+            "registration_closes": -40,
+            "orientation_1": -66,
+            "registration_open": -113
+        }
+    },
+    "orientation_1": {
+        "time_display": "11:00AM - 12:00PM ET",
+        "zoom_link": "",
+        "slides_link": "",
+        "video_link": ""
+    },
+    "orientation_2": {
+        "time_display": "11:00AM - 12:00PM ET",
+        "zoom_link": "",
+        "slides_link": "",
+        "video_link": ""
+    },
+    "registration": {
+        "status": "open",
+        "form_link": "https://selapp.lanthan.at/?selection=icra2026",
+        "hide_participants": true
+    },
+    "results": {
+        "time_trial_sheet_link": "",
+        "bracket_link": "",
+        "youtube_stream_id": "KLOceDeegVs",
+        "twitch_parent_domains": [
+            "icra2026-race.f1tenth.org",
+            "localhost"
+        ],
+        "show_stream_placeholder": true,
+        "stream_placeholder_text": "Live stream will appear here during the event.",
+        "show_results_placeholder": true,
+        "results_placeholder_text": "Results will be posted after the competition."
+    },
+    "sim_racing": {
+        "enabled": true,
+        "edition": "5th",
+        "website_url": "https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-icra-2026/",
+        "registration_url": "https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-icra-2026/#registration",
+        "timeline_url": "https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-icra-2026/#timeline"
+    }
+}
