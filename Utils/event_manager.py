@@ -12,6 +12,7 @@ This tool allows organizers to:
 Run with: uv run python Utils/event_manager.py
 """
 
+import io
 import json
 import os
 import re
@@ -21,7 +22,9 @@ from pathlib import Path
 from tkinter import filedialog, messagebox, ttk
 from typing import Any
 
+import cairosvg
 import pandas as pd
+from PIL import Image
 from tkcalendar import Calendar
 from ttkthemes import ThemedTk
 
@@ -132,6 +135,111 @@ def format_date_display(date: datetime, include_ordinal: bool = True) -> str:
             suffix = {1: "st", 2: "nd", 3: "rd"}.get(day % 10, "th")
         return f"{date.strftime('%B')} {day}{suffix}"
     return f"{date.strftime('%B')} {day}"
+
+
+class ScaleDialog:
+    """Dialog to get a scale factor from the user."""
+
+    def __init__(self, parent, title: str, message: str, default_value: float = 1.0):
+        self.result = None
+
+        # Create dialog window
+        self.dialog = tk.Toplevel(parent)
+        self.dialog.title(title)
+        self.dialog.transient(parent)
+        self.dialog.grab_set()
+
+        # Dark theme styling
+        self.dialog.configure(bg="#1e1e2e")
+
+        # Center the dialog
+        self.dialog.geometry("400x200")
+        self.dialog.resizable(False, False)
+
+        # Message label
+        msg_label = tk.Label(
+            self.dialog,
+            text=message,
+            bg="#1e1e2e",
+            fg="#cdd6f4",
+            font=("Ubuntu", 10),
+            justify="left"
+        )
+        msg_label.pack(padx=20, pady=(20, 10))
+
+        # Scale entry
+        entry_frame = tk.Frame(self.dialog, bg="#1e1e2e")
+        entry_frame.pack(pady=10)
+
+        tk.Label(
+            entry_frame,
+            text="Scale factor:",
+            bg="#1e1e2e",
+            fg="#cdd6f4",
+            font=("Ubuntu", 10)
+        ).pack(side="left", padx=(0, 10))
+
+        self.scale_entry = tk.Entry(
+            entry_frame,
+            width=10,
+            bg="#3c3c3c",
+            fg="white",
+            insertbackground="white",
+            font=("Ubuntu", 10)
+        )
+        self.scale_entry.pack(side="left")
+        self.scale_entry.insert(0, str(default_value))
+        self.scale_entry.select_range(0, tk.END)
+        self.scale_entry.focus_set()
+
+        # Buttons
+        btn_frame = tk.Frame(self.dialog, bg="#1e1e2e")
+        btn_frame.pack(pady=20)
+
+        ok_btn = tk.Button(
+            btn_frame,
+            text="OK",
+            command=self.on_ok,
+            bg="#45475a",
+            fg="#cdd6f4",
+            font=("Ubuntu", 10),
+            width=10
+        )
+        ok_btn.pack(side="left", padx=5)
+
+        cancel_btn = tk.Button(
+            btn_frame,
+            text="Cancel",
+            command=self.on_cancel,
+            bg="#45475a",
+            fg="#cdd6f4",
+            font=("Ubuntu", 10),
+            width=10
+        )
+        cancel_btn.pack(side="left", padx=5)
+
+        # Bind Enter key
+        self.scale_entry.bind("<Return>", lambda e: self.on_ok())
+        self.dialog.bind("<Escape>", lambda e: self.on_cancel())
+
+        # Wait for dialog to close
+        parent.wait_window(self.dialog)
+
+    def on_ok(self):
+        try:
+            self.result = float(self.scale_entry.get())
+            if self.result <= 0:
+                raise ValueError("Scale must be positive")
+            self.dialog.destroy()
+        except ValueError:
+            tk.messagebox.showerror(
+                "Invalid Input",
+                "Please enter a valid positive number."
+            )
+
+    def on_cancel(self):
+        self.result = None
+        self.dialog.destroy()
 
 
 class EventManagerApp:
@@ -358,9 +466,19 @@ class EventManagerApp:
             frame, "Conference URL:", row, event.get("conference_url", "")
         )
         row += 1
-        self.conference_logo_entry = self.create_labeled_entry(
-            frame, "Conference Logo Path:", row, event.get("conference_logo", "")
+        # Conference logo with file picker
+        ttk.Label(frame, text="Conference Logo:").grid(
+            row=row, column=0, sticky="w", padx=5, pady=2
         )
+        logo_frame = ttk.Frame(frame)
+        logo_frame.grid(row=row, column=1, sticky="ew", padx=5, pady=2)
+        self.conference_logo_entry = tk.Entry(logo_frame, width=40, bg="#3c3c3c", fg="white", insertbackground="white")
+        self.conference_logo_entry.pack(side="left", fill="x", expand=True)
+        self.conference_logo_entry.insert(0, event.get("conference_logo", ""))
+        browse_btn = ttk.Button(
+            logo_frame, text="Browse...", command=self.browse_conference_logo, style="Accent.TButton"
+        )
+        browse_btn.pack(side="left", padx=(5, 0))
         row += 1
         self.contact_email_entry = self.create_labeled_entry(
             frame, "Contact Email:", row, event.get("contact_email", "")
@@ -861,6 +979,127 @@ class EventManagerApp:
             pady=8,
             cursor="hand2",
         ).pack(side=tk.RIGHT, padx=5)
+
+    def browse_conference_logo(self) -> None:
+        """Open file picker to select conference logo image."""
+        # Start in images directory
+        initial_dir = PROJECT_ROOT / "images"
+        if not initial_dir.exists():
+            initial_dir = PROJECT_ROOT
+
+        filepath = filedialog.askopenfilename(
+            title="Select Conference Logo",
+            initialdir=initial_dir,
+            filetypes=[
+                ("Image files", "*.png *.jpg *.jpeg *.webp *.gif"),
+                ("PNG files", "*.png"),
+                ("JPEG files", "*.jpg *.jpeg"),
+                ("WebP files", "*.webp"),
+                ("All files", "*.*"),
+            ],
+        )
+
+        if filepath:
+            # Convert to relative path from project root
+            try:
+                rel_path = Path(filepath).relative_to(PROJECT_ROOT)
+                self.conference_logo_entry.delete(0, tk.END)
+                self.conference_logo_entry.insert(0, str(rel_path))
+
+                # Ask if user wants to regenerate the banner
+                if messagebox.askyesno(
+                    "Generate Banner",
+                    "Would you like to regenerate BackGroundProject.png with this logo?"
+                ):
+                    self.generate_banner_image(str(rel_path))
+            except ValueError:
+                # File is outside project root - copy it to images folder
+                messagebox.showwarning(
+                    "File Location",
+                    "Please select an image from within the project directory, "
+                    "or copy the image to the 'images' folder first."
+                )
+
+    def generate_banner_image(self, logo_path: str) -> None:
+        """Generate BackGroundProject.png with roboracer icon and conference logo on base image."""
+        try:
+            offset = 100
+            svg_scale = 8  # Scale for roboracer icon
+
+            # Load the base background image
+            base_path = PROJECT_ROOT / "images" / "Main_Image_Backup.jpg"
+            if not base_path.exists():
+                messagebox.showerror(
+                    "Error",
+                    "Main_Image_Backup.jpg not found in images folder.\n"
+                    "This file is required as the base background."
+                )
+                return
+
+            banner = Image.open(base_path).convert("RGBA")
+            banner_width, banner_height = banner.size
+
+            # Load and render roboracer_icon.svg
+            roboracer_icon = None
+            roboracer_height = 50 * svg_scale  # Default height
+            svg_path = PROJECT_ROOT / "images" / "roboracer_icon.svg"
+            if svg_path.exists():
+                # Render SVG to PNG at a larger size for the banner
+                png_data = cairosvg.svg2png(
+                    url=str(svg_path),
+                    output_width=81 * svg_scale,
+                    output_height=50 * svg_scale
+                )
+                roboracer_icon = Image.open(io.BytesIO(png_data)).convert("RGBA")
+                roboracer_height = roboracer_icon.height
+
+                # Position at top-right with offset
+                icon_x = banner_width - roboracer_icon.width - offset
+                icon_y = offset
+                banner.paste(roboracer_icon, (icon_x, icon_y), roboracer_icon)
+
+            # Ask user for scale factor
+            scale_dialog = ScaleDialog(
+                self.root,
+                "Logo Scale",
+                f"The Roboracer icon is {roboracer_height}px tall.\n\n"
+                "Enter a scale factor for the conference logo:\n"
+                "• 1.0 = same height as Roboracer icon\n"
+                "• 0.5 = half the height\n"
+                "• 2.0 = double the height",
+                default_value=1.0
+            )
+            if scale_dialog.result is None:
+                return  # User cancelled
+
+            logo_scale = scale_dialog.result
+
+            # Load conference logo
+            conf_logo_path = PROJECT_ROOT / logo_path
+            if conf_logo_path.exists():
+                conf_logo = Image.open(conf_logo_path).convert("RGBA")
+
+                # Scale conference logo based on user input (relative to roboracer height)
+                target_height = int(roboracer_height * logo_scale)
+                ratio = target_height / conf_logo.height
+                new_width = int(conf_logo.width * ratio)
+                conf_logo = conf_logo.resize((new_width, target_height), Image.Resampling.LANCZOS)
+
+                # Position at top-left with offset
+                banner.paste(conf_logo, (offset, offset), conf_logo)
+
+            # Save the banner as PNG
+            output_path = PROJECT_ROOT / "images" / "BackGroundProject.png"
+            banner.save(output_path, "PNG")
+
+            messagebox.showinfo(
+                "Success",
+                f"Banner image generated successfully!\n\n"
+                f"Conference logo scaled to {logo_scale}x Roboracer icon height.\n"
+                f"Saved to: {output_path}"
+            )
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to generate banner: {e}")
 
     def clear_participants(self) -> None:
         """Clear the participants table in registration.html."""
