@@ -6,7 +6,7 @@
         "year": "2026",
         "venue_name": "VIECON - Vienna Congress & Convention Center",
         "location": "Wien, Vienna, Austria",
-        "venue_url": "https://www.gwcca.org/georgia-world-congress-center",
+        "venue_url": "https://www.messecongress.at/",
         "conference_url": "https://2026.ieee-icra.org/",
         "conference_logo": "images/ICRA2026.png",
         "contact_email": "roboracer2026icra@tuwien.ac.at",
@@ -26,13 +26,13 @@
         }
     },
     "orientation_1": {
-        "time_display": "11:00AM-12:00PM ET",
+        "time_display": "11:00AM - 12:00PM ET",
         "zoom_link": "",
         "slides_link": "",
         "video_link": ""
     },
     "orientation_2": {
-        "time_display": "11:00AM-12:00PM ET",
+        "time_display": "11:00AM - 12:00PM ET",
         "zoom_link": "",
         "slides_link": "",
         "video_link": ""
