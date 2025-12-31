@@ -1894,32 +1894,38 @@ class RepositoryUpdater:
         return content
 
     def update_md_file(self, filepath: Path) -> str:
-        """Update a markdown file using placeholder markers."""
+        """Update a markdown file."""
         try:
             with open(filepath, "r", encoding="utf-8") as f:
                 content = f.read()
 
             original_content = content
 
-            # Update conference year placeholder
-            content = self.replace_placeholder(content, "MD_CONF_YEAR", self.conf_with_year)
+            # Update title in YAML front matter (simple text replacement)
+            content = re.sub(
+                r"title: Roboracer \w+ \d+ Race Resources",
+                f"title: Roboracer {self.conf_with_year} Race Resources",
+                content,
+            )
 
-            # Update orientation links
+            # Build orientation links - only include links that have URLs
+            orientation_lines = []
             o1_slides = self.o1.get("slides_link", "")
-            if o1_slides:
-                content = self.replace_placeholder(content, "MD_O1_SLIDES", o1_slides)
-
             o1_video = self.o1.get("video_link", "")
-            if o1_video:
-                content = self.replace_placeholder(content, "MD_O1_VIDEO", o1_video)
-
             o2_slides = self.o2.get("slides_link", "")
-            if o2_slides:
-                content = self.replace_placeholder(content, "MD_O2_SLIDES", o2_slides)
-
             o2_video = self.o2.get("video_link", "")
+
+            if o1_slides:
+                orientation_lines.append(f"- [Orientation 1 Meeting Slides]({o1_slides})")
+            if o1_video:
+                orientation_lines.append(f"- [Orientation 1 Recording]({o1_video})")
+            if o2_slides:
+                orientation_lines.append(f"- [Orientation 2 Meeting Slides]({o2_slides})")
             if o2_video:
-                content = self.replace_placeholder(content, "MD_O2_VIDEO", o2_video)
+                orientation_lines.append(f"- [Orientation 2 Recording]({o2_video})")
+
+            orientation_content = "\n".join(orientation_lines)
+            content = self.replace_placeholder(content, "ORIENTATION_LINKS", orientation_content)
 
             if content != original_content:
                 with open(filepath, "w", encoding="utf-8") as f:
