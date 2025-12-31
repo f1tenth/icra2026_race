@@ -1563,7 +1563,9 @@ class RepositoryUpdater:
             original_content = content
 
             # Common placeholders for all HTML files
-            content = self.replace_placeholder(content, "PAGE_TITLE", self.conf_with_year)
+            # Page title - wrap entire element
+            page_title = f"<title>Roboracer {self.conf_with_year}</title>"
+            content = self.replace_placeholder(content, "PAGE_TITLE", page_title)
             content = self.replace_placeholder(content, "CONF_WITH_YEAR", self.conf_with_year)
 
             # Nav email link - wrap entire element
