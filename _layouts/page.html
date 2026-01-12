@@ -11,9 +11,9 @@
 	<title>Roboracer ICRA 2026 | {{ page.short_title | default: page.title | escape }}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="{% link assets/css/main.css %}" />
 	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
+		<link rel="stylesheet" href="{% link assets/css/noscript.css %}" />
 	</noscript>
 </head>
 
@@ -24,33 +24,57 @@
 
 		<!-- Header -->
 		<header id="header">
-			<a href="index.html" class="logo">{{ page.short_title | default: page.title | escape }}</a>
+			<a href="{% link index.html %}" class="logo">{{ page.short_title | default: page.title | escape }}</a>
 		</header>
 
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
-				<li {%if page.section=="about" %}class="active" {%endif%}><a href="index.html">About</a></li>
-				<li {%if page.section=="timeline" %}class="active" {%endif%}><a href="timeline.html">Timeline</a></li>
-				<li {%if page.section=="race" %}class="active" {%endif%}><a
-						href="race_resources.html">Race Resources</a></li>
-				<li {%if page.section=="f1tenth" %}class="active" {%endif%}><a href="roboracer_resources.html">Getting
-						Started</a></li>
-				<li {%if page.section=="reg" %}class="active" {%endif%}><a href="registration.html">Registration</a>
-				</li>
-				<li {%if page.section=="stream" %}class="active" {%endif%}><a href="results.html">Results/Stream</a></li>
+				<li {%if page.section=="about" %}class="active" {%endif%}>
+                    <a href="{% link index.html %}">About</a>
+                </li>
+				<li {%if page.section=="timeline" %}class="active" {%endif%}>
+                    <a href="{% link timeline.md %}">Timeline</a>
+                </li>
+				<li {%if page.section=="race" %}class="active" {%endif%}>
+                    <a href="{% link race_resources.md %}">Race Resources</a>
+                </li>
+				<li {%if page.section=="f1tenth" %}class="active" {%endif%}>
+                    <a href="{% link roboracer_resources.md %}">Getting Started</a>
+                </li>
+				<li {%if page.section=="reg" %}class="active" {%endif%}>
+                    <a href="{% link registration.md %}">Registration</a>
+                </li>
+				<li {%if page.section=="stream" %}class="active" {%endif%}>
+                    <a href="{% link results.md %}">Results/Stream</a>
+                </li>
 			</ul>
 			<ul class="icons">
-				<li><a href="https://x.com/RoboRacerAi" class="icon brands alt fa-twitter"><span
-							class="label">Twitter</span></a></li>
-				<li><a href="https://roboracer.ai/" class="icon solid solo fa-home"><span
-							class="label">Website</span></a></li>
-				<li><a href="mailto:roboracer2026icra@tuwien.ac.at" class="icon solid solo fa-envelope"><span
-							class="label">Email</span></a></li>
-				<li><a href="https://join.slack.com/t/robo-racer/shared_invite/zt-2sfu4qr7p-3oe27mCnH98muwRR9uEAbg"
-						class="icon brands alt fa-slack"><span class="label">Slack</span></a></li>
-				<li><a href="https://github.com/f1tenth" class="icon brands alt fa-github"><span
-							class="label">GitHub</span></a></li>
+                <li>
+                    <a href="https://x.com/RoboRacerAi" class="icon brands alt fa-twitter">
+                        <span class="label">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://roboracer.ai/" class="icon solid solo fa-home">
+                        <span class="label">Website</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:roboracer2026icra@tuwien.ac.at" class="icon solid solo fa-envelope">
+                        <span class="label">Email</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://join.slack.com/t/robo-racer/shared_invite/zt-2sfu4qr7p-3oe27mCnH98muwRR9uEAbg" class="icon brands alt fa-slack">
+                        <span class="label">Slack</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/f1tenth" class="icon brands alt fa-github">
+                        <span class="label">GitHub</span>
+                    </a>
+                </li>
 			</ul>
 		</nav>
 
@@ -83,13 +107,13 @@
 		</div>
 
 		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<script src="{% link assets/js/jquery.min.js %}"></script>
+		<script src="{% link assets/js/jquery.scrollex.min.js %}"></script>
+		<script src="{% link assets/js/jquery.scrolly.min.js %}"></script>
+		<script src="{% link assets/js/browser.min.js %}"></script>
+		<script src="{% link assets/js/breakpoints.min.js %}"></script>
+		<script src="{% link assets/js/util.js %}"></script>
+		<script src="{% link assets/js/main.js %}"></script>
 
 </body>
 
