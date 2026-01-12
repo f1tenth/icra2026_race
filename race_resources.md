@@ -8,5 +8,5 @@ section: race
 All necessary information about the race e.g. rules, scoring system,
 simulation environments and track data will be displayed here.
 
-- [Rules]({% link roboracer_rules/README.md %})
+<!-- - [Rules]({% link roboracer_rules/README.md %}) -->
 <!-- ORIENTATION_LINKS --><!-- /ORIENTATION_LINKS -->
