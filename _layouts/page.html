@@ -82,12 +82,13 @@
 
 			<!-- Post -->
 			<section class="post">
+				{% if page.title and page.title != "" and page.title != nil %}
 				<header class="post">
 					<center>
 						<h2>{{ page.title | escape }}</h2>
 					</center>
 				</header>
-
+				{% endif %}
 				{{ content }}
 			</section>
 
