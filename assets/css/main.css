@@ -377,11 +377,11 @@ input, select, textarea {
 		}
 
 		.row > .col-2 {
-			width: 16.66667%;
+			width: 25%;
 		}
 
 		.row > .off-2 {
-			margin-left: 16.66667%;
+			margin-left: 25%;
 		}
 
 		.row > .col-3 {
