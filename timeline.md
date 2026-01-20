@@ -187,7 +187,7 @@ section: timeline
 	</tbody>
 </table>
 
-<div style="background:#ffdddd; padding:10px; margin-bottom: 10px; border: 1px solid #dd0000;"><strong>Please note: Timings will be strict, and attendance at the workshop and team presentations is expected. Please book your flights accordingly, such that you arrive before Monday and also can participate in the workshop and team presentations on Friday!<strong></div>
+<div style="background:#ffdddd; padding:10px; margin-bottom: 10px; border: 1px solid #dd0000;"><strong>Please note: Timings will be strict, and attendance at the workshop and team presentations is expected. Please book your flights accordingly, such that you arrive before Monday and also can participate in the workshop and team presentations on Friday!</strong></div>
 
 <!-- <h3><span>24th Roboracer Racing Competition TimeLine</span></h3>
 <table class="tg">
