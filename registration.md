@@ -23,6 +23,32 @@ The following pre-registration form is only for preliminary registration and for
 If you have any question regarding your participation, please contact us at
 <a href="mailto:roboracer2026icra@tuwien.ac.at"><span class="label">roboracer2026icra@tuwien.ac.at</span></a>.
 
+<h3 id="accomodation">Accomodation</h3>
+
+<p>
+Registration of accommodation needs to be organized and paid for individually by the participants. However, we are listing here a selection of options that you might consider interesting. Disclosure: The organizers are not affiliated with any of these accommodations and do not get any benefits from them.
+</p>
+
+<ul>
+    <li>
+        <strong>Vienna Brigittenau - Youth Hostel</strong><br />
+        Webpage: <a target="_blank" href="https://www.oejhv.at/en/youth-hostels/vienna/1200-vienna/">https://www.oejhv.at/en/youth-hostels/vienna/1200-vienna/</a><br />
+        Address: Adalbert Stifter Straße 73, A-1200 Wien, AUSTRIA<br />
+        Public transport connections: 11A (~ 20 minutes to VIECON: 5 min. to U6/S-Bahn Handelskai, 15 min. to U1 Vorgartenstraße), Tram line 2, Tram line 31, Night bus lines N29 & N31
+        Breakfast included<br />
+        Booking happens per team directly with the hostel. For room rates, please check the webpage.
+    </li>
+    <li>
+        Potentially further suggestions to come.
+    </li>
+    <li>
+        <strong>Official ICRA Conference Hotels</strong><br />
+        Webpage: <a target="_blank" href="https://2026.ieee-icra.org/attend/housing-information/">https://2026.ieee-icra.org/attend/housing-information/</a><br />
+        Depending on your available budget, you might also consider the official ICRA conference hotels.
+    </li>
+</ul>
+
+
 <!-- PARTICIPANTS_SECTION -->
 <hr style="display:none;">
 
