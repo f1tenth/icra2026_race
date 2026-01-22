@@ -34,7 +34,7 @@ Registration of accommodation needs to be organized and paid for individually by
         <strong>Vienna Brigittenau - Youth Hostel</strong><br />
         Webpage: <a target="_blank" href="https://www.oejhv.at/en/youth-hostels/vienna/1200-vienna/">https://www.oejhv.at/en/youth-hostels/vienna/1200-vienna/</a><br />
         Address: Adalbert Stifter Straße 73, A-1200 Wien, AUSTRIA<br />
-        Public transport connections: 11A (~ 20 minutes to VIECON: 5 min. to U6/S-Bahn Handelskai, 15 min. to U1 Vorgartenstraße), Tram line 2, Tram line 31, Night bus lines N29 & N31
+        Public transport connections: Direct bus connection (line 11A) between the hostel and the conference location, which takes approximately 25 minutes.
         Breakfast included<br />
         Booking happens per team directly with the hostel. For room rates, please check the webpage.
     </li>
