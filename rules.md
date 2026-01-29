@@ -15,6 +15,7 @@ These rules are prepared for the _27th International RoboRacer Autonomous Racing
 
 <i>Version: {{ version | slice: 0, 9 }}</i>
 
+{% comment %}
 <style>
 ol#markdown-toc  li {
   margin-left: 1rem;
@@ -24,10 +25,14 @@ ol#markdown-toc  li {
 1. ToC
 {:toc}
 {::options toc_levels="2..2" /}
+{% endcomment %}
 
 {% capture rules %}
 {% include roboracer_rules/rules_v3.md %}
 {% endcapture %}
 
 {{ rules | replace: "# RoboRacer Rules", "" | markdownify | replace: "h4", "h3" | replace: "h5", "h4" | replace: "h6", "h5" }}
+{% comment %}
+/* This creates the rules again, but also populates the toc above. */
 {{ rules | toc }}
+{% endcomment %}
