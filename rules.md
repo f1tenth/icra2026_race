@@ -9,12 +9,6 @@ section: race
 
 These rules are prepared for the _27th International RoboRacer Autonomous Racing Competition_. Rules are subject to change.
 
-{% capture version %}
-{% include_relative .git/modules/roboracer_rules/HEAD %}
-{% endcapture %}
-
-<i>Version: {{ version | slice: 0, 9 }}</i>
-
 {% comment %}
 <style>
 ol#markdown-toc  li {
@@ -36,3 +30,11 @@ ol#markdown-toc  li {
 /* This creates the rules again, but also populates the toc above. */
 {{ rules | toc }}
 {% endcomment %}
+
+{% capture version %}
+{% include_relative .git/modules/roboracer_rules/HEAD %}
+{% endcapture %}
+
+<p style="text-align: right; font-size: 0.6rem">
+<i>Version: {{ version | slice: 0, 9 }}</i>
+</p>
