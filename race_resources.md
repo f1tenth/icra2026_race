@@ -9,4 +9,5 @@ All necessary information about the race e.g. rules, scoring system,
 simulation environments and track data will be displayed here.
 
 - [Rules]({% link rules.md %})
+- [FAQ]({% link faq.md %})
 <!-- ORIENTATION_LINKS --><!-- /ORIENTATION_LINKS -->
