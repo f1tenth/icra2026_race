@@ -95,9 +95,22 @@ section: timeline
 	</thead>
 	<tbody>
 		<tr class="tg-1vzr">
+			<td class="tg-tbri">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<!-- TL_REG_OPEN_DATE -->January 1st<!-- /TL_REG_OPEN_DATE -->
+				</span>
+			</td>
+			<td class="tg-npj4">
+				<span style="font-weight:400;font-style:normal">
+					<a>Pre-Registration Opens</a>
+				</span>
+			</td>
+		</tr>
+
+		<tr class="tg-1vzr">
 			<td class="tg-1vzr">
 				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					<!-- TL_REG_OPEN_DATE -->February 11th<!-- /TL_REG_OPEN_DATE -->
+					<!-- TL_REG_OPEN_DATE -->TBA<!-- /TL_REG_OPEN_DATE -->
 				</span>
 			</td>
 			<td class="tg-j1gp">
@@ -132,7 +145,7 @@ section: timeline
 		<tr>
 			<td class="tg-tbri">
 				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					<!-- TL_REG_CLOSE_DATE -->April 25th<!-- /TL_REG_CLOSE_DATE -->
+					<!-- TL_REG_CLOSE_DATE -->TBA<!-- /TL_REG_CLOSE_DATE -->
 				</span>
 			</td>
 			<td class="tg-npj4">
