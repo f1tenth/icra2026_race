@@ -95,93 +95,137 @@ section: timeline
 	</thead>
 	<tbody>
 		<tr class="tg-1vzr">
-			<td class="tg-1vzr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_OPEN_DATE -->February 11th<!-- /TL_REG_OPEN_DATE --></span></td>
-			<td class="tg-j1gp"><span style="font-weight:400;font-style:normal"> <a>Registration Opens</a></span></td>
-		</tr>
-
-		<!-- TL_O1_ROW --><tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">March 23rd, 11:00AM - 12:00PM ET (t.b.c.)</span>
+			<td class="tg-1vzr">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<!-- TL_REG_OPEN_DATE -->February 11th<!-- /TL_REG_OPEN_DATE -->
+				</span>
 			</td>
-			<td class="tg-j1gp"><a
-					href=""><span
-						style="font-weight:inherit;font-style:inherit">Roboracer Orientation 1 (
-						Competition Rules overview )</span></a><br>
-				<span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					<a
-						href="">Slide</a>
-					<a
-						href="">Video</a></span>
-			</td>
-		</tr><!-- /TL_O1_ROW -->
-
-		<tr>
-			<td class="tg-tbri"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_REG_CLOSE_DATE -->April 25th<!-- /TL_REG_CLOSE_DATE --></span></td>
-			<td class="tg-npj4"><span style="font-weight:400;font-style:normal">Registration Closes,
-					Video Demonstration Due</span>
+			<td class="tg-j1gp">
+				<span style="font-weight:400;font-style:normal">
+					<a>Registration Opens</a>
+				</span>
 			</td>
 		</tr>
 
-		<!-- TL_O2_ROW --><tr>
-			<td class="tg-tbri"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">April 27th, 11:00AM - 12:00PM ET (t.b.c.)</span></td>
-			<td class="tg-npj4"><a
-					href=""><span
-						style="font-weight:400;font-style:normal">Roboracer Orientation 2 ( Track set
-						up, Track overview for in-person competition, Teams Training )</span></a><br>
-				<span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					<a
-						href="">Slide</a>
-					<a
-						href="">Video</a></span>
+		<!-- TL_O1_ROW -->
+		<tr>
+			<td class="tg-1vzr">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					March 23rd, 11:00AM - 12:00PM ET (t.b.c.)
+				</span>
 			</td>
-		</tr><!-- /TL_O2_ROW -->
+			<td class="tg-j1gp">
+				<a href="">
+					<span style="font-weight:inherit;font-style:inherit">
+						Roboracer Orientation 1 ( Competition Rules overview )
+					</span>
+				</a>
+				<br>
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<a href="">Slide</a>
+					<a href="">Video</a>
+				</span>
+			</td>
+		</tr>
+		<!-- /TL_O1_ROW -->
 
 		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_TRACK_SETUP_DATE -->June 1st, starting 08:00 AM CEST<!-- /TL_TRACK_SETUP_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Teams on-site registration and training/practice sessions</span>
+			<td class="tg-tbri">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<!-- TL_REG_CLOSE_DATE -->April 25th<!-- /TL_REG_CLOSE_DATE -->
+				</span>
+			</td>
+			<td class="tg-npj4">
+				<span style="font-weight:400;font-style:normal">
+					Registration Closes, Video Demonstration Due
+				</span>
+			</td>
+		</tr>
+
+		<!-- TL_O2_ROW -->
+		<tr>
+			<td class="tg-tbri">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					April 27th, 11:00AM - 12:00PM ET (t.b.c.)
+				</span>
+			</td>
+			<td class="tg-npj4">
+				<a href="">
+					<span style="font-weight:400;font-style:normal">
+						Roboracer Orientation 2 ( Track setup, Track overview for in-person competition, Teams Training )
+					</span>
+				</a>
+				<br>
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<a href="">Slide</a>
+					<a href="">Video</a>
+				</span>
+			</td>
+		</tr>
+		<!-- /TL_O2_ROW -->
+
+		<tr>
+			<td class="tg-1vzr">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<!-- TL_TRACK_SETUP_DATE -->June 1st, starting 08:00 AM CEST<!-- /TL_TRACK_SETUP_DATE -->
+				</span>
+			</td>
+			<td class="tg-j1gp">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					Teams on-site registration and training/practice sessions
+				</span>
 			</td>
 		</tr>
 
 		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_TRAINING_DATE -->June 2nd<!-- /TL_TRAINING_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Training/practice sessions</span>
+			<td class="tg-1vzr">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<!-- TL_TRAINING_DATE -->June 2nd<!-- /TL_TRAINING_DATE -->
+				</span>
+			</td>
+			<td class="tg-j1gp">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					Training/practice sessions
+				</span>
 			</td>
 		</tr>
 
 		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_QUAL_DATE -->June 3rd<!-- /TL_QUAL_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Qualification Time Trials</span>
+			<td class="tg-1vzr">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<!-- TL_QUAL_DATE -->June 3rd<!-- /TL_QUAL_DATE -->
+				</span>
+			</td>
+			<td class="tg-j1gp">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					Qualification Time Trials
+				</span>
 			</td>
 		</tr>
 
 		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_RACE_DATE -->June 4th<!-- /TL_RACE_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Head-to-Head Tournament & Award Ceremony</span>
+			<td class="tg-1vzr">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<!-- TL_RACE_DATE -->June 4th<!-- /TL_RACE_DATE -->
+				</span>
+			</td>
+			<td class="tg-j1gp">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					Head-to-Head Tournament & Award Ceremony
+				</span>
 			</td>
 		</tr>
 
 		<tr>
-			<td class="tg-1vzr"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"><!-- TL_WS_DATE -->June 5th, until 4:00 PM CEST (t.b.c.)<!-- /TL_WS_DATE --></span></td>
-			<td class="tg-j1gp"><span
-					style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Workshop and team presentations</span>
+			<td class="tg-1vzr">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<!-- TL_WS_DATE -->June 5th, until 4:00 PM CEST (t.b.c.)<!-- /TL_WS_DATE -->
+				</span>
+			</td>
+			<td class="tg-j1gp">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					Workshop and team presentations
+				</span>
 			</td>
 		</tr>
 	</tbody>
