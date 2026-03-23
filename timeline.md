@@ -135,6 +135,7 @@ section: timeline
 				</a>
 				<br>
 				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<a href="https://tuwien.zoom.us/j/69238652160?pwd=IOdbFGFG1Cl7aAv8TfgpDSJmNsBwYv.1">Link to the meeting</a>
 					<a href="">Slide</a>
 					<a href="">Video</a>
 				</span>
