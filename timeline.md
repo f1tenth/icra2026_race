@@ -111,7 +111,7 @@ section: timeline
 		<tr>
 			<td class="tg-1vzr">
 				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					March 23rd, 11:00AM - 12:00PM ET (4:00 PM CET)
+					March 23rd, 11:00AM - 12:00PM ET (4:00PM CET)
 				</span>
 			</td>
 			<td class="tg-j1gp">
@@ -122,7 +122,7 @@ section: timeline
 				</a>
 				<br>
 				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					<a href="https://tuwien.zoom.us/j/69238652160?pwd=IOdbFGFG1Cl7aAv8TfgpDSJmNsBwYv.1">Link to the meeting</a>
+					<a href="https://tuwien.zoom.us/j/69238652160?pwd=IOdbFGFG1Cl7aAv8TfgpDSJmNsBwYv.1" style="color: red">Link to the meeting</a>
 					<a href="">Slide</a>
 					<a href="">Video</a>
 				</span>
