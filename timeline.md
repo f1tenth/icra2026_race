@@ -107,24 +107,11 @@ section: timeline
 			</td>
 		</tr>
 
-		<tr class="tg-1vzr">
-			<td class="tg-1vzr">
-				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					<!-- TL_REG_OPEN_DATE -->TBA<!-- /TL_REG_OPEN_DATE -->
-				</span>
-			</td>
-			<td class="tg-j1gp">
-				<span style="font-weight:400;font-style:normal">
-					<a>Registration Opens</a>
-				</span>
-			</td>
-		</tr>
-
 		<!-- TL_O1_ROW -->
 		<tr>
 			<td class="tg-1vzr">
 				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					March 23rd, 11:00AM - 12:00PM ET (t.b.c.)
+					March 23rd, 11:00AM - 12:00PM ET (4:00 PM CET)
 				</span>
 			</td>
 			<td class="tg-j1gp">
@@ -143,15 +130,28 @@ section: timeline
 		</tr>
 		<!-- /TL_O1_ROW -->
 
+		<tr class="tg-1vzr">
+			<td class="tg-1vzr">
+				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<!-- TL_REG_OPEN_DATE -->March 26th<!-- /TL_REG_OPEN_DATE -->
+				</span>
+			</td>
+			<td class="tg-j1gp">
+				<span style="font-weight:400;font-style:normal">
+					<a>Registration Opens</a>
+				</span>
+			</td>
+		</tr>
+
 		<tr>
 			<td class="tg-tbri">
 				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					<!-- TL_REG_CLOSE_DATE -->TBA<!-- /TL_REG_CLOSE_DATE -->
+					<!-- TL_REG_CLOSE_DATE -->April 23th, 11:59PM AOE<!-- /TL_REG_CLOSE_DATE -->
 				</span>
 			</td>
 			<td class="tg-npj4">
 				<span style="font-weight:400;font-style:normal">
-					Registration Closes, Video Demonstration Due
+					Registration Closes, Video Demonstration Due, Hardware List Due
 				</span>
 			</td>
 		</tr>
@@ -160,7 +160,7 @@ section: timeline
 		<tr>
 			<td class="tg-tbri">
 				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					April 27th, 11:00AM - 12:00PM ET (t.b.c.)
+					April 27th, 11:00AM - 12:00PM ET (5:00PM CEST)
 				</span>
 			</td>
 			<td class="tg-npj4">
