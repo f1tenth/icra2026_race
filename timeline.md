@@ -115,17 +115,15 @@ section: timeline
 				</span>
 			</td>
 			<td class="tg-j1gp">
-				<a href="">
-					<span style="font-weight:inherit;font-style:inherit">
-						Roboracer Orientation 1 ( Competition Rules overview )
-					</span>
-				</a>
-				<br>
-				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					<a href="https://tuwien.zoom.us/j/69238652160?pwd=IOdbFGFG1Cl7aAv8TfgpDSJmNsBwYv.1" style="color: red">Link to the meeting</a>
-					<a href="">Slide</a>
-					<a href="">Video</a>
+				<span style="font-weight:inherit;font-style:inherit">
+					Roboracer Orientation 1 ( Competition Rules overview )
 				</span>
+				<br>
+				<!--<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
+					<a href="https://tuwien.zoom.us/j/69238652160?pwd=IOdbFGFG1Cl7aAv8TfgpDSJmNsBwYv.1" style="color: red">Link to the meeting</a>
+					<a href="">Slides</a>
+					<a href="">Video</a>
+				</span>-->
 			</td>
 		</tr>
 		<!-- /TL_O1_ROW -->
