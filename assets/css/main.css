@@ -2853,6 +2853,10 @@ input, select, textarea {
 		padding-left: 1rem;
 	}
 
+		ul ul {
+			margin-bottom: 0;
+		}
+
 		ul li {
 			padding-left: 0.5rem;
 		}
