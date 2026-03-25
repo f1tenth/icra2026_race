@@ -223,7 +223,7 @@ section: timeline
 			</td>
 			<td class="tg-j1gp">
 				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
-					Head-to-Head Tournament & Award Ceremony
+					Head-to-Head Tournament & Social Event + Award Ceremony*
 				</span>
 			</td>
 		</tr>
@@ -242,6 +242,7 @@ section: timeline
 		</tr>
 	</tbody>
 </table>
+<p style="text-align: left; font-size: smaller; margin-top: -2rem; margin-left: 0.5rem">*There might be space restrictions.</p>
 
 <div style="background:#ffdddd; padding:10px; margin-bottom: 10px; border: 1px solid #dd0000;"><strong>Please note: Timings will be strict, and attendance at the workshop and team presentations is expected. Please book your flights accordingly, such that you arrive before Monday and also can participate in the workshop and team presentations on Friday!</strong></div>
 
