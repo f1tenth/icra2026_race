@@ -46,9 +46,10 @@ _No changes here._
   - Painted/sealed concrete (industrial floor) with high reflection. Occasionally accompanied with metal covers (protecting the utility networks).
   - Side pulling force (peak) ≤ 20 N (for a Traxxas Fiesta with average-used stock tyres and a total weight of 3.8 kg).
 <center>
-<img src="images/competition_rules/HalleB_floor_detail.jpg" alt="Detail of the floor of Hall B of VIECON" style="height: 20vh; width: 20vw; object-fit: cover" />
-<img src="images/competition_rules/side_pull.jpg" alt="Side pull test in the racing hall" style="height: 20vh; width: 20vw; object-fit: cover" />
+<img src="images/competition_rules/HalleB_floor_detail.jpg" alt="Detail of the floor of Hall B of VIECON" style="height: 20vh; max-width: 70%; object-fit: cover" />
+<img src="images/competition_rules/side_pull.jpg" alt="Side pull test in the racing hall" style="height: 20vh; max-width: 70%; object-fit: cover" />
 </center>
+
 
 - _Nature of the room (e.g., walls/windows, ceiling type):_
   - Rather darker room with no walls/windows in the close vicinity of the track. Ceiling is not flat, exposing the full building structure. Room lightning is mostly artificial.
@@ -61,8 +62,9 @@ _No changes here._
   - Wooden boards (to be confirmed).
 
 <center>
-<img src="images/competition_rules/pipes.jpg" alt="Image of the pipes" style="height: 20vh; width: 40vw; object-fit: cover" />
+<img src="images/competition_rules/pipes.jpg" alt="Image of the pipes" style="height: 20vh; max-width: 70%; object-fit: cover" />
 </center>
+
 
 
 - _Height of delimiters:_
