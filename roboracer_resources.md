@@ -6,7 +6,7 @@ section: f1tenth
 ---
 
 <h3>Build</h3>
-<p><span class="image left"><img src="images/Roboracer/f1tenth_NX.png" style="width: 14vw"
+<p><span class="image left"><img src="images/Roboracer/f1tenth_NX.png" style="zoom: 14%"
 	alt="" /></span>We designed and maintain the Roboracer Autonomous Vehicle System, a powerful
 and versatile open-source platform for autonomous systems research and education on a 1:10 scale.
 This vehicle defines the baseline for the in-person competition and provides both sensors as well as
@@ -15,7 +15,7 @@ in-person competition you have to bring your own Roboracer racecar. A detailed d
 build the vehicle including videos and a step by step instruction can be found here: <a
 href="https://roboracer.ai/build.html">Roboracer Build Instructions </a></p>
 <h3>Simulation</h3>
-<p><span class="image right"><img src="images/Roboracer/basic_sim_f1tenth.gif" style="width: 18vw"
+<p><span class="image right"><img src="images/Roboracer/basic_sim_f1tenth.gif" style="zoom: 49%"
 	alt="" /></span>Autonomous Driving needs heavy development in simulation to provide a good
 evaluation for the developed algorithms before we bring them on the car. We provide different
 simulation environments that can help you in your development. The <a
@@ -27,7 +27,7 @@ href="https://github.com/f1tenth/f1tenth_gym_ros">Roboracer ROS Simulator</a> wh
 the ROS messages from the Roboracer car in and simulation environment.</p>
 <h3>Digital Twin</h3>
 <p><span class="image right"><a href="https://youtu.be/Rq7Wwcwn1uk?feature=shared"><img
-		src="images/Roboracer/autodrive_sim_f1tenth.png" style="width: 20vw"
+		src="images/Roboracer/autodrive_sim_f1tenth.png" style="zoom: 39%"
 		alt="" /></a></span>You can leverage the <a
 href="https://autodrive-ecosystem.github.io/">AutoDRIVE Simulator</a> to simulate high-fidelity
 3D <a href="https://youtu.be/Rq7Wwcwn1uk?feature=shared">digital twin</a> of the Roboracer racecar
@@ -47,7 +47,7 @@ before deploying them on the physical vehicles. The best part – AutoDRIVE Simu
 href="https://github.com/Tinker-Twins/AutoDRIVE/tree/AutoDRIVE-Simulator">open-source</a> and
 can be customized to fit your R&D objectives beyond this competition!</p>
 <h3>Autonomous Racing</h3>
-<p><span class="image left"><img src="images/Roboracer/Lecture_1_Thumbnail.png" style="width: 20vw"
+<p><span class="image left"><img src="images/Roboracer/Lecture_1_Thumbnail.png" style="zoom: 19%"
 	alt="" /></span>If you are new to the field of autonomous racing then we can provide some
 useful learning resources for you. The complete material from our Roboracer Penn course can be found
 online at <a href="https://roboracer.ai/learn.html">Roboracer Learn </a>. This course provides

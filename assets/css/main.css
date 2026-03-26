@@ -183,7 +183,8 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-
+		overflow: hidden; /* Proper wrapping when next to a floating image.
+		https://stackoverflow.com/questions/11411219/css-to-stop-text-wrapping-under-image */
 		margin: 0 0 2rem 0;
 	}
 
@@ -2679,6 +2680,18 @@ input, select, textarea {
 			
 			.image.main-image {
 				margin: 2rem 0;
+			}
+
+			.image.left {
+				float: none;
+				display: block;
+				margin: 0 0 2rem 0;
+			}
+
+			.image.right {
+				float: none;
+				display: block;
+				margin: 0 0 2rem 0;
 			}
 		}
 
