@@ -95,15 +95,13 @@ Registration for the competition is split into two parts:
 
 ## Competition registration
 
-Competition registration is done using a registration form available on the competition website. The limit of the registered teams is **40**. In case more teams register, the time of the initial submission of the registration form is decisive. We provide up to 4 chairs, 1 table and 1 power socket for every team.
+Competition registration is done using a registration form available on the competition website. The limit of the registered teams is **40**. We provide up to 4 chairs, 1 table and 1 power socket for every team.
 
 The registration is considered final when the teams:
 
 - Fill out the form.
 - Submit a video of their car driving autonomously (~1 minute).
 - Submit a hardware list that will be made public after the competition.
-
-The teams will be able to submit or change the required materials at a later date (i.e., after submitting the form), however at the latest by the date of the registration deadline.
 
 In case that we will find unapproved hardware (e.g., sensors out of the allowed specification) we will inform the team and give them an opportunity to change the hardware.
 
