@@ -23,20 +23,11 @@ The hall can be virtually inspected [here](https://vieconcenter.at/en/hall-b).
 
 
 
-
-
-# Definitions
-
-_No changes here._
-
-
-
 # Vehicle Specifications
 
 - Additional requirements:
-  - Space for sticker: <span style="color: red">To be specified</span>
-  - Space for an active marker: <span style="color: red">To be specified</span>
-  - Empty USB port: <span style="color: red">To be specified</span>
+  - Space for sticker: 40×15 mm (on a visible location; e.g., front or top of the car).
+  - Space for an active marker: 70×85 mm (21 mm height; mounting information will follow soon).
 
 
 
@@ -104,7 +95,7 @@ Registration for the competition is split into two parts:
 
 ## Competition registration
 
-Competition registration is done using a registration form available on the competition website. The limit of the registered teams is **50**. In case more teams register, the time of the initial submission of the registration form is decisive. We provide up to 4 chairs, 1 table and 1 power socket for every team.
+Competition registration is done using a registration form available on the competition website. The limit of the registered teams is **40**. In case more teams register, the time of the initial submission of the registration form is decisive. We provide up to 4 chairs, 1 table and 1 power socket for every team.
 
 The registration is considered final when the teams:
 
@@ -180,7 +171,7 @@ Qualification won't be organized as a separate session. The teams will qualify f
 # Time Trial
 
 - _Number of heats, time per heat:_
-  - 2 heats, 5 minutes each
+  - 2 heats, ≤ 5 minutes each. Announced on the first day of the competition.
 
 
 
