@@ -10,6 +10,7 @@ simulation environments and track data will be displayed here.
 
 - Rules
     - [General Rules]({% link rules.md %})
+    - [Competition Rules]({% link competition_rules.md %})
 - [FAQ]({% link faq.md %})
 <!-- ORIENTATION_LINKS --><!-- /ORIENTATION_LINKS -->
 - [Orientation 1 Slides](https://docs.google.com/presentation/d/1z7jnTjTu0ZdNL-0zmQbKWZ0SYT9kUcww70MEBfNe2ag)
