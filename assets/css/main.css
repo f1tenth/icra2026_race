@@ -7,6 +7,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/*
+ * Notes:
+ *
+ * Changed all 980px to 1000px as it did not work with the current navbar (label issue).
+ * */
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1056,7 +1062,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			.row {
 				display: flex;
@@ -2164,7 +2170,7 @@ input, select, textarea {
 			padding: 0 2.75rem;
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			input[type="submit"],
 			input[type="reset"],
@@ -2323,7 +2329,7 @@ input, select, textarea {
 		margin: 0 0 0.75rem 0;
 	}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			label {
 				font-size: 0.9rem;
@@ -2985,7 +2991,7 @@ input, select, textarea {
 					right: 0;
 				}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			header br {
 				display: none;
@@ -3038,7 +3044,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-			@media screen and (max-width: 980px) {
+			@media screen and (max-width: 1000px) {
 
 				table th {
 					font-size: 0.9rem;
@@ -3177,7 +3183,7 @@ input, select, textarea {
 			margin-left: 0.9375em;
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			.pagination a, .pagination span {
 				font-size: 0.9rem;
@@ -3454,7 +3460,7 @@ input, select, textarea {
 				opacity: 0;
 			}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			#intro {
 				padding: 4rem 4rem 2rem 4rem ;
@@ -3586,7 +3592,7 @@ input, select, textarea {
 				color: #18bfef !important;
 			}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			#header {
 				height: 14rem;
@@ -3750,7 +3756,7 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			#nav {
 				display: none;
@@ -3886,7 +3892,7 @@ input, select, textarea {
 					border-top-width: 0;
 				}
 
-			@media screen and (max-width: 980px) {
+			@media screen and (max-width: 1000px) {
 
 				#main > .posts > * {
 					width: 50%;
@@ -4301,7 +4307,7 @@ input, select, textarea {
 			font-size: 0.8rem;
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			#footer {
 				display: block;
@@ -4539,7 +4545,7 @@ input, select, textarea {
 				background-color: #ffffff;
 			}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			#navPanelToggle {
 				display: block;
@@ -4660,7 +4666,7 @@ input, select, textarea {
 
 			}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 1000px) {
 
 			#navPanel {
 				display: block;
@@ -4676,7 +4682,7 @@ input, select, textarea {
 
 		}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 1000px) {
 
 		body.is-navPanel-visible #wrapper {
 			opacity: 0.5;
