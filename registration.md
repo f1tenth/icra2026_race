@@ -10,11 +10,14 @@ Teams that take part in the in-person competition need to provide and build an R
 To register in the 5th Roboracer Sim Racing League, please refer to the <a
 href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-icra-2026/#registration">Sim Racing Registration page</a>.
 <br>
-The following pre-registration form is only for preliminary registration and for orientation and information sessions. Registration to ICRA 2026 is expected for all competitors.
+<!--The following pre-registration form is only for preliminary registration and for orientation and information sessions. Registration to ICRA 2026 is expected for all competitors.-->
 </p><!-- /REG_INFO_PARAGRAPH -->
 
 <center class="actions">
-<!-- REG_BUTTON --><a href="https://selapp.lanthan.at/?selection=icra2026" class="button disabled">Pre-registration Closed</a><!-- /REG_BUTTON -->
+<!-- REG_BUTTON -->
+<!--<a href="https://selapp.lanthan.at/?selection=icra2026" class="button disabled">Pre-registration Closed</a>-->
+<a href="https://selapp.lanthan.at/?selection=icra2026" class="button primary">Register Your Team</a>
+<!-- /REG_BUTTON -->
 </center>
 
 <br>
@@ -23,7 +26,12 @@ The following pre-registration form is only for preliminary registration and for
 If you have any question regarding your participation, please contact us at
 <a href="mailto:roboracer2026icra@tuwien.ac.at"><span class="label">roboracer2026icra@tuwien.ac.at</span></a>.
 
+<hr>
+
+<section class="post">
+<header class="post">
 <h3 id="accomodation">Accomodation</h3>
+</header>
 
 <p>
 Registration of accommodation needs to be organized and paid for individually by the participants. However, we are listing here a selection of options that you might consider interesting. Disclosure: The organizers are not affiliated with any of these accommodations and do not get any benefits from them.
@@ -47,7 +55,7 @@ Registration of accommodation needs to be organized and paid for individually by
         Depending on your available budget, you might also consider the official ICRA conference hotels.
     </li>
 </ul>
-
+</section>
 
 <!-- PARTICIPANTS_SECTION -->
 <hr style="display:none;">
