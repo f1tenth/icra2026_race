@@ -1,2 +1,11 @@
 kramdown:
   header_offset: 2
+exclude:
+  - Utils
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - Makefile
+  - "*.toml"
+  - "*.lock"
+  - RUN_LOCALLY.md
