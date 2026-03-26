@@ -2653,6 +2653,20 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.main-image {
+			display: block;
+			margin: 4rem 0;
+		}
+
+			.image.main-image:first-child {
+				margin-top: 0;
+			}
+			
+			.image.main-image img {
+				max-width: 100%;
+			}
+			
+
 		@media screen and (max-width: 736px) {
 
 			.image.fit {
@@ -2662,7 +2676,10 @@ input, select, textarea {
 			.image.main {
 				margin: 2rem 0;
 			}
-
+			
+			.image.main-image {
+				margin: 2rem 0;
+			}
 		}
 
 	a.image {
