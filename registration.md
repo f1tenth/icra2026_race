@@ -14,7 +14,7 @@ The following pre-registration form is only for preliminary registration and for
 </p><!-- /REG_INFO_PARAGRAPH -->
 
 <center class="actions">
-<!-- REG_BUTTON --><a href="https://selapp.lanthan.at/?selection=icra2026" class="button">Pre-registration Open</a><!-- /REG_BUTTON -->
+<!-- REG_BUTTON --><a href="https://selapp.lanthan.at/?selection=icra2026" class="button disabled">Pre-registration Closed</a><!-- /REG_BUTTON -->
 </center>
 
 <br>
