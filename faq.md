@@ -44,22 +44,28 @@ For the in-person competition, information about building a car, research, as we
 A: Everyone (be it team member, student, teacher, supervisor, etc.) who will be present at the competition (not matter if they themselves participate in the race or not) has to be registered for ICRA. This can either be a full registration, or the cheaper registration specifically for competitors.
 
 ## Q: How much will ICRA's special registration for competitors cost?
-A: Right now, there has been no exact amount communicated by the ICRA organizers. From experience, we expect the cost to be around €150 to €200 per person.
+<span style="color: red">A: Currently, the price communicated by ICRA for competition only registration is 275€ per person, but we are in talks with the ICRA organizers to lower it. We hope we can announce a lower competition only registration fee to you soon!</span>
 
 ## Q: What is included in the special registration for competitors at ICRA?
-A: Access to the competition area, the exhibition area, lunch and coffee on-site from Monday till Thursday. As far as we know, access to the sessions and workshop is NOT included.
+<span style="color: red">A: Access to the competition area and the exhibition area from Monday to Thursday, as well as lunch on-site from Tuesday to Thursday. As far as we know, access to the sessions and workshop is NOT included.</span>
+
+## Q: How can we get a VISA for Austria?
+<span style="color: red">A: Visa support is provided by ICRA, see <https://2026.ieee-icra.org/attend/visa-information/> for more details.</span>
 
 ## Q: How many people are needed/allowed for each team?
-A: There is no limit to the number of people in a team. A team consisting only of a single person is also fine. However, for the in-person competition in Vienna, Austria, there will likely be a limit of how many people can be at the team's desk and the track of the competition at any time (for security reasons). Note that every team member who wants to access the competition in person at ICRA has to be registered with ICRA.
+A: There is no limit to the number of people in a team. A team consisting only of a single person is also fine. However, for the in-person competition in Vienna, Austria, <span style="color: red">we can only guarantee equipment (tables, chairs, etc.) for four people per team.</span> Note that every team member who wants to access the competition in person at ICRA has to be registered with ICRA.
 
 ## Q: Are there any pre-competition events or meetings?
 A: As we are going to be very busy to prepare for the competition on the weekend leading up to ICRA, there are currently no plans for any pre-competition events or meetings. All relevant details will be communicated via Slack. Note that there are events planned during the week.
 
 ## Q: When does the registration for the competition start?
-A: The pre-registration is already open. We highly advise everyone who wants to compete to pre-register, so they can receive up-to-date information regarding the competition. The main registration will open in the next couple of weeks (and if you are pre-registered you will be notified about that).
+<!-- A: The pre-registration is already open. We highly advise everyone who wants to compete to pre-register, so they can receive up-to-date information regarding the competition. The main registration will open in the next couple of weeks (and if you are pre-registered you will be notified about that).-->
 
-## Q: How will you calculate the motor specifications according to the current rules?
-A: We use this formula: <https://things-in-motion.blogspot.com/2018/12/how-to-estimate-torque-of-bldc-pmsm.html>
+<span style="color: red">A: The registration has started on March 26, in accordance with the [official timeline]({% link timeline.md %}). Register [here]({% link registration.md %}).</span>
+
+## Q: How are you going to calculate the motor specifications according to the current rules?
+A: We use this formula: <https://things-in-motion.blogspot.com/2018/12/how-to-estimate-torque-of-bldc-pmsm.html>.
+<span style="color: red">For this race, we aim to accept any motors that have previously been approved, as well as motors with similar specs. After examining the hardware lists supplied by the teams, there will either be a clarification of the rules or a list of approved motors.</span>
 
 
 # Sim Racing League
