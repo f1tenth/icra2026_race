@@ -108,11 +108,22 @@ In case that we will find unapproved hardware (e.g., sensors out of the allowed 
 
 ## Conference registration
 
-In order to get access to the competition area, every team member must register and pay the registration fee on the ICRA website. Note that there is no deadline from our side, but the organizers of the ICRA conference may introduce deadline at any time.
+<span style="color: red">_Note: This whole section was updated._</span>
 
-- Paying the "competition fee" is usually the cheapest option to get access to the venue.
-  - The current estimate for the competition fee is **275€** per person. It contains lunch and coffee breaks (Tue-Thu).
+In order to get access to the competition area, every team member must register and pay the registration fee on the ICRA website.
+
+- The competitions-only registration rate is **275€** per person. This fee is available only with a given "discount code", available to all teams during the Competition registration.
+  - The access is the same as exhibition-only fee, therefore, you will have access to:
+    - Hall B, where the competitions and exhibitions are located.
+    - Hall C, where the posters of accepted papers are.
+    - Lunches, from Tuesday to Thursday.
+    - Coffee breaks.
+    - InfoVaya system, where the whole program of the conference is available.
+    - Accepted papers.
+- Deadline for the registration (imposed by the conference organizers) is **May 25, 2026**.
+- Visa letters are available as an option during the conference registration process. They will be sent to the corresponding e-mail addresses after completing the payment.
 - Other types of registration (e.g., paper author) usually contain the access to the competition area. No other registration is therefore necessary.
+- Any questions, regarding the registration or visa letter, can be addressed to [icra2026registration@aimgroup.eu](mailto:icra2026registration@aimgroup.eu).
 
 
 
