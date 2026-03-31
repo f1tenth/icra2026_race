@@ -44,7 +44,7 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="{% link index.html %}" class="logo">
+            <a href="{% link index.md %}" class="logo">
                 {%if page.intro %}
                     Roboracer {{ site.CONF_WITH_YEAR }}
                 {%else%}
@@ -57,7 +57,7 @@
         <nav id="nav">
             <ul class="links">
                 <li {%if page.section=="about" %}class="active" {%endif%}>
-                    <a href="{% link index.html %}">About</a>
+                    <a href="{% link index.md %}">About</a>
                 </li>
                 <li {%if page.section=="timeline" %}class="active" {%endif%}>
                     <a href="{% link timeline.md %}">Timeline</a>
