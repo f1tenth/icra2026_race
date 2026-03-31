@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Roboracer {{ site.CONF_WITH_YEAR }}{%unless page.intro %} | {%endunless%}{{ page.short_title | default: page.title | escape }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{% link assets/css/main.css %}" />
+    <noscript>
+        <link rel="stylesheet" href="{% link assets/css/noscript.css %}" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        {%if page.intro %}
+        <!-- Intro -->
+        <div id="intro">
+            <h1>{{ site.RACE_NUMBER }} Roboracer AUTONOMOUS Racing Competition</h1>
+            <p>
+                {{ site.CONF_FULL_WITH_YEAR }} ({{ site.CONF_WITH_YEAR }})
+                <br />
+                <a href="#" class="icon solid solo fa-calendar-alt">
+                    <span class="label">Calender</span>
+                </a> {{ site.CONF_DATES_WITH_YEAR }}
+                <br />
+                <a href="{{ site.VENUE_URL }}" class="icon solid solo fa-globe-europe">
+                    <span class="label">Location</span> {{ site.VENUE_NAME }}, {{ site.VENUE_LOCATION }}
+                </a>
+            </p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
+        {%endif%}
+
+        <!-- Header -->
+        <header id="header">
+            <a href="{% link index.html %}" class="logo">
+                {%if page.intro %}
+                    Roboracer {{ site.CONF_WITH_YEAR }}
+                {%else%}
+                    {{ page.short_title | default: page.title | escape }}
+                {%endif%}
+            </a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li {%if page.section=="about" %}class="active" {%endif%}>
+                    <a href="{% link index.html %}">About</a>
+                </li>
+                <li {%if page.section=="timeline" %}class="active" {%endif%}>
+                    <a href="{% link timeline.md %}">Timeline</a>
+                </li>
+                <li {%if page.section=="race" %}class="active" {%endif%}>
+                    <a href="{% link race_resources.md %}">Race Resources</a>
+                </li>
+                <li {%if page.section=="f1tenth" %}class="active" {%endif%}>
+                    <a href="{% link roboracer_resources.md %}">Getting Started</a>
+                </li>
+                <li {%if page.section=="reg" %}class="active" {%endif%}>
+                    <a href="{% link registration.md %}">Registration</a>
+                </li>
+                <li {%if page.section=="faq" %}class="active" {%endif%}>
+                    <a href="{% link faq.md %}">FAQ</a>
+                </li>
+                <!--<li {%if page.section=="stream" %}class="active" {%endif%}>
+                    <a href="{% link results.md %}">Results/Stream</a>
+                </li>-->
+            </ul>
+            <ul class="icons">
+                <li>
+                    <a href="https://x.com/RoboRacerAi" class="icon brands alt fa-twitter">
+                        <span class="label">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://roboracer.ai/" class="icon solid solo fa-home">
+                        <span class="label">Website</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:{{ site.NAV_EMAIL_LINK }}" class="icon solid solo fa-envelope">
+                        <span class="label">Email</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://join.slack.com/t/robo-racer/shared_invite/zt-2sfu4qr7p-3oe27mCnH98muwRR9uEAbg" class="icon brands alt fa-slack">
+                        <span class="label">Slack</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/f1tenth" class="icon brands alt fa-github">
+                        <span class="label">GitHub</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="main">
+
+            {{ content }}
+
+
+            <!-- Copyright -->
+            <div id="copyright">
+                <ul>
+                    <li>&copy;
+                        <script>
+                            document.write("Copyright " + new Date().getFullYear() + " ROBORACER Foundation");
+                        </script>
+                    </li>
+                    <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% link assets/js/jquery.min.js %}"></script>
+    <script src="{% link assets/js/jquery.scrollex.min.js %}"></script>
+    <script src="{% link assets/js/jquery.scrolly.min.js %}"></script>
+    <script src="{% link assets/js/browser.min.js %}"></script>
+    <script src="{% link assets/js/breakpoints.min.js %}"></script>
+    <script src="{% link assets/js/util.js %}"></script>
+    <script src="{% link assets/js/main.js %}"></script>
+
+</body>
+
+</html>
