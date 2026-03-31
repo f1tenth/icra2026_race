@@ -2,7 +2,7 @@
 title: Frequently Asked Questions
 short_title: FAQ
 layout: page
-section: race
+section: faq
 ---
 
 <style>
