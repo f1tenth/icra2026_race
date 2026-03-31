@@ -57,18 +57,20 @@ Registration of accommodation needs to be organized and paid for individually by
 </ul>
 </section>
 
+{% if site.data.registered_participants %}
 <!-- PARTICIPANTS_SECTION -->
-<hr style="display:none;">
+<hr>
 
-<h3 id="participants" style="display:none;">Participants</h3>
+<h3 id="participants">Participants</h3>
 
 <p style="display:none;">
 If you have registered for participation but the list below is not updated, please contact us at <a href="mailto:{{ site.NAV_EMAIL_LINK }}"><span class="label">{{ site.NAV_EMAIL_LINK }}</span></a>.
 <br>
 Register the modified information under the same team name, and we will update it accordingly.
 </p>
+<p><i>Note: Only teams that submitted all the required materials are listed below.</i></p>
 
-<table style="display:none;">
+<table>
 <thead>
     <tr>
         <th style="text-align: left">TEAM NAME</th>
@@ -77,9 +79,34 @@ Register the modified information under the same team name, and we will update i
     </tr>
 </thead>
 <tbody>
+{%- comment -%}
+https://stackoverflow.com/questions/32015337/intelligent-way-to-generate-tables-with-liquid-from-a-csv-file
+The '-' are done so that it renders nicely even in the HTML code.
+{%- endcomment -%}
+{%- for item in site.data.registered_participants -%}
+    {% if item[""] == "15" and item["State"] == "submitted" %}
+    <tr>
+        <td>{{- item["Team name"] -}}</td>
+        <td>{{- item["Affiliation"] -}}</td>
+        <td>
+            {%- assign first_names = item["First name (Given name)"] | split: '
+' -%}
+            {%- assign last_names = item["Last name (Surname)"] | split: '
+' -%}
+            {%- for last_name in last_names -%}
+                {{- last_name | strip | append: ", " | append: first_names[forloop.index0] | strip -}}
+                {%- unless forloop.last -%}
+                    <br />
+                {%- endunless -%}
+            {%- endfor -%}
+        </td>
+    </tr>
+    {%- endif -%}
+{% endfor %}
 </tbody>
 </table>
 <!-- /PARTICIPANTS_SECTION -->
+{% endif %}
 
 <br>
 <!-- Google Site Registration -->
