@@ -9,3 +9,18 @@ exclude:
   - "*.toml"
   - "*.lock"
   - RUN_LOCALLY.md
+
+# Site configuration
+RACE_NUMBER: 27th
+
+CONF_WITH_YEAR: ICRA 2026
+CONF_FULL_WITH_YEAR: 2026 IEEE Conference on Robotics and Automation
+CONF_DATES_WITH_YEAR: June 1st - 5th 2026
+CONF_URL: https://2026.ieee-icra.org/
+CONF_LOGO: images/ICRA2026.png
+
+VENUE_NAME: VIECON - Vienna Congress & Convention Center
+VENUE_LOCATION: Wien, Vienna, Austria
+VENUE_URL: https://www.messecongress.at/
+
+NAV_EMAIL_LINK: roboracer2026icra@tuwien.ac.at
