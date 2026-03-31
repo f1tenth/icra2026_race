@@ -83,7 +83,8 @@ Register the modified information under the same team name, and we will update i
 https://stackoverflow.com/questions/32015337/intelligent-way-to-generate-tables-with-liquid-from-a-csv-file
 The '-' are done so that it renders nicely even in the HTML code.
 {%- endcomment -%}
-{%- for item in site.data.registered_participants -%}
+{%- assign participants = site.data.registered_participants | sort_natural: "Team name" -%}
+{%- for item in participants -%}
     {% if item[""] == "15" and item["State"] == "submitted" %}
     <tr>
         <td>{{- item["Team name"] -}}</td>
