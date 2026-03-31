@@ -1,3 +1,6 @@
+---
+# This is left here to force Liquid to process this file.
+---
 <!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP
@@ -9,7 +12,7 @@
 <!-- NEW RACE CHANGE HERE -->
 
 <head>
-	<!-- PAGE_TITLE --><title>Roboracer ICRA 2026</title><!-- /PAGE_TITLE -->
+	<title>Roboracer {{ site.CONF_WITH_YEAR }}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,10 +28,10 @@
 
 		<!-- Intro -->
 		<div id="intro">
-			<h1><!-- RACE_NUMBER -->27TH<!-- /RACE_NUMBER --> Roboracer AUTONOMOUS Racing Competition</h1>
-			<p><!-- CONF_FULL_WITH_YEAR -->2026 IEEE Conference on Robotics and Automation<!-- /CONF_FULL_WITH_YEAR --> (<!-- CONF_WITH_YEAR -->ICRA 2026<!-- /CONF_WITH_YEAR -->)<br />
-				<a href="#" class="icon solid solo fa-calendar-alt"><span class="label">Calender</span></a> <!-- CONF_DATES_WITH_YEAR -->June 1st - 5th 2026<!-- /CONF_DATES_WITH_YEAR --> <br />
-				<!-- VENUE_LINK --><a href="https://www.messecongress.at/" class="icon solid solo fa-globe-europe"><span class="label">Location</span> VIECON - Vienna Congress & Convention Center, Wien, Vienna, Austria</a><!-- /VENUE_LINK --></p>
+			<h1>{{ site.RACE_NUMBER }} Roboracer AUTONOMOUS Racing Competition</h1>
+			<p>{{ site.CONF_FULL_WITH_YEAR }} ({{ site.CONF_WITH_YEAR }})<br />
+				<a href="#" class="icon solid solo fa-calendar-alt"><span class="label">Calender</span></a> {{ site.CONF_DATES_WITH_YEAR }} <br />
+				<a href="{{ site.VENUE_URL }}" class="icon solid solo fa-globe-europe"><span class="label">Location</span> {{ site.VENUE_NAME }}, {{ site.VENUE_LOCATION }}</a></p>
 			<ul class="actions">
 				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 			</ul>
@@ -36,7 +39,7 @@
 
 		<!-- Header -->
 		<header id="header">
-			<a href="index.html" class="logo">Roboracer <!-- CONF_WITH_YEAR -->ICRA 2026<!-- /CONF_WITH_YEAR --></a>
+			<a href="index.html" class="logo">Roboracer {{ site.CONF_WITH_YEAR }}</a>
 		</header>
 
 		<!-- Nav -->
@@ -55,8 +58,8 @@
 							class="label">Twitter</span></a></li>
 				<li><a href="https://roboracer.ai/" class="icon solid solo fa-home"><span
 							class="label">Website</span></a></li>
-			<!-- NAV_EMAIL_LINK --><li><a href="mailto:roboracer2026icra@tuwien.ac.at" class="icon solid solo fa-envelope"><span
-						class="label">Email</span></a></li><!-- /NAV_EMAIL_LINK -->
+				<li><a href="mailto:{{ site.NAV_EMAIL_LINK }}" class="icon solid solo fa-envelope"><span
+						class="label">Email</span></a></li>
 				<li><a href="https://join.slack.com/t/robo-racer/shared_invite/zt-2sfu4qr7p-3oe27mCnH98muwRR9uEAbg"
 						class="icon brands alt fa-slack"><span class="label">Slack</span></a></li>
 				<li><a href="https://github.com/f1tenth" class="icon brands alt fa-github"><span
@@ -70,11 +73,11 @@
 			<!-- Featured Post -->
 			<article class="post featured">
 				<header class="major">
-					<h2><a><!-- RACE_NUMBER -->27TH<!-- /RACE_NUMBER --> Roboracer AUTONOMOUS Racing Competition</a></h2>
+					<h2><a>{{ site.RACE_NUMBER }} Roboracer AUTONOMOUS Racing Competition</a></h2>
 					<left>
 						<p>Roboracer Autonomous Racing is a semi-regular competition organized by an international
 							community of researchers, engineers, and autonomous systems enthusiasts. The teams
-							participating in <!-- RACE_NUMBER -->27TH<!-- /RACE_NUMBER --> Roboracer Racing Competition at <!-- CONF_WITH_YEAR -->ICRA 2026<!-- /CONF_WITH_YEAR --> will build a 1:10 scaled
+							participating in {{ site.RACE_NUMBER }} Roboracer Racing Competition at {{ site.CONF_WITH_YEAR }} will build a 1:10 scaled
 							autonomous
 							race car according to a given specification and write software for it to fulfill the
 							objectives for the competition: Don't crash and minimize laptime.</p>
@@ -87,9 +90,9 @@
 					</center>
 
 					<left>
-						<p> ICRA 2026 will host an in-person competition in the form of the <!-- RACE_NUMBER -->27th<!-- /RACE_NUMBER --> Roboracer Autonomous
+						<p> ICRA 2026 will host an in-person competition in the form of the {{ site.RACE_NUMBER }} Roboracer Autonomous
 							Racing Competition as well as a virtual benchmark competition in the form of the
-							Roboracer Sim Racing League. The main focus of the <!-- RACE_NUMBER -->27th<!-- /RACE_NUMBER --> Roboracer
+							Roboracer Sim Racing League. The main focus of the {{ site.RACE_NUMBER }} Roboracer
 							Autonomous Racing Competition is an in-person competition with physical cars. Each team will
 							bring
 							their own Roboracer car and write the software for their car. The teams have access to a
@@ -126,11 +129,9 @@
 					</left>
 				</header>
 				<center>
-					<!-- CONF_LOGO_LINK -->
-					<a href="https://2026.ieee-icra.org/" class="image main-image">
-						<img src="images/ICRA2026.png" style="zoom: 70%" />
+					<a href="{{ site.CONF_URL }}" class="image main-image">
+						<img src="{{ site.CONF_LOGO }}" style="zoom: 70%" />
 					</a>
-					<!-- /CONF_LOGO_LINK -->
 				</center>
 
 			</article>
@@ -161,7 +162,7 @@
 
 				<h2>Organizers:</h2>
 
-                <div style="background:#ddddff; padding:10px; margin-bottom: 10px; border: 1px solid #0000dd;"><strong>For all questions to the organizers regarding the competition, please only write to <a href="mailto:roboracer2026icra@tuwien.ac.at">roboracer2026icra@tuwien.ac.at</a> and do not contact individual people by their personal email address! Thank you!</strong></div>
+                <div style="background:#ddddff; padding:10px; margin-bottom: 10px; border: 1px solid #0000dd;"><strong>For all questions to the organizers regarding the competition, please only write to <a href="mailto:{{ site.NAV_EMAIL_LINK }}">{{ site.NAV_EMAIL_LINK }}</a> and do not contact individual people by their personal email address! Thank you!</strong></div>
 
 				<div class="box alt">
 					<div class="row gtr-50 gtr-uniform">

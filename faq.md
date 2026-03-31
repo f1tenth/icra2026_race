@@ -31,7 +31,7 @@ A: No there are no general restrictions, prerequisites or formal requirements fo
 A: There is no fee to participate in the Roboracer competition itself. However, since the in-person Roboracer competition is held at ICRA, every in-person participant has to be registered with ICRA to be able to access the competition area (see questions below).
 
 ## Q: Where can I get more information/ask questions about the event?
-A: Please join the [Slack channel](https://join.slack.com/t/robo-racer/shared_invite/zt-2sfu4qr7p-3oe27mCnH98muwRR9uEAbg) and ask any questions there. This way, you will also receive relevant updates from our side. You can also E-Mail your questions to: <roboracer2026icra@tuwien.ac.at>
+A: Please join the [Slack channel](https://join.slack.com/t/robo-racer/shared_invite/zt-2sfu4qr7p-3oe27mCnH98muwRR9uEAbg) and ask any questions there. This way, you will also receive relevant updates from our side. You can also E-Mail your questions to: <{{ site.NAV_EMAIL_LINK }}>
 
 ## Q: I am new to Roboracer, where can I find resources to get started?
 A: For the Sim Racing League see here: <https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-icra-2026/>

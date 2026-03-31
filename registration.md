@@ -24,7 +24,7 @@ href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-ic
 <br>
 
 If you have any question regarding your participation, please contact us at
-<a href="mailto:roboracer2026icra@tuwien.ac.at"><span class="label">roboracer2026icra@tuwien.ac.at</span></a>.
+<a href="mailto:{{ site.NAV_EMAIL_LINK }}"><span class="label">{{ site.NAV_EMAIL_LINK }}</span></a>.
 
 <hr>
 
@@ -63,7 +63,7 @@ Registration of accommodation needs to be organized and paid for individually by
 <h3 id="participants" style="display:none;">Participants</h3>
 
 <p style="display:none;">
-If you have registered for participation but the list below is not updated, please contact us at <a href="mailto:roboracer2026icra@tuwien.ac.at"><span class="label">roboracer2026icra@tuwien.ac.at</span></a>.
+If you have registered for participation but the list below is not updated, please contact us at <a href="mailto:{{ site.NAV_EMAIL_LINK }}"><span class="label">{{ site.NAV_EMAIL_LINK }}</span></a>.
 <br>
 Register the modified information under the same team name, and we will update it accordingly.
 </p>
