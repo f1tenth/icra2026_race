@@ -4,20 +4,25 @@ short_title: Registration
 layout: page
 section: reg
 ---
-<!-- REG_INFO_PARAGRAPH --><p>This competition is open for everyone of all levels, everyone is welcome to participate in this competition.
-A team can consist of multiple teammates. Teams with only one person are also allowed.
-Teams that take part in the in-person competition need to provide and build an Roboracer car by themselves.
-To register in the 5th Roboracer Sim Racing League, please refer to the <a
-href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-icra-2026/#registration">Sim Racing Registration page</a>.
-<br>
-<!--The following pre-registration form is only for preliminary registration and for orientation and information sessions. Registration to ICRA 2026 is expected for all competitors.-->
-</p><!-- /REG_INFO_PARAGRAPH -->
+<!-- REG_INFO_PARAGRAPH -->
+<p>
+    This competition is open for everyone of all levels, everyone is welcome to participate in this competition.
+    A team can consist of multiple teammates. Teams with only one person are also allowed.
+    Teams that take part in the in-person competition need to provide and build an Roboracer car by themselves.
+    To register in the 5th Roboracer Sim Racing League, please refer to the
+    <a href="https://autodrive-ecosystem.github.io/competitions/roboracer-sim-racing-icra-2026/#registration">
+        Sim Racing Registration page
+    </a>.
+    <br>
+    <!--The following pre-registration form is only for preliminary registration and for orientation and information sessions. Registration to ICRA 2026 is expected for all competitors.-->
+</p>
+<!-- /REG_INFO_PARAGRAPH -->
 
 <center class="actions">
-<!-- REG_BUTTON -->
-<!--<a href="https://selapp.lanthan.at/?selection=icra2026" class="button disabled">Pre-registration Closed</a>-->
-<a href="https://selapp.lanthan.at/?selection=icra2026" class="button primary">Register Your Team</a>
-<!-- /REG_BUTTON -->
+    <!-- REG_BUTTON -->
+    <!--<a href="https://selapp.lanthan.at/?selection=icra2026" class="button disabled">Pre-registration Closed</a>-->
+    <a href="https://selapp.lanthan.at/?selection=icra2026" class="button primary">Register Your Team</a>
+    <!-- /REG_BUTTON -->
 </center>
 
 <br>
@@ -28,7 +33,6 @@ If you have any question regarding your participation, please contact us at
 
 <hr>
 
-<section class="post">
 <header class="post">
 <h3 id="accomodation">Accomodation</h3>
 </header>
@@ -55,20 +59,23 @@ Registration of accommodation needs to be organized and paid for individually by
         Depending on your available budget, you might also consider the official ICRA conference hotels.
     </li>
 </ul>
-</section>
 
 {% if site.data.registered_participants %}
 <!-- PARTICIPANTS_SECTION -->
 <hr>
 
+<header>
 <h3 id="participants">Participants</h3>
+<p>
+    Note: Only teams that submitted all the required materials are listed below.
+</p>
+</header>
 
 <p style="display:none;">
 If you have registered for participation but the list below is not updated, please contact us at <a href="mailto:{{ site.NAV_EMAIL_LINK }}"><span class="label">{{ site.NAV_EMAIL_LINK }}</span></a>.
 <br>
 Register the modified information under the same team name, and we will update it accordingly.
 </p>
-<p><i>Note: Only teams that submitted all the required materials are listed below.</i></p>
 
 <table>
 <thead>
@@ -108,6 +115,3 @@ The '-' are done so that it renders nicely even in the HTML code.
 </table>
 <!-- /PARTICIPANTS_SECTION -->
 {% endif %}
-
-<br>
-<!-- Google Site Registration -->
