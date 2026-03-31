@@ -11,6 +11,7 @@
  * Notes:
  *
  * Changed all 980px to 1000px as it did not work with the current navbar (label issue).
+ * Enabled <br> for <1000px screens in #intro.
  * */
 
 html, body, div, span, applet, object,
@@ -3498,7 +3499,7 @@ input, select, textarea {
 			}
 
 				#intro p br {
-					display: none;
+					/* display: none; */
 				}
 
 				#intro + #header {
