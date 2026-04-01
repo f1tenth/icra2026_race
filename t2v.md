@@ -11,6 +11,15 @@ section: race
 .footnotes ol {
     margin-top: 4rem;
 }
+table {
+    /* table-wrapper class */
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+
+    @media screen and (max-width: 736px) {
+        display: inline-block;
+    }
+}
 </style>
 _Original blog post is available here: <https://scuderiasegfault.github.io/blog/2026/03/17/t2v-module.html>_
 
@@ -122,10 +131,11 @@ For local testing you can easily extend the circuit with infrared sender:
 Wiring diagram:
 
 <center>
-<span class="image">
+<a href="images/t2v_mini_schematics.jpg" class="image main-image">
 <img src="images/t2v_mini_schematics.jpg" style="zoom: 25%" />
-</span>
+</a>
 </center>
+
 
 We also provide a PCB design that includes the USB plug, headers for the
 IR receiver, and headers for some typical low-level protocols, such as I2C, SPI, and one-wire. We will release the build
@@ -168,7 +178,7 @@ basic tools for testing.
 # Specialized Sender: Starting Lights
 
 <center>
-<span class="image">
+<span class="image main-image">
 <img src="https://scuderiasegfault.github.io/blog/assets/t2v_module/t2v_start_module.png" style="zoom: 15%" />
 </span>
 </center>
