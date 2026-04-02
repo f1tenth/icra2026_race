@@ -41,9 +41,9 @@ and, if possible, to indicate slow-driving sections[^1].
 
 [^1]: Subject to final rule agreement and roll-out of T2V Module.
 
-To allow for an early roll-out to as many teams as possible, we provide build instructions and software for the
+<!--To allow for an early roll-out to as many teams as possible, we provide build instructions and software for the
 receivers, based on the ESP32-P4 platform. Teams can find those instructions on GitHub in the repository for the T2V
-Module. We also provide a basic ROS integration and will include a sensible integration for our Ackermann Mux NG (our new implementation for the Ackermann Mux, which we will release soon). All instructions, source code, and designs will be available as open-source projects under MIT or CC0 licenses, respectively, after we have finalized the initial versions for each component.
+Module. We also provide a basic ROS integration and will include a sensible integration for our Ackermann Mux NG (our new implementation for the Ackermann Mux, which we will release soon). All instructions, source code, and designs will be available as open-source projects under MIT or CC0 licenses, respectively, after we have finalized the initial versions for each component.-->
 
 <hr>
 
@@ -88,7 +88,7 @@ informative, and devices might use them to optimize their starting routine (e.g.
 the dead man's switch without the car starting to drive).
 
 | ID          | Name        | Required | Usage                            |
-|-------------|-------------|----------|----------------------------------|
+| ----------- | ----------- | -------- | -------------------------------- |
 | `00`        | START_READY | No       | Starting sequence has started.   |
 | `01`        | START_SET   | No       | Start of race is imminent.       |
 | `02`        | START_GO    | Yes      | Start the race.                  |
@@ -105,28 +105,34 @@ We aim to make the T2V Module accessible to as many teams as possible by providi
 Reference Receiver. To achieve this, we have based the receiver on
 the [ESP32-P4-NANO](https://www.waveshare.com/esp32-p4-nano.htm) from Waveshare, which is internationally available and
 costs less than 20 USD. In the minimum configuration, teams need to purchase an additional IR Receiver, a USB plug with
-a corresponding cable, and a few jumper wires:
+a corresponding cable, a few passive components, and a bunch of jumper wires:
 
-| Reference      | Note                             | Value/Type | Farnell Code | Link (Examples)                                              |
-| -------------- | -------------------------------- | ---------- | ------------ | ------------------------------------------------------------ |
-|                | ESP32-P4-NANO                    |            |              | [Waveshare.com](https://www.waveshare.com/esp32-p4-nano.htm?sku=29026) |
-| C1, C2, C3, C6 | Capacitors                       | 1 µF       | 3188966      |                                                              |
-| D1             | Power LED                        | Green      | 2099252      |                                                              |
-| F1             | Fuse                             |            | 2834854      |                                                              |
-| J3             | USB Connector                    | USB mini B | 4552359      | [Amazon.de](https://www.amazon.de/DAOKAI-8-Piece-USB-Adapter-2-54/dp/B09YYHNCC3/ref=sr_1_1_sspa?aref=IGryautNMT) |
-| R1             | Resistor for Power LED           | 470 Ω      | 9240926      |                                                              |
-| R7             | Resistor for Receiver LED filter | 10 Ω       | 9236643      |                                                              |
-| U1             | Receiver LED                     | TSOP345xx  | 2251343      | [Amazon.de](https://www.amazon.de/-/en/LAOMAO-Pairs-Infrared-Emission-Receiver/dp/B00EFOTJZE/ref=sr_1_5) |
-|                | Jumper wires                     |            |              |                                                              |
+| Reference  | Note                             | Value/Type | Farnell Code | Link (Examples)                                              |
+| ---------- | -------------------------------- | ---------- | ------------ | ------------------------------------------------------------ |
+|            | ESP32-P4-NANO                    |            |              | [Waveshare.com](https://www.waveshare.com/esp32-p4-nano.htm?sku=29026) |
+| C2, C3, C6 | Capacitors                       | 1 µF       | 3188966      |                                                              |
+| F1         | Fuse                             |            | 2834854      |                                                              |
+| J3         | USB Connector                    | USB mini B | 4552359      | [Amazon.de](https://www.amazon.de/DAOKAI-8-Piece-USB-Adapter-2-54/dp/B09YYHNCC3/ref=sr_1_1_sspa?aref=IGryautNMT) |
+| R7         | Resistor for Receiver LED filter | 10 Ω       | 9236643      |                                                              |
+| U1         | Receiver LED                     | TSOP345xx  | 2251343      | [Amazon.de](https://www.amazon.de/-/en/LAOMAO-Pairs-Infrared-Emission-Receiver/dp/B00EFOTJZE/ref=sr_1_5) |
+|            | Jumper wires                     |            |              |                                                              |
 
-For local testing you can easily extend the circuit with infrared sender:
+Optionally also add a Power LED to be able to see that the device is powered:
 
-| Reference | Note                      | Value/Type | Farnell Code | Link (Examples)                                              |
-| --------- | ------------------------- | ---------- | ------------ | ------------------------------------------------------------ |
-| C5        | Capacitor for Sender LED  | 1 µF       | 3188966      |                                                              |
-| D2        | Sender LED                | Infrared   | 1328299      | [Amazon.de](https://www.amazon.de/-/en/LAOMAO-Pairs-Infrared-Emission-Receiver/dp/B00EFOTJZE/ref=sr_1_5) |
-| Q1        | Transistor for Sender LED | BSS138     | 4655271      |                                                              |
-| R2        | Resistor for Sender LED   | 39 Ω       | 9236716      |                                                              |
+| Reference | Note      | Value/Type | Farnell Code | Link (Examples) |
+| --------- | --------- | ---------- | ------------ | --------------- |
+| C1        | Capacitor | 1 µF       | 3188966      |                 |
+| D1        | Power LED | Green      | 2099252      |                 |
+| R1        | Resistor  | 470 Ω      | 9240926      |                 |
+
+For local testing you can easily extend the circuit with an infrared sender:
+
+| Reference | Note       | Value/Type | Farnell Code | Link (Examples)                                              |
+| --------- | ---------- | ---------- | ------------ | ------------------------------------------------------------ |
+| C5        | Capacitor  | 1 µF       | 3188966      |                                                              |
+| D2        | Sender LED | Infrared   | 1328299      | [Amazon.de](https://www.amazon.de/-/en/LAOMAO-Pairs-Infrared-Emission-Receiver/dp/B00EFOTJZE/ref=sr_1_5) |
+| Q1        | Transistor | BSS138     | 4655271      |                                                              |
+| R2        | Resistor   | 39 Ω       | 9236716      |                                                              |
 
 Wiring diagram:
 
@@ -137,9 +143,9 @@ Wiring diagram:
 </center>
 
 
-We also provide a PCB design that includes the USB plug, headers for the
+<!-- We also provide a PCB design that includes the USB plug, headers for the
 IR receiver, and headers for some typical low-level protocols, such as I2C, SPI, and one-wire. We will release the build
-instructions in a forthcoming post, followed by the PCB design once it has been finalized and tested.
+instructions in a forthcoming post, followed by the PCB design once it has been finalized and tested. -->
 
 The firmware handles the processing of the IR NEC frames and communication as a USB device. As we intend to expand the
 receiver's functionality to read data from temperature sensors and voltage meters, these features will also be generally
@@ -163,6 +169,13 @@ table below describes the characteristics and their BLE attributes.
 | `FF04`         | Unicast address | Read/Write  | Unicast address for this device.                                                                 |
 | `FF05`         | Multicast mask  | Read/Write  | Multicast mask, with each bit in the mask representing one possible address.                     |
 
+## Documentation
+
+- Instructions: <https://github.com/ScuderiaSegfault/t2v_mod/tree/main>
+- Driver: <https://github.com/ScuderiaSegfault/t2v_mod_rs>
+- Example ROS 2 node: <https://github.com/ScuderiaSegfault/t2v_mod_node>
+- Message definitions: <https://github.com/ScuderiaSegfault/t2v_msgs>
+
 <hr>
 
 # Reference Sender
@@ -170,12 +183,11 @@ table below describes the characteristics and their BLE attributes.
 Similar to the Reference Receiver, we have also developed a Reference Sender for use at the Vienna Grand Prix. It is based
 on the same hardware platform as the receiver, but uses Power over Ethernet for power supply and network connectivity.
 In the first version, it will allow direct commands via UDP and TCP, as well as communication based on Zenoh for
-integration into more complex systems. Once we have finalized the protocols, we will make them available, including some
-basic tools for testing.
+integration into more complex systems. <!--Once we have finalized the protocols, we will make them available, including some
+basic tools for testing.-->
 
-<hr>
 
-# Specialized Sender: Starting Lights
+## Specialized Sender: Starting Lights
 
 <center>
 <span class="image main-image">
