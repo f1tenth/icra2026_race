@@ -117,6 +117,7 @@ section: timeline
 			<td class="tg-j1gp">
 				<span style="font-weight:inherit;font-style:inherit">
 					Roboracer Orientation 1 ( Competition Rules overview )
+					{% if site.ORIENTATION_1_SLIDES_LINK %}<br /><a href="{{ site.ORIENTATION_1_SLIDES_LINK }}">Slides</a>{% endif %}
 				</span>
 				<br>
 				<!--<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
