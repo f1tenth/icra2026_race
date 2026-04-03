@@ -171,7 +171,7 @@ Qualification won't be organized as a separate session. The teams will qualify f
 
 - _List of possible ways to start a race:_
   - Manual
-  - Automatic (with a T2V module)
+  - Automatic (with a [T2V module]({% link t2v.md %}))
   - Mixed
 - All start variants will contain three signals: `Ready`, `Set`, `Go`
   - The time delays between the signals may vary for every start.
