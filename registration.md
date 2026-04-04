@@ -82,7 +82,10 @@ Register the modified information under the same team name, and we will update i
     <tr>
         <th style="text-align: left">TEAM NAME</th>
         <th style="text-align: left">AFFILIATION</th>
+        {%- assign names_available = site.data.registered_participants | where_exp: "item", "item['First name (Given name)']" | where_exp: "item", "item['Last name (Surname)']" -%}
+        {%- if names_available.size > 0 -%}
         <th style="text-align: left">TEAM MEMBERS</th>
+        {%- endif -%}
     </tr>
 </thead>
 <tbody>
@@ -96,7 +99,7 @@ The '-' are done so that it renders nicely even in the HTML code.
     <tr>
         <td>{{- item["Team name"] -}}</td>
         <td>{{- item["Affiliation"] -}}</td>
-        <td>
+        {% if names_available.size > 0 %}<td>
             {%- assign first_names = item["First name (Given name)"] | split: '
 ' -%}
             {%- assign last_names = item["Last name (Surname)"] | split: '
@@ -107,7 +110,7 @@ The '-' are done so that it renders nicely even in the HTML code.
                     <br />
                 {%- endunless -%}
             {%- endfor -%}
-        </td>
+        </td>{% endif %}
     </tr>
     {%- endif -%}
 {% endfor %}
