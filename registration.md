@@ -95,7 +95,7 @@ The '-' are done so that it renders nicely even in the HTML code.
 {%- endcomment -%}
 {%- assign participants = site.data.registered_participants | sort_natural: "Team name" -%}
 {%- for item in participants -%}
-    {% if item[""] == "15" and item["State"] == "submitted" %}
+    {% if item["State"] == "submitted" %}
     <tr>
         <td>{{- item["Team name"] -}}</td>
         <td>{{- item["Affiliation"] -}}</td>
