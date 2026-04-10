@@ -404,7 +404,8 @@ data_values[get_code('{{ elem.name }}')] = {n: {{ elem.size }}};
 new svgMap({
   targetElementID: 'svgMap',
   showZoomReset: true,
-  mouseWheelZoomEnabled: true,
+  mouseWheelZoomEnabled: false,
+  mouseWheelZoomWithKey: false, /* Does not work very well. */
   zoomScaleSensitivity: 0.4,
   onGetTooltip: function (tooltipDiv, countryID, countryValues) {
     if (countryValues !== undefined) {
