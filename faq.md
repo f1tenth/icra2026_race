@@ -44,7 +44,8 @@ For the in-person competition, information about building a car, research, as we
 A: Everyone (be it team member, student, teacher, supervisor, etc.) who will be present at the competition (not matter if they themselves participate in the race or not) has to be registered for ICRA. This can either be a full registration, or the cheaper registration specifically for competitors.
 
 ## Q: How much will ICRA's special registration for competitors cost?
-<span style="color: red">A: Currently, the price communicated by ICRA for competition only registration is 275€ per person, but we are in talks with the ICRA organizers to lower it. We hope we can announce a lower competition only registration fee to you soon!</span>
+<span style="color: red"><s>A: Currently, the price communicated by ICRA for competition only registration is 275€ per person, but we are in talks with the ICRA organizers to lower it. We hope we can announce a lower competition only registration fee to you soon!</s></span>
+<span style="color: red">A: The ICRA competition only registration is 275€ per person using a discount code provided to every registered team.</span>
 
 ## Q: What is included in the special registration for competitors at ICRA?
 <span style="color: red">A: Access to the competition area and the exhibition area from Monday to Thursday, as well as lunch on-site from Tuesday to Thursday. As far as we know, access to the sessions and workshop is NOT included.</span>
