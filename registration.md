@@ -86,6 +86,10 @@ Register the modified information under the same team name, and we will update i
         {%- if names_available.size > 0 -%}
         <th style="text-align: left">TEAM MEMBERS</th>
         {%- endif -%}
+        {%- assign countries_available = site.data.registered_participants | where_exp: "item", "item['Country']" -%}
+        {%- if countries_available.size > 0 -%}
+        <th style="text-align: left">COUNTRY</th>
+        {%- endif -%}
     </tr>
 </thead>
 <tbody>
@@ -94,11 +98,16 @@ https://stackoverflow.com/questions/32015337/intelligent-way-to-generate-tables-
 The '-' are done so that it renders nicely even in the HTML code.
 {%- endcomment -%}
 {%- assign participants = site.data.registered_participants | sort_natural: "Team name" -%}
+{%- assign countries = "," | split: "," -%}
 {%- for item in participants -%}
     {% if item["State"] == "submitted" %}
     <tr>
         <td>{{- item["Team name"] -}}</td>
         <td>{{- item["Affiliation"] -}}</td>
+        {% if countries_available.size > 0 %}<td>
+            {%- assign countries = countries | push: item["Country"] -%}
+            {{- item["Country"] -}}
+        </td>{% endif %}
         {% if names_available.size > 0 %}<td>
             {%- assign first_names = item["First name (Given name)"] | split: '
 ' -%}
