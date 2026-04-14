@@ -369,6 +369,7 @@ var countryCodes = {
     'Ukraine' : 'UA',
     'Uganda' : 'UG',
     'United States Minor Outlying Islands' : 'UM',
+    'United States' : 'US',
     'United States of America' : 'US',
     'Uruguay' : 'UY',
     'Uzbekistan' : 'UZ',
