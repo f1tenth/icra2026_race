@@ -10,6 +10,7 @@ section: reg
 <h3 id="participants">Participants</h3>
 <p markdown="1">
     Note: Only teams that submitted all the required materials are listed below. This table is updated automatically.
+    Registered teams can directly update their own data before the deadline using the personal link that was sent by email.
 </p>
 </header>
 

@@ -67,7 +67,7 @@ Registration of accommodation needs to be organized and paid for individually by
 <header>
 <h3 id="participants">Participants</h3>
 <p markdown="1">
-    Note: Only teams that submitted all the required materials are listed below. This table is updated manually, for an automatically updated table see [this page](https://selapp.lanthan.at/export_icra_list.php).
+    Note: Only teams that submitted all the required materials are listed below. This table is updated manually, for an automatically updated table see [this page](registration_auto_table.html).
 </p>
 </header>
 
