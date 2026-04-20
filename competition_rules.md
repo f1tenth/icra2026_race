@@ -50,7 +50,7 @@ The hall can be virtually inspected [here](https://vieconcenter.at/en/hall-b).
   - Orange pipes with black stripes.
   - Pipes of other colors (to be confirmed).
   - Cardboard boxes.
-  - Wooden boards (to be confirmed).
+  - Wooden boards<span style="color: orange"><s> (to be confirmed)</s></span>.
 
 <center>
 <img src="images/competition_rules/pipes.jpg" alt="Image of the pipes" style="height: 20vh; max-width: 70%; object-fit: cover" />
@@ -80,9 +80,15 @@ The hall can be virtually inspected [here](https://vieconcenter.at/en/hall-b).
   - Track splits.
     - Minimum track width during a track split is 1 m.
 
-  - Slopes / Bridge (for Master Cup only).
+  - <div id="bridge">Slopes / Bridge (for Master Cup only).</div>
     - Maximum elevation is 15 %. (However, we aim for a lower number.) <!-- clearance ~2cm,~1.4cm -->
+    - <span style="color: orange">Technical drawing for the Bridge used during the competition is available [here](bridge/bridge_side_profile_V3.pdf). All measurements are ideal according to our manufacturing plan, but there will be small deviations. Note that the bridge will delimited by side barriers on both sides; in the technical drawing they are omitted to improve the readability of the dimensions.</span>
+      - <span style="color: orange">To check whether your car does not touch the ground on the slopes, you can use [Python script](bridge/bridge_check.py) submitted by Samir Shehadeh (LAMARRacing). Competition organizers are not responsible for correctness of the code and/or provided results.</span>
+      - <span style="color: orange">Note that the visibility of bridge and its delimiters depends on the height of the LiDAR on the car. For example, LiDAR at 20 cm height can be expected to see only ~1.2 m of walls ahead in certain parts of the bridge (e.g., at the end of the flat top part before going down). To estimate it in your case, you can use following formula:</span>
 
+<center>
+<img src="bridge/equation.png" alt="Equation to compute visibility range for the Bridge" />
+</center>
 
 
 # Registration
