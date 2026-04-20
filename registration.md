@@ -415,7 +415,8 @@ new svgMap({
     throw new Error("No data available."); // Just throw this.
   },
   /*colorNoData: "#d9ecff",*/
-  colorMin: "#cc0033",
+  colorMin: "#dd0033",
+  colorMax: "#aa0033",
   data: {
     data: {
       n: {
