@@ -4,6 +4,17 @@ short_title: Registration
 layout: page
 section: reg
 ---
+<style>
+table {
+    /* table-wrapper class */
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+
+    @media screen and (max-width: 736px) {
+        display: inline-block;
+    }
+}
+</style>
 <!-- REG_INFO_PARAGRAPH -->
 <p>
     This competition is open for everyone of all levels, everyone is welcome to participate in this competition.
