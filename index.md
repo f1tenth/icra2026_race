@@ -97,6 +97,12 @@ section: about
         <a href="https://www.qualisys.com/" class="image">
             <img src="images/sponsors/Qualisys_Logo_byline_RGB_web.png" style="max-width: 100%; height: 8vh; margin-left: 1vw; margin-right: 1vw" alt="" />
         </a>
+        <a href="https://www.ffg.at/" class="image">
+            <img src="images/sponsors/FFG_Logo_EN_CMYK.png" style="max-width: 100%; height: 12vh; margin-left: 1vw; margin-right: 1vw" alt="" />
+        </a>
+        <a href="https://www.bmimi.gv.at/" class="image">
+            <img src="images/sponsors/Logo_BMIMI_Gefoerdert_EN_SRGB.png" style="max-width: 100%; height: 12vh; margin-left: 1vw; margin-right: 1vw" alt="" />
+        </a>
     </center>
 </section>
 
