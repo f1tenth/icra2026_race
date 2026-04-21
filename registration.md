@@ -111,7 +111,7 @@ The '-' are done so that it renders nicely even in the HTML code.
 {%- assign participants = site.data.registered_participants | sort_natural: "Team name" -%}
 {%- assign countries = "," | split: "," -%}
 {%- for item in participants -%}
-    {% if item["State"] == "submitted" %}
+    {% if item["State"] == "submitted" or item["State"] == "arc" %}
     <tr>
         <td>{{- item["Team name"] -}}</td>
         <td>{{- item["Affiliation"] -}}</td>
@@ -427,7 +427,7 @@ new svgMap({
   },
   /*colorNoData: "#d9ecff",*/
   colorMin: "#dd0033",
-  colorMax: "#aa0033",
+  colorMax: "#770033",
   data: {
     data: {
       n: {
