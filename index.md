@@ -82,25 +82,25 @@ section: about
     <h2>Sponsors:</h2>
 
     <center>
-        <a href="https://www.knapp.com/en/" class="image main-image">
+        <a href="https://www.knapp.com/en/" class="image main-image" target="_blank">
             <img src="images/sponsors/knapp.png" style="zoom: 70%" alt="" />
         </a>
     </center>
 
     <center>
-        <a href="https://htu.at/" class="image">
+        <a href="https://htu.at/" class="image" target="_blank">
             <img src="images/sponsors/htu.png" style="max-width: 100%; min-height: 64px; height: 8vh; margin: 1vw" alt="" />
         </a>
-        <a href="https://www.tuwien.at/" class="image">
+        <a href="https://www.tuwien.at/" class="image" target="_blank">
             <img src="images/sponsors/tuwien.png" style="max-width: 100%; min-height: 64px; height: 8vh; margin: 1vw" alt="" />
         </a>
-        <a href="https://www.qualisys.com/" class="image">
+        <a href="https://www.qualisys.com/" class="image" target="_blank">
             <img src="images/sponsors/Qualisys_Logo_byline_RGB_web.png" style="max-width: 100%; min-height: 64px; height: 8vh; margin: 1vw" alt="" />
         </a>
-        <a href="https://www.ffg.at/" class="image">
+        <a href="https://www.ffg.at/" class="image" target="_blank">
             <img src="images/sponsors/FFG_Logo_EN_CMYK.png" style="max-width: 100%; min-height: 64px; height: 12vh; margin: 1vw" alt="" />
         </a>
-        <a href="https://www.bmimi.gv.at/" class="image">
+        <a href="https://www.bmimi.gv.at/" class="image" target="_blank">
             <img src="images/sponsors/Logo_BMIMI_Gefoerdert_EN_SRGB.png" style="max-width: 100%; min-height: 64px; height: 12vh; margin: 1vw" alt="" />
         </a>
     </center>
