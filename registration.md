@@ -31,11 +31,11 @@ table {
 
 <!-- https://www.w3schools.com/howto/howto_js_countdown.asp -->
 <!-- Display the countdown timer in an element -->
-<center>
-<h5 id="demo" style="text-align: center; color: crimson"></h5>
-</center>
+<!--<center>-->
+<!--<h5 id="demo" style="text-align: center; color: crimson"></h5>-->
+<!--</center>-->
 
-<script>
+<script>/*
 // Set the date we're counting down to
 var countDownDate = new Date(Date.UTC(2026, 3, 24, 11, 59, 59)).getTime(); // 3 = April, AOE is UTC-12
 
@@ -64,12 +64,12 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "Remaining time: 0d 0h 0m 0s";
   }
 }, 1000);
-</script>
+*/</script>
 
 <center class="actions">
     <!-- REG_BUTTON -->
-    <!--<a href="https://selapp.lanthan.at/?selection=icra2026" class="button disabled">Pre-registration Closed</a>-->
-    <a href="https://selapp.lanthan.at/?selection=icra2026" class="button primary">Register Your Team</a>
+    <!-- Use primary for active button otherwise disabled. -->
+    <a href="#" class="button disabled">Registration Closed</a>
     <!-- /REG_BUTTON -->
 </center>
 
