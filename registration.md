@@ -350,6 +350,7 @@ var countryCodes = {
     'Norfolk Island' : 'NF',
     'Nigeria' : 'NG',
     'Nicaragua' : 'NI',
+    'Netherlands' : 'NL',
     'Netherlands, Kingdom of the' : 'NL',
     'Norway' : 'NO',
     'Nepal' : 'NP',
