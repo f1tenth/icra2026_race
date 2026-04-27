@@ -14,6 +14,7 @@ simulation environments and track data will be displayed here.
 - [FAQ]({% link faq.md %})
 <!-- ORIENTATION_LINKS --><!-- /ORIENTATION_LINKS -->
 - Orientations{% if site.ORIENTATION_1_SLIDES_LINK %}
-    - [Orientation 1 Slides]({{ site.ORIENTATION_1_SLIDES_LINK }}){% endif %}
+    - [Orientation 1 Slides]({{ site.ORIENTATION_1_SLIDES_LINK }}){% endif %}{% if site.ORIENTATION_2_SLIDES_LINK %}
+    - [Orientation 2 Slides]({{ site.ORIENTATION_2_SLIDES_LINK }}){% endif %}
 - [Track2Vehicle Module]({% link t2v.md %})
 - [Bridge]({% link competition_rules.md %}#bridge)

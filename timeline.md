@@ -165,6 +165,7 @@ section: timeline
 			<td class="tg-npj4">
 				<span style="font-weight:400;font-style:normal">
 					Roboracer Orientation 2 ( Track setup, Track overview for in-person competition, Teams Training )
+					{% if site.ORIENTATION_2_SLIDES_LINK %}<br /><a href="{{ site.ORIENTATION_2_SLIDES_LINK }}">Slides</a>{% endif %}
 				</span>
 				<!--<br>
 				<span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">
