@@ -103,6 +103,9 @@ section: about
         <a href="https://www.bmimi.gv.at/" class="image" target="_blank">
             <img src="images/sponsors/Logo_BMIMI_Gefoerdert_EN_SRGB.png" style="max-width: 100%; min-height: 64px; height: 12vh; margin: 1vw" alt="" />
         </a>
+        <a href="https://www.magna.com/" class="image" target="_blank">
+            <img src="images/sponsors/Magna_logo.png" style="max-width: 100%; min-height: 64px; height: 8vh; margin: 1vw" alt="" />
+        </a>
     </center>
 </section>
 
