@@ -68,6 +68,9 @@ A: As we are going to be very busy to prepare for the competition on the weekend
 A: We use this formula: <https://things-in-motion.blogspot.com/2018/12/how-to-estimate-torque-of-bldc-pmsm.html>.
 <span style="color: red">For this race, we aim to accept any motors that have previously been approved, as well as motors with similar specs. After examining the hardware lists supplied by the teams, there will either be a clarification of the rules or a list of approved motors.</span>
 
+## Q: How long is the centerline of the tracks for Classic/Master Cup?
+<span style="color: orange">A: Currently, the layouts are still not finished, however we estimate that the track centerline should be approximately 100 meters long for the Classic Cup. For Master Cup, the estimated value is approximately 240 meters.</span>
+
 
 # Sim Racing League
 
