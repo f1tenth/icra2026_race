@@ -48,9 +48,10 @@ The hall can be virtually inspected [here](https://vieconcenter.at/en/hall-b).
 - _Type of delimiters (e.g., air ducts, cardboard boxes):_
   - Yellow pipes with black stripes.
   - Orange pipes with black stripes.
-  - Pipes of other colors (to be confirmed).
+  - <span style="color: green"><s>Pipes of other colors (to be confirmed).</s></span>
   - Cardboard boxes.
   - Wooden boards<span style="color: orange"><s> (to be confirmed)</s></span>.
+  - <span style="color: green"><i>Note: Surface of both the cardboard boxes and the wooden boards may be of any color and may contain logos. However none of them will be solid black.</i></span>
 
 <center>
 <img src="images/competition_rules/pipes.jpg" alt="Image of the pipes" style="height: 20vh; max-width: 70%; object-fit: cover" />
@@ -152,13 +153,14 @@ Practice track will contain all track features used in the Classic Cup of the co
   - Shared Practice.
   - Open Practice.
   - Closed Practice.
-  - Mapping Practice. (Most likely for Master Cup only.)
+  - Mapping Practice.<span style="color: green"><s> (Most likely for Master Cup only.)</s></span>
+- <span style="color: green">Practice track will have the same layout as the track used during the Classic Cup.</span>
 
 
 
 # Inspection
 
-Car inspection will be done during the first two days of the competition. Generally, we will confirm that your car matches the submitted hardware list.
+Car inspection will be done during the <span style="color: green"><s>first two days</s>second day</span> of the competition. Generally, we will confirm that your car matches the submitted hardware list.
 
 - You may take a part in the Practice sessions without Inspection.
 
@@ -169,6 +171,13 @@ Car inspection will be done during the first two days of the competition. Genera
 Qualification won't be organized as a separate session. The teams will qualify for Head-to-Head races in two parts:
 
 - Obstacle avoidance and kill-switch capability will be tested during a specific session.
+  - <span style="color: green">Demonstrating ability to avoid both static and dynamic obstacles.</span>
+  - <span style="color: green">The car MUST avoid touching and crashing into anything.</span>
+  - <span style="color: green">Multiple attempts are possible (up to the time allocated for the testing).</span>
+  - <span style="color: green">Failing the obstacle avoidance test means that the team can attend only Time Trial, but not Head-to-Head.</span>
+    - <span style="color: green">An extra attempt MAY be allowed during one of the Time Trial heats. Obstacle Avoidance testing will use the time of the allocated heat.</span>
+    - <span style="color: green">Passing the test during this extra attempt makes the team eligible for Head-to-Head.</span>
+
 - Completing at least one full lap during Time Trials.
 
 
@@ -177,11 +186,12 @@ Qualification won't be organized as a separate session. The teams will qualify f
 
 - _List of possible ways to start a race:_
   - Manual
-  - Automatic (with a [T2V module]({% link t2v.md %}))
-  - Mixed
+  - <span style="color: green"><s>Automatic (with a [T2V module]({% link t2v.md %}))</s></span>
+  - <span style="color: green"><s>Mixed</s></span>
 - All start variants will contain three signals: `Ready`, `Set`, `Go`
   - The time delays between the signals may vary for every start.
 
+<span style="color: green"><i>Due to an interference between the Qualisys system and T2V modules, the automatic start won't be used this time.</i></span>
 
 
 # Time Trial
@@ -211,8 +221,17 @@ Qualification won't be organized as a separate session. The teams will qualify f
 
 The Award ceremony will be a part of a social event on Thursday evening. Note that there might be space restrictions.
 
+- <span style="color: green">Thursday, 19:30−23:00</span>
+- <span style="color: green">TU Wien Main Building, Karlsplatz 13, Vienna</span>
+- <span style="color: green">Space restrictions: up to 6 people / team</span>
+  - <span style="color: green">Paid by the organizers.</span>
+  - <span style="color: green">Only fully registered team members are eligible. This number may be increased eventually.</span>
+
 
 
 # Workshop
 
 The workshop will be on Friday, in a separate location (i.e., not in the competition area).
+
+- <span style="color: green">Friday, 10:00−15:00</span>
+- <span style="color: green">Fakultät für Technische Chemie, TU Wien, Getreidemarkt 9, Vienna</span>

@@ -10,7 +10,7 @@ simulation environments and track data will be displayed here.
 
 - Rules
     - [General Rules]({% link rules.md %}) (Updated after <span style="color: red">Orientation 1</span>.)
-    - [Competition Rules]({% link competition_rules.md %}) (Updated on <span style="color: red">2026-03-28</span> and <span style="color: orange">2026-04-20</span>.)
+    - [Competition Rules]({% link competition_rules.md %}) (Updated on <span style="color: red">2026-03-28</span>, <span style="color: orange">2026-04-20</span> and <span style="color: green">2026-05-11</span>.)
 - [FAQ]({% link faq.md %})
 <!-- ORIENTATION_LINKS --><!-- /ORIENTATION_LINKS -->
 - Orientations{% if site.ORIENTATION_1_SLIDES_LINK %}
