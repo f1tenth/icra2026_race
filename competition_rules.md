@@ -104,6 +104,11 @@ The hall can be virtually inspected [here](https://vieconcenter.at/en/hall-b).
 <img src="bridge/equation.png" alt="Equation to compute visibility range for the Bridge" />
 </center>
 
+<center>
+<img src="images/competition_rules/bridge_1.jpg" alt="Bridge used during the competition, entry" style="max-width: 28%; object-fit: cover" />
+<img src="images/competition_rules/bridge_2.jpg" alt="Bridge used during the competition, side view" style="max-width: 42%; object-fit: cover" />
+</center>
+
 
 # Registration
 
