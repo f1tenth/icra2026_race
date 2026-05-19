@@ -27,9 +27,15 @@ The hall can be virtually inspected [here](https://vieconcenter.at/en/hall-b).
 
 - Additional requirements:
   - Space for sticker: 40×15 mm (on a visible location; e.g., front or top of the car).
-  - Space for an active marker: 70×85 mm (21 mm height; mounting information will follow soon).
+  - Space for an active marker: 70×85 mm (21 mm height<span style="color: blue"><s>; mounting information will follow soon</s></span>).
+    - <span style="color: blue">Exact position on the car is not defined. As a part of the Inspection, we will measure the relative position of Traqr on your car and consider it during tracking.</span>
+    - <span style="color: blue">The Traqr MUST NOT be covered from above, i.e., there MUST NOT be anything on top of it. We expect that obstruction from one side (caused by the "box") won't influence tracking quality.</span>
+    - <span style="color:blue">The Traqr mount (last image) will be attached to your car using three M3 screws from above.</span>
 
-
+<center>
+<img src="images/competition_rules/traqr_mount.png" alt="Traqr and mounting information" style="max-width: 68%; object-fit: cover" />
+<img src="images/competition_rules/traqr-screw-mount-quarter-drawing.png" alt="Mount of the Traqr" style="max-width: 22%; vertical-align: center; margin-left: 2em" />
+</center>
 
 # Track details
 
@@ -77,6 +83,13 @@ The hall can be virtually inspected [here](https://vieconcenter.at/en/hall-b).
   - Surface changes.
     - Done with covering the floor with different materials.
     - Maximum height change is 7 mm (but probably will be lower).
+    - <span style="color: blue">We aim to use following carpets during the competition (colors may vary):</span>
+
+<center>
+<img src="images/competition_rules/carpet.jpg" alt="Image of the carpet" style="max-width: 35%; object-fit: cover" />
+<img src="images/competition_rules/carpet_detail.jpg" alt="Detailed image of the carpet" style="max-width: 35%; object-fit: cover" />
+</center>
+
 
   - Track splits.
     - Minimum track width during a track split is 1 m.
@@ -140,7 +153,7 @@ In order to get access to the competition area, every team member must register 
 - Timetables of the sessions will become available on the first day of the competition.
 - _List of used notification systems:_
   - Colored flags.
-    - One set per currently racing team.
+    - One set per <span style="color: blue"><s>currently racing team</s>track</span>.
   - Whistles.
 
 
@@ -194,6 +207,24 @@ Qualification won't be organized as a separate session. The teams will qualify f
 <span style="color: green"><i>Due to an interference between the Qualisys system and T2V modules, the automatic start won't be used this time.</i></span>
 
 
+## <span style="color: blue">Manual start</span>
+
+- <span style="color: blue">Manual start will be controlled using a set of starting lights:</span>
+
+<center>
+    <img src="images/competition_rules/starting_lights.jpg" style="max-width: 70%; zoom: 70%" />
+</center>
+
+- <span style="color: blue">The signals will be as follows (subject to changes):</span>
+  - <span style="color: blue">`Ready`: Red light on</span>
+  - <span style="color: blue">`Set`: Orange light on</span>
+  - <span style="color: blue">`Go`: Green light on</span>
+  - <span style="color: blue">`Abort`: Red/Orange light flashes</span>
+
+- <span style="color: blue">The starting lights are meant for the team to start the autonomous mode of its car manually; it is not expected that the car will be monitoring the starting lights itself.</span>
+
+
+
 # Time Trial
 
 - _Number of heats, time per heat:_
@@ -235,3 +266,21 @@ The workshop will be on Friday, in a separate location (i.e., not in the competi
 
 - <span style="color: green">Friday, 10:00−15:00</span>
 - <span style="color: green">Fakultät für Technische Chemie, TU Wien, Getreidemarkt 9, Vienna</span>
+
+
+# <span style="color: blue">Additional notes</span>
+
+## <span style="color: blue">Qualisys Motion Capture</span>
+
+<span style="color: blue">All vehicles will be tracked using an active marker (Traqr) monitored by Qualisys Motion Capture System.</span>
+
+- <span style="color: blue">Access to the MoCap data is provided on a best-effort basis, so the service might be unavailable or laps might not be properly recorded.</span>
+    - <span style="color: blue">There are no restrictions on the use of the Motion Capture data.</span>
+    - <span style="color: blue">Please also note that data might not be available when the car is under the bridge.</span>
+- <span style="color: blue">During the competition, access is restricted to your own team's data.</span>
+  - <span style="color: blue">First access to the data will be granted on Monday, after the track closes.</span>
+  - <span style="color: blue">On the subsequent days, the lap data will be available with a 15-minute delay after you finish the lap.</span>
+- <span style="color: blue">After the competition, the data will be made available as an open-access dataset.</span>
+- <span style="color: blue">Example of the data shared during the competition:</span>
+    - <span style="color: blue">[csv file format]({% link qualisys/lap_0002.csv %})</span>
+    - <span style="color: blue">[mcap file format]({% link qualisys/lap_0002.mcap %})</span>
