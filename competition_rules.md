@@ -70,6 +70,7 @@ The hall can be virtually inspected [here](https://vieconcenter.at/en/hall-b).
 
 - _Maximum size (e.g., area) of the track:_
   - 20×20 m (40×20 m for Master Cup).
+  - <span style="color: blue">We estimate that the track centerline should be approximately 100 meters long for the Classic Cup and 240 meters long for the Master Cup.</span>
 
 - _Minimum track width (minimum distance between the inner and outer border):_
 
