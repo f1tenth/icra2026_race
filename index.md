@@ -7,7 +7,7 @@ section: about
 <article class="post featured">
     <header class="major">
         <h2>
-            <a>{{ site.RACE_NUMBER }} Roboracer AUTONOMOUS Racing Competition</a>
+            <a>{{ site.RACE_NUMBER }} Roboracer Autonomous Racing Competition</a>
         </h2>
         <left>
             <p>
