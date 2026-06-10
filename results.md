@@ -35,6 +35,23 @@ table.results td img, object {
 table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
     content: " \25B4\25BE";
 }
+
+table.sortable tbody {
+    counter-reset: sortabletablescope;
+}
+table.sortable thead tr::before {
+    content: "#";
+    display: table-cell;
+    height: 1em;
+    padding: 0.75rem 0.75rem;
+}
+table.sortable tbody tr::before {
+    content: counter(sortabletablescope);
+    counter-increment: sortabletablescope;
+    display: table-cell;
+    height: 1em;
+    padding: 0.75rem 0.75rem;
+}
 </style>
 
 - ToC
@@ -70,9 +87,11 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 <table class="time-trial results sortable">
     <thead>
         <tr>
+        {%- comment -%}
             <th>
                 Place
             </th>
+        {%- endcomment -%}
             <th>
                 Team Name
             </th>
@@ -100,6 +119,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
             {%- else -%}
                 <tr>
         {%- endcase -%}
+        {%- comment -%}
             <td sorttable_customkey="{{ forloop.index }}">
                 {{ forloop.index }}
                 {%- if forloop.index > 10 and forloop.index < 21 -%}
@@ -118,6 +138,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
                     {%- endcase -%}
                 {%- endif -%}
             </td>
+        {%- endcomment -%}
             <td>
                 {%- comment -%}
                 <object data="images/logos/lq/{{ team.id }}.png" type="image/png"><img src="images/logos/lq/0.png" /></object>
