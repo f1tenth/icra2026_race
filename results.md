@@ -14,6 +14,8 @@ table {
 }
 
 table.time-trial {
+    max-width: 100%;
+
     @media screen and (max-width: 736px) {
         display: inline-block;
         text-align: left;
