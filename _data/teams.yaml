@@ -1,0 +1,247 @@
+- id: 3
+  name: SAR
+
+- id: 5
+  name: HiPeRT Modena
+  lap_time: 22.2
+  consecutive_laps: 6
+  points: 22
+  cup: Master
+  position: 13
+
+- id: 7
+  name: Quick-Witted
+  lap_time: null
+  consecutive_laps: 0
+  points: 0.1
+  cup: Classic
+  position: 14
+
+- id: 9
+  name: DeepSpeed
+  lap_time: 19.28
+  consecutive_laps: 12
+  points: 38
+  cup: Classic
+  position: 9
+
+- id: 10
+  name: ForzaETH
+  lap_time: 17.01
+  consecutive_laps: 14
+  points: 51.1
+  cup: Master
+  position: 9
+
+- id: 11
+  name: WVU Mountaineers
+
+- id: 12
+  name: VAUL 2
+  lap_time: 18.69
+  consecutive_laps: 12
+  points: 43
+  cup: Classic
+  position: 1
+
+- id: 14
+  name: Ingenuity Labs Racing
+  lap_time: 19.717
+  consecutive_laps: 5
+  points: 20
+  cup: Classic
+  position: 13
+
+- id: 17
+  name: tron racing
+  lap_time: 21.92
+  consecutive_laps: 4
+  points: 14
+  cup: Classic
+  position: 3
+
+- id: 19
+  name: Quicksilver
+  lap_time: 24.811
+  consecutive_laps: 6
+  points: 16
+  cup: Classic
+  position: 5
+
+- id: 20
+  name: Brake Check Buddies
+  lap_time: 20.76
+  consecutive_laps: 6
+  points: 21.1
+  cup: Classic
+  position: 2
+
+- id: 21
+  name: SummerArcBoys
+  lap_time: 19.7
+  consecutive_laps: 4
+  points: 19
+  cup: Classic
+  position: 11
+
+- id: 22
+  name: 404_DriverNotFound
+  lap_time: 18.868
+  consecutive_laps: 9
+  points: 36
+  cup: Master
+  position: 10
+
+- id: 23
+  name: ARC RIDERS
+  lap_time: 22.639
+  consecutive_laps: 10
+  points: 25
+  cup: Master
+  position: 12
+
+- id: 24
+  name: Min Verstappen
+  lap_time: 19.43
+  consecutive_laps: 11
+  points: 33
+  cup: Master
+  position: 8
+
+- id: 25
+  name: flyby
+  lap_time: 18.85
+  consecutive_laps: 3
+  points: 23
+  cup: Master
+  position: 6
+
+- id: 26
+  name: NOVA
+
+- id: 27
+  name: LAMARRacing
+  lap_time: 14.59
+  consecutive_laps: 14
+  points: 54
+  cup: Master
+  position: 4
+
+- id: 29
+  name: RCV-FORMULA
+  lap_time: 23.38
+  consecutive_laps: 5
+  points: 14.1
+  cup: Classic
+  position: 12
+
+- id: 31
+  name: UBM-Atlas
+  lap_time: 18.52
+  consecutive_laps: 12
+  points: 44
+  cup: Master
+  position: 2
+
+- id: 32
+  name: UBM-Tom
+  lap_time: 17.78
+  consecutive_laps: 13
+  points: 48
+  cup: Master
+  position: 3
+
+- id: 33
+  name: ASU F1TENTH
+
+- id: 34
+  name: RAM
+
+- id: 35
+  name: Sagol
+  lap_time: 38.33
+  consecutive_laps: 6
+  points: 12
+  cup: Classic
+  position: 7
+
+- id: 37
+  name: Same Mess Again
+  lap_time: null
+  consecutive_laps: 0
+  points: 0
+
+- id: 38
+  name: VAUL 1
+  lap_time: 19.239
+  consecutive_laps: 11
+  points: 36.1
+  cup: Master
+  position: 7
+
+- id: 41
+  name: JKU-ITS
+  lap_time: 24.972
+  consecutive_laps: 7
+  points: 20.1
+  cup: Classic
+  position: 10
+
+- id: 42
+  name: Arcus
+  lap_time: 21.76
+  consecutive_laps: 3
+  points: 12
+  cup: Classic
+  position: 8
+
+- id: 43
+  name: Scuderia Segfault
+  lap_time: 19.308
+  consecutive_laps: 11
+  points: 34
+  cup: Master
+  position: 11
+
+- id: 46
+  name: UPenn Autonomous Racing
+  lap_time: 16.179
+  consecutive_laps: 14
+  points: 52
+  cup: Master
+  position: 5
+
+- id: 47
+  name: Celeritas
+  lap_time: 19.031
+  consecutive_laps: 3
+  points: 21
+  cup: Master
+  position: 14
+
+- id: 48
+  name: E-yantra
+
+- id: 53
+  name: PhoenixRacing
+  lap_time: 32.060
+  consecutive_laps: 6
+  points: 14.2
+  cup: Classic
+  position: 4
+
+- id: 54
+  name: UNICORN_Racing
+  lap_time: 15.94
+  consecutive_laps: 13
+  points: 51
+  cup: Master
+  position: 1
+
+- id: 57
+  name: NPU-TianRacer
+  lap_time: 35.282
+  consecutive_laps: 5
+  points: 10
+  cup: Classic
+  position: 6

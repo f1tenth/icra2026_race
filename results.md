@@ -4,15 +4,34 @@ short_title: Results
 layout: page
 section: stream
 ---
+<script src="{% link assets/js/sorttable.js %}"></script>
 <style>
 table {
     /* table-wrapper class */
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
     max-width: 760px;
-    /*@media screen and (max-width: 736px) {
+}
+
+table.time-trial {
+    @media screen and (max-width: 736px) {
         display: inline-block;
-    }*/
+        text-align: left;
+    }
+}
+
+table.results td {
+    height: 1em;
+}
+table.results td img, object {
+    height: calc(1em + 0.75rem);
+    max-width: calc(1em + 0.75rem);
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+    content: " \25B4\25BE";
 }
 </style>
 
@@ -45,50 +64,99 @@ table {
 <hr>
 
 # Time Trial
-_To be published._
-
-
-<!-- RESULTS_PLACEHOLDER --><!--<p style="color: #888; font-style: italic;">Results will be posted after the competition.</p>--><!-- /RESULTS_PLACEHOLDER -->
-
-<!-- <h3 style="text-align: left;">CEREMONY</h3>
-    <table>
-	    <tr>
-		    <th>Ranking</th>
-		    <th>AWARD</th>
-		    <th>TEAM</th>
-	    </tr>
-	    <tr>
-		    <td>1st Place Prize</td>
-		    <td>IEEE ICRA2025</td>
-		    <td>IDEA_LAB</td>
-	    </tr>
-	    <tr>
-		    <td>2st Place Prize</td>
-		    <td>IEEE ICRA2025</td>
-		    <td>Tayo Eagles</td>
-	    </tr>
-	    <tr>
-		    <td>3st Place Prize</td>
-		    <td>IEEE ICRA2025</td>
-		    <td>F1T_Lab</td>
-	    </tr>
-	    <tr>
-		    <td>4st Place Prize</td>
-		    <td>IEEE ICRA2025</td>
-		    <td>DDRX</td>
-	    </tr>
-    </table> -->
-
-<!-- TIME_TRIAL_SECTION --><!-- /TIME_TRIAL_SECTION -->
-
-<!-- BRACKET_SECTION --><!-- /BRACKET_SECTION -->
+<center>
+<table class="time-trial results sortable">
+    <thead>
+        <tr>
+            <th>
+                Place
+            </th>
+            <th>
+                Team Name
+            </th>
+            <th>
+                Best Lap Time
+            </th>
+            <th>
+                Consecutive Laps
+            </th>
+            <th>
+                Points
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    {%- assign time_trial_results = site.data.teams | where_exp: "item", "item.points != nil" | sort: "points" | reverse -%}
+    {%- for team in time_trial_results -%}
+        {%- case forloop.index -%}
+            {%- when 1 -%}
+                <tr style="background-color: #fbbc04">
+            {%- when 2 -%}
+                <tr style="background-color: #cccccc">
+            {%- when 3 -%}
+                <tr style="background-color: #ce8946">
+            {%- else -%}
+                <tr>
+        {%- endcase -%}
+            <td sorttable_customkey="{{ forloop.index }}">
+                {{ forloop.index }}
+                {%- if forloop.index > 10 and forloop.index < 21 -%}
+                    th
+                {%- else -%}
+                    {%- assign position = forloop.index | modulo: 10 -%}
+                    {%- case position -%}
+                        {%- when 1 -%}
+                            st
+                        {%- when 2 -%}
+                            nd
+                        {%- when 3 -%}
+                            rd
+                        {%- else -%}
+                            th
+                    {%- endcase -%}
+                {%- endif -%}
+            </td>
+            <td>
+                {%- comment -%}
+                <object data="images/logos/lq/{{ team.id }}.png" type="image/png"><img src="images/logos/lq/0.png" /></object>
+                {%- endcomment -%}
+                <img src="images/logos/lq/{{ team.id }}.png" />
+                {{ team.name }}
+            </td>
+            <td style="text-align: center">
+                {%- comment -%}
+                https://stackoverflow.com/questions/37862167/trailing-zeros-in-jekyll-liquid
+                {%- endcomment -%}
+                {%- assign lap_split = team.lap_time | round: 3 | split: "." -%}
+                {%- if lap_split[1] -%}
+                    {%- assign fraction = lap_split[1] | append: "000" | truncate: 3, "" -%}
+                {%- else -%}
+                    {%- assign fraction = "000" -%}
+                {%- endif -%}
+                {%- if team.lap_time -%}
+                    {{ lap_split[0] }}.{{ fraction }} s
+                {%- else -%}
+                    <span style="display: none">999</span>
+                {%- endif -%}
+            </td>
+            <td style="text-align: center">
+                {{ team.consecutive_laps }}
+            </td>
+            <td style="text-align: center" sorttable_customkey="{{ forloop.index }}">
+                {{ team.points | round }}
+            </td>
+        </tr>
+    {%- endfor -%}
+    </tbody>
+</table>
+</center>
 
 <hr>
 
 # Classic Cup
 ## Results
 <center>
-<table>
+<table class="results">
     <thead>
         <tr>
             <th>
@@ -100,118 +168,45 @@ _To be published._
         </tr>
     </thead>
     <tbody>
-        <tr style="background-color: #fbbc04">
+    {%- assign classic_cup_results = site.data.teams | where: "cup", "Classic" | sort: "position" -%}
+    {%- for team in classic_cup_results -%}
+        {%- case team.position -%}
+            {%- when 1 -%}
+                <tr style="background-color: #fbbc04">
+            {%- when 2 -%}
+                <tr style="background-color: #cccccc">
+            {%- when 3 -%}
+                <tr style="background-color: #ce8946">
+            {%- else -%}
+                <tr>
+        {%- endcase -%}
             <td>
-                1st
+                {{ team.position }}
+                {%- if team.position > 10 and team.position < 21 -%}
+                    th
+                {%- else -%}
+                    {%- assign position = team.position | modulo: 10 -%}
+                    {%- case position -%}
+                        {%- when 1 -%}
+                            st
+                        {%- when 2 -%}
+                            nd
+                        {%- when 3 -%}
+                            rd
+                        {%- else -%}
+                            th
+                    {%- endcase -%}
+                {%- endif -%}
             </td>
             <td>
-                VAUL 2
-            </td>
-        </tr>
-        <tr style="background-color: #cccccc">
-            <td>
-                2nd
-            </td>
-            <td>
-                Brake Check Buddies
-            </td>
-        </tr>
-        <tr style="background-color: #ce8946">
-            <td>
-                3rd
-            </td>
-            <td>
-                tron racing
-            </td>
-        </tr>
-        <tr>
-            <td>
-                4th
-            </td>
-            <td>
-                PhoenixRacing
-            </td>
-        </tr>
-        <tr>
-            <td>
-                5th
-            </td>
-            <td>
-                Quicksilver
+                {%- comment -%}
+                <object data="images/logos/lq/{{ team.id }}.png" type="image/png"><img src="images/logos/lq/0.png" /></object>
+                {%- endcomment -%}
+                <img src="images/logos/lq/{{ team.id }}.png" />
+                {{ team.name }}
             </td>
         </tr>
-        <tr>
-            <td>
-                6th
-            </td>
-            <td>
-                NPU-TianRacer
-            </td>
-        </tr>
-        <tr>
-            <td>
-                7th
-            </td>
-            <td>
-                Sagol
-            </td>
-        </tr>
-        <tr>
-            <td>
-                8th
-            </td>
-            <td>
-                Arcus
-            </td>
-        </tr>
-        <tr>
-            <td>
-                9th
-            </td>
-            <td>
-                DeepSpeed
-            </td>
-        </tr>
-        <tr>
-            <td>
-                10th
-            </td>
-            <td>
-                JKU-ITS
-            </td>
-        </tr>
-        <tr>
-            <td>
-                11th
-            </td>
-            <td>
-                SummerArcBoys
-            </td>
-        </tr>
-        <tr>
-            <td>
-                12th
-            </td>
-            <td>
-                RCV-Formula
-            </td>
-        </tr>
-        <tr>
-            <td>
-                13th
-            </td>
-            <td>
-                Ingenuity Labs Racing
-            </td>
-        </tr>
-        <tr>
-            <td>
-                14th
-            </td>
-            <td>
-                Quick-Witted
-            </td>
-        </tr>
+    {%- endfor -%}
     </tbody>
 </table>
 </center>
@@ -225,7 +220,7 @@ _To be published._
 # Master Cup
 ## Results
 <center>
-<table>
+<table class="results">
     <thead>
         <tr>
             <th>
@@ -237,118 +232,45 @@ _To be published._
         </tr>
     </thead>
     <tbody>
-        <tr style="background-color: #fbbc04">
+    {%- assign master_cup_results = site.data.teams | where: "cup", "Master" | sort: "position" -%}
+    {%- for team in master_cup_results -%}
+        {%- case team.position -%}
+            {%- when 1 -%}
+                <tr style="background-color: #fbbc04">
+            {%- when 2 -%}
+                <tr style="background-color: #cccccc">
+            {%- when 3 -%}
+                <tr style="background-color: #ce8946">
+            {%- else -%}
+                <tr>
+        {%- endcase -%}
             <td>
-                1st
+                {{ team.position }}
+                {%- if team.position > 10 and team.position < 21 -%}
+                    th
+                {%- else -%}
+                    {%- assign position = team.position | modulo: 10 -%}
+                    {%- case position -%}
+                        {%- when 1 -%}
+                            st
+                        {%- when 2 -%}
+                            nd
+                        {%- when 3 -%}
+                            rd
+                        {%- else -%}
+                            th
+                    {%- endcase -%}
+                {%- endif -%}
             </td>
             <td>
-                UNICORN_Racing
-            </td>
-        </tr>
-        <tr style="background-color: #cccccc">
-            <td>
-                2nd
-            </td>
-            <td>
-                UBM-Atlas
-            </td>
-        </tr>
-        <tr style="background-color: #ce8946">
-            <td>
-                3rd
-            </td>
-            <td>
-                UBM-Tom
-            </td>
-        </tr>
-        <tr>
-            <td>
-                4th
-            </td>
-            <td>
-                LAMARRacing
-            </td>
-        </tr>
-        <tr>
-            <td>
-                5th
-            </td>
-            <td>
-                UPenn Autonomous Racing
+                {%- comment -%}
+                <object data="images/logos/lq/{{ team.id }}.png" type="image/png"><img src="images/logos/lq/0.png" /></object>
+                {%- endcomment -%}
+                <img src="images/logos/lq/{{ team.id }}.png" />
+                {{ team.name }}
             </td>
         </tr>
-        <tr>
-            <td>
-                6th
-            </td>
-            <td>
-                flyby
-            </td>
-        </tr>
-        <tr>
-            <td>
-                7th
-            </td>
-            <td>
-                VAUL 1
-            </td>
-        </tr>
-        <tr>
-            <td>
-                8th
-            </td>
-            <td>
-                Min Verstappen
-            </td>
-        </tr>
-        <tr>
-            <td>
-                9th
-            </td>
-            <td>
-                ForzaETH
-            </td>
-        </tr>
-        <tr>
-            <td>
-                10th
-            </td>
-            <td>
-                404_DriverNotFound
-            </td>
-        </tr>
-        <tr>
-            <td>
-                11th
-            </td>
-            <td>
-                Scuderia Segfault
-            </td>
-        </tr>
-        <tr>
-            <td>
-                12th
-            </td>
-            <td>
-                ARC RIDERS
-            </td>
-        </tr>
-        <tr>
-            <td>
-                13th
-            </td>
-            <td>
-                HiPeRT Modena
-            </td>
-        </tr>
-        <tr>
-            <td>
-                14th
-            </td>
-            <td>
-                Celeritas
-            </td>
-        </tr>
+    {%- endfor -%}
     </tbody>
 </table>
 </center>
