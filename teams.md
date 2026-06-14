@@ -50,14 +50,14 @@ div.grid-child.team-name {
 <div class="teams-list">
 {%- assign teams = site.data.teams | where_exp: "item", "item.points != nil" | sort_natural: "name" -%}
 {%- for team in teams -%}
-    <div class="grid-parent">
+    <div class="grid-parent"><a href="{%- capture teampage -%}{% link teams/0.md %}{%- endcapture -%}{{ teampage | split: "0." | first | append: team.id | append: ".html" }}" style="display: contents">
         <div class="grid-child logo">
             <img src="images/logos/lq/{{ team.id }}.png" />
         </div>
         <div class="grid-child team-name">
             {{ team.name }}
         </div>
-    </div>
+    </a></div>
 {%- endfor -%}
 </div>
 <br />
