@@ -3,8 +3,8 @@ layout: page
 short_title: Team profile
 ---
 <style>
-p {
-	margin: unset;
+.grid-child p {
+    margin: unset;
 }
 
 div.grid-parent {
@@ -166,11 +166,11 @@ div.grid-parent2 {
         {%- assign valid_members = team.details.members | where_exp: "item", "item != 'N.N.'" -%}
         {%- assign hidden_members_count = team.details.members | where_exp: "item", "item == 'N.N.'" | size -%}
         {%- assign hidden_members = team.details.hidden_members | plus: hidden_members_count -%}
-    	{%- if valid_members -%}
-    	{{ valid_members | join: ", " }}
-    	{%- if hidden_members and hidden_members > 0 -%}
-    	, and {{ hidden_members }} other(s)
-    	{%- endif -%}
+        {%- if valid_members -%}
+        {{ valid_members | join: ", " }}
+        {%- if hidden_members and hidden_members > 0 -%}
+        , and {{ hidden_members }} other(s)
+        {%- endif -%}
         {%- else -%}
         {%- if hidden_members and hidden_members > 0 -%}
         {{ hidden_members }} members
