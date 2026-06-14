@@ -180,3 +180,9 @@ div.grid-parent2 {
 </div>
 <p></p>
 
+
+# Hardware list
+
+<p>
+<a href="{%- capture hwlist -%}{% link hardware_lists/0.csv %}{%- endcapture -%}{{ hwlist | split: "0." | first | append: team.id | append: ".csv" }}"><i class="fas fa-download"></i> Download the hardware list as a CSV file</a>
+</p>
