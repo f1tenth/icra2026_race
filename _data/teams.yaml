@@ -18,7 +18,6 @@
     - Alessandro Appio
     - Federico Gavioli
     - Luca Tagliatini
-    - Tommaso Mortara
     - Simone Bondi
     hidden_members: 0
 
@@ -53,7 +52,7 @@
     Country: Singapore
     e-mail:
     members:
-    hidden_members: 9
+    hidden_members: 5
 
 - id: 10
   name: ForzaETH
@@ -69,7 +68,7 @@
     Country: Switzerland
     e-mail:
     members:
-    hidden_members: 12
+    hidden_members: 8
 
 - id: 11
   name: WVU Mountaineers
@@ -311,9 +310,6 @@
     members:
     - Bomena Kim
     - Yebin Lee
-    - Jaeseo Shin
-    - Jonghak Kim
-    - Seongyeong Moon
     hidden_members: 0
 
 - id: 31
@@ -386,7 +382,6 @@
     members:
     - Anand George
     - Manu Madhu Pillai
-    - Shreshtha Tiwari
     hidden_members: 0
 
 - id: 38
@@ -458,7 +453,6 @@
     - N.N.
     - Yelyzaveta Nikolaieva
     - N.N.
-    - N.N.
     - Piet Kaul
 
 - id: 46
@@ -496,7 +490,6 @@
     - Mohammed Abdelazim
     - Karim Shousha
     - Nada Mahmoud
-    - Adam Elsayed
     hidden_members: 0
 
 - id: 48
@@ -516,7 +509,7 @@
     Country: Germany
     e-mail:
     members:
-    hidden_members: 7
+    hidden_members: 6
 
 - id: 54
   name: UNICORN_Racing
@@ -551,16 +544,11 @@
     - Kaixiao Ye
     - Binhong Liu
     - Linge Shi
-    - Ruixuan Chen
-    - Chengxuan Zhang
-    - Dongzheng Han
-    - Ziye Tao
     - Xuanqi Xiang
     - Xing Cheng
     - Linghan Du
     - Qingyu Wang
     - Li’ao Deng
-    - Nuo Cheng
     - Tong Zhang
     - Tao Yang
     hidden_members: 0
