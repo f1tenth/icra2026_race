@@ -58,6 +58,7 @@ span.filesize {
     - [Slide 11 Video](https://tucloud.tuwien.ac.at/index.php/s/fopgdaG9ody4rNr) <span class="filesize">(~5,3 MB .mp4)</span>
     - [Slide 12 Video](https://tucloud.tuwien.ac.at/index.php/s/eaRWPaNt2awpfcg) <span class="filesize">(~1,7 MB .mp4)</span>
 - Sagol
+    - [Slides](https://tucloud.tuwien.ac.at/index.php/s/bsnr3koH7tRAbGF) <span class="filesize">(~0,5 MB .pdf)</span>
 
 
 <p style="font-size: smaller">
