@@ -184,5 +184,9 @@ div.grid-parent2 {
 # Hardware list
 
 <p>
-<a href="{%- capture hwlist -%}{% link hardware_lists/0.csv %}{%- endcapture -%}{{ hwlist | split: "0." | first | append: team.id | append: ".csv" }}"><i class="fas fa-download"></i> Download the hardware list as a CSV file</a>
+<a href="{%- capture hwlist -%}{% link hardware_lists/0.csv %}{%- endcapture -%}{{ hwlist | split: "0." | first | append: team.id | append: ".csv" }}"><i class="fas fa-download"></i> Download the hardware list as a CSV file</a>*
+</p>
+
+<p style="font-size: smaller">
+<i>* Hardware list submitted as a part of the registration. Subsequent changes requested by the teams before the competition are respected. If you find a mistake, <a href="mailto:{{ site.NAV_EMAIL_LINK }}?subject=[ICRA 2026] Mistake found in team {{ team.id }} {{ team.name }}">let us know</a>.</i>
 </p>
