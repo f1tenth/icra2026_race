@@ -1,0 +1,188 @@
+---
+layout: page
+short_title: Team profile
+---
+<style>
+.grid-child p {
+    margin: unset;
+}
+
+div.grid-parent {
+    width: 100%;
+    min-width: 260px;
+    padding: 0.75rem 0.75rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 1.5em;
+    
+    @media screen and (max-width: 736px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+div.grid-child.logo {
+    justify-self: center;
+    align-self: center;
+
+    img {
+        height: 256px;
+        max-width: 256px;
+        vertical-align: middle;
+        object-fit: contain;
+    }
+}
+
+div.grid-child.team-name {
+    justify-self: left;
+    align-self: end;
+    text-align: left;
+    font-size: xx-large;
+    
+    .team-subname {
+        font-size: large;
+        margin-top: -0.5em;
+    }
+}
+
+div.grid-parent2 {
+    width: 100%;
+    min-width: 260px;
+    padding: 0.75rem 0.75rem;
+    margin-top: 1em;
+    margin-bottom: 1.75rem;
+
+    display: grid;
+    grid-template-columns: [first-icon] 64px [first] 1fr 0.5em [second-icon] 64px [second] 1fr [end];
+    /*grid-template-rows: repeat(3, 2em);*/
+    grid-template-rows: fit-content(2em) [colend];
+    grid-row-gap: 1.5em;
+    grid-column-gap: 0.5em;
+    align-items: start;
+    
+    .grid-second-icon, .grid-second {
+        grid-row-start: 1;
+    }
+    
+    @media screen and (max-width: 736px) {
+        grid-template-columns: [first-icon] 64px [first second] 1fr [second-icon end];
+        
+        .grid-second-icon {
+            grid-column-start: first-icon;
+            grid-row-start: unset;
+        }
+        
+        .grid-second {
+            grid-column-start: first;
+            grid-row-start: unset;
+        }
+        
+        /*.grid-span {
+            grid-row-end: unset;
+        }*/
+    }
+}
+
+.grid-first-icon {
+    grid-column-start: first-icon;
+    justify-self: center;
+    /*align-self: center;*/
+    line-height: unset;
+}
+
+.grid-first {
+    grid-column-start: first;
+    grid-column-end: second-icon;
+    
+    border: 2px solid #eeeeee;
+    padding: 0 1rem;
+}
+
+.grid-icon {
+    justify-self: center;
+    /*align-self: center;*/
+    line-height: unset;
+}
+
+.grid-second-icon {
+    grid-column-start: second-icon;
+    justify-self: center;
+    /*align-self: center;*/
+    line-height: unset;
+}
+
+.grid-second {
+    grid-column-start: second;
+    
+    border: 2px solid #eeeeee;
+    padding: 0 1rem;
+}
+
+.grid-span {
+    grid-row-end: span end;
+}
+
+.grid-content {
+    border: 2px solid #eeeeee;
+    padding: 0 1rem;
+}
+</style>
+{% assign team = site.data.teams | where: "id", page.team_id | first %}
+
+
+<div class="grid-parent">
+    <div class="grid-child logo">
+        <img src="{%- capture image -%}{% link images/logos/oq/0.png %}{%- endcapture -%}{{ image | split: "0." | first | append: team.id | append: ".png" }}" />
+    </div>
+    <div class="grid-child team-name">
+        {{ team.id }} | {{ team.name }}
+        <div class="team-subname">
+            {%- if team.details.Affiliation -%}{{ team.details.Affiliation }} / {% endif %}{{ team.details.Country }}
+        </div>
+    </div>
+</div>
+<div class="grid-parent2">
+    <div class="grid-child grid-first-icon fas fa-link">
+    </div>
+    <div class="grid-child grid-first grid-content">
+        {%- if team.details["Weblink (optional)"] -%}
+        {{ team.details["Weblink (optional)"] | markdownify }}
+        {%- else -%}
+        —
+        {%- endif -%}
+    </div>
+    <div class="grid-child grid-first-icon fas fa-at">
+    </div>
+    <div class="grid-child grid-first grid-content">
+        {%- if team.details["e-mail"] -%}
+        {{ team.details["e-mail"] | markdownify }}
+        {%- else -%}
+        —
+        {%- endif -%}
+    </div>
+        <div class="grid-child grid-second-icon fas fa-users">
+    </div>
+    <div class="grid-child grid-second grid-content grid-span">
+        {%- assign valid_members = team.details.members | where_exp: "item", "item != 'N.N.'" -%}
+        {%- assign hidden_members_count = team.details.members | where_exp: "item", "item == 'N.N.'" | size -%}
+        {%- assign hidden_members = team.details.hidden_members | plus: hidden_members_count -%}
+        {%- if valid_members -%}
+        {{ valid_members | join: ", " }}
+        {%- if hidden_members and hidden_members > 0 -%}
+        , and {{ hidden_members }} other(s)
+        {%- endif -%}
+        {%- else -%}
+        {%- if hidden_members and hidden_members > 0 -%}
+        {{ hidden_members }} members
+        {%- endif -%}
+        {%- endif -%}
+    </div>
+</div>
+<p></p>
+
+
+# Hardware list
+
+<p>
+<a href="{%- capture hwlist -%}{% link hardware_lists/0.csv %}{%- endcapture -%}{{ hwlist | split: "0." | first | append: team.id | append: ".csv" }}"><i class="fas fa-download"></i> Download the hardware list as a CSV file</a>
+</p>

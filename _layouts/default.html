@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>Roboracer {{ site.CONF_WITH_YEAR }}{%unless page.intro %} | {%endunless%}{{ page.short_title | default: page.title | escape }}</title>
+    <title>Roboracer {{ site.CONF_WITH_YEAR }}{%unless page.intro %} | {%endunless%}{{ page.short_title | default: layout.short_title | default: page.title | escape }}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="{% link assets/css/main.css %}" />
@@ -48,7 +48,7 @@
                 {%if page.intro %}
                     Roboracer {{ site.CONF_WITH_YEAR }}
                 {%else%}
-                    {{ page.short_title | default: page.title | escape }}
+                    {{ page.short_title | default: layout.short_title | default: page.title | escape }}
                 {%endif%}
             </a>
         </header>
