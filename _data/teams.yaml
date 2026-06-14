@@ -8,6 +8,19 @@
   points: 22
   cup: Master
   position: 13
+  details:
+    Affiliation: UNIMORE
+    Team name: HiPeRT Modena
+    Weblink (optional):
+    Country: Italy
+    e-mail:
+    members:
+    - Alessandro Appio
+    - Federico Gavioli
+    - Luca Tagliatini
+    - Tommaso Mortara
+    - Simone Bondi
+    hidden_members: 0
 
 - id: 7
   name: Quick-Witted
@@ -16,6 +29,15 @@
   points: 0.1
   cup: Classic
   position: 14
+  details:
+    Affiliation:
+    Team name: Quick-Witted
+    Weblink (optional):
+    Country: Netherlands
+    e-mail:
+    members:
+    - Karun Ashok Kumar
+    hidden_members: 0
 
 - id: 9
   name: DeepSpeed
@@ -24,6 +46,14 @@
   points: 38
   cup: Classic
   position: 9
+  details:
+    Affiliation: Nanyang Technological University
+    Team name: DeepSpeed
+    Weblink (optional):
+    Country: Singapore
+    e-mail:
+    members:
+    hidden_members: 9
 
 - id: 10
   name: ForzaETH
@@ -32,6 +62,14 @@
   points: 51.1
   cup: Master
   position: 9
+  details:
+    Affiliation: ETH Zürich
+    Team name: ForzaETH
+    Weblink (optional): <https://www.forzaeth.ch/>
+    Country: Switzerland
+    e-mail:
+    members:
+    hidden_members: 12
 
 - id: 11
   name: WVU Mountaineers
@@ -43,6 +81,14 @@
   points: 43
   cup: Classic
   position: 1
+  details:
+    Affiliation: Université Laval
+    Team name:
+    Weblink (optional):
+    Country: Canada
+    e-mail:
+    members:
+    hidden_members: 5
 
 - id: 14
   name: Ingenuity Labs Racing
@@ -51,6 +97,14 @@
   points: 20
   cup: Classic
   position: 13
+  details:
+    Affiliation: Queen's University - Ingenuity Labs
+    Team name:
+    Weblink (optional): <https://ingenuitylabs.queensu.ca/research/student-activities/ingenuity-labs-racing>
+    Country: Canada
+    e-mail:
+    members:
+    hidden_members: 7
 
 - id: 17
   name: tron racing
@@ -59,6 +113,15 @@
   points: 14
   cup: Classic
   position: 3
+  details:
+    Affiliation: RobotX Workshops
+    Team name:
+    Weblink (optional): <https://robotxworkshops.tech/>
+    Country: Germany
+    e-mail:
+    members:
+    - Andrew Johnson
+    hidden_members: 0
 
 - id: 19
   name: Quicksilver
@@ -67,6 +130,20 @@
   points: 16
   cup: Classic
   position: 5
+  details:
+    Affiliation:
+    Team name:
+    Weblink (optional):
+    Country:
+    e-mail:
+    members:
+    - N.N.
+    - N.N.
+    - Marko Krejovic
+    - Lara Stevanovic
+    - Aatu Voutilainen
+    - Chaeran Yoo
+    hidden_members: 0
 
 - id: 20
   name: Brake Check Buddies
@@ -75,6 +152,20 @@
   points: 21.1
   cup: Classic
   position: 2
+  details:
+    Affiliation:
+    Team name:
+    Weblink (optional):
+    Country:
+    e-mail:
+    members:
+    - N.N.
+    - N.N.
+    - N.N.
+    - N.N.
+    - Anton Kuznetsov
+    - Simon Boenigk
+    hidden_members: 0
 
 - id: 21
   name: SummerArcBoys
@@ -83,6 +174,19 @@
   points: 19
   cup: Classic
   position: 11
+  details:
+    Affiliation:
+    Team name:
+    Weblink (optional):
+    Country:
+    e-mail:
+    members:
+    - N.N.
+    - Bugra Gulbeyaz
+    - N.N.
+    - N.N.
+    - N.N.
+    hidden_members: 0
 
 - id: 22
   name: 404_DriverNotFound
@@ -91,6 +195,20 @@
   points: 36
   cup: Master
   position: 10
+  details:
+    Affiliation:
+    Team name:
+    Weblink (optional):
+    Country:
+    e-mail:
+    members:
+    - Alexander Wieser
+    - N.N.
+    - Elias Eckermann
+    - N.N.
+    - Yanislav Velikov
+    - N.N.
+    hidden_members: 0
 
 - id: 23
   name: ARC RIDERS
@@ -99,6 +217,20 @@
   points: 25
   cup: Master
   position: 12
+  details:
+    Affiliation:
+    Team name:
+    Weblink (optional):
+    Country:
+    e-mail:
+    members:
+    - Marcel Menzel
+    - N.N.
+    - Matthias Fritz Schmiegel
+    - N.N.
+    - Tim Lippert
+    - N.N.
+    hidden_members: 0
 
 - id: 24
   name: Min Verstappen
@@ -107,6 +239,20 @@
   points: 33
   cup: Master
   position: 8
+  details:
+    Affiliation:
+    Team name:
+    Weblink (optional):
+    Country:
+    e-mail:
+    members:
+    - N.N.
+    - Matthias Wöckinger
+    - Benjamin Mandl
+    - N.N.
+    - Robin Dheilly
+    - Daniel Pappalardo
+    hidden_members: 0
 
 - id: 25
   name: flyby
@@ -115,6 +261,20 @@
   points: 23
   cup: Master
   position: 6
+  details:
+    Affiliation: 	robo4you/ TU Wien/ Flyby Racing GesbR
+    Team name: flyby
+    Weblink (optional): <https://robo4you.at/> and <https://flyby-racing.dev/>
+    Country: Austria
+    e-mail: —
+    members:
+    - Joel Klimont
+    - Jakob Buchsteiner
+    - Moritz Taferner
+    - Jakob Kampichler
+    - Sebastian Manger
+    - Maria Malshakova
+    hidden_members: 0
 
 - id: 26
   name: NOVA
@@ -126,6 +286,14 @@
   points: 54
   cup: Master
   position: 4
+  details:
+    Affiliation: University of Bonn
+    Team name:
+    Weblink (optional):
+    Country: Germany
+    e-mail:
+    members:
+    hidden_members: 6
 
 - id: 29
   name: RCV-FORMULA
@@ -134,6 +302,19 @@
   points: 14.1
   cup: Classic
   position: 12
+  details:
+    Affiliation: Inha-University
+    Team name:
+    Weblink (optional):
+    Country: South Korea
+    e-mail:
+    members:
+    - Bomena Kim
+    - Yebin Lee
+    - Jaeseo Shin
+    - Jonghak Kim
+    - Seongyeong Moon
+    hidden_members: 0
 
 - id: 31
   name: UBM-Atlas
@@ -142,6 +323,14 @@
   points: 44
   cup: Master
   position: 2
+  details:
+    Affiliation: University of Bologna
+    Team name:
+    Weblink (optional):
+    Country: Italy
+    e-mail:
+    members:
+    hidden_members: 2
 
 - id: 32
   name: UBM-Tom
@@ -150,6 +339,14 @@
   points: 48
   cup: Master
   position: 3
+  details:
+    Affiliation: University of Bologna
+    Team name:
+    Weblink (optional):
+    Country: Italy
+    e-mail:
+    members:
+    hidden_members: 2
 
 - id: 33
   name: ASU F1TENTH
@@ -164,12 +361,33 @@
   points: 12
   cup: Classic
   position: 7
+  details:
+    Affiliation:
+    Team name:
+    Weblink (optional):
+    Country: South Korea
+    e-mail:
+    members:
+    - JoonCheol Park
+    - Jiyul Park
+    hidden_members: 0
 
 - id: 37
   name: Same Mess Again
   lap_time: null
   consecutive_laps: 0
   points: 0
+  details:
+    Affiliation:
+    Team name:
+    Weblink (optional):
+    Country: India
+    e-mail:
+    members:
+    - Anand George
+    - Manu Madhu Pillai
+    - Shreshtha Tiwari
+    hidden_members: 0
 
 - id: 38
   name: VAUL 1
@@ -178,6 +396,14 @@
   points: 36.1
   cup: Master
   position: 7
+  details:
+    Affiliation: Université Laval
+    Team name:
+    Weblink (optional): <https://vaul.fsg.ulaval.ca/>
+    Country: Canada
+    e-mail:
+    members:
+    hidden_members: 5
 
 - id: 41
   name: JKU-ITS
@@ -186,6 +412,17 @@
   points: 20.1
   cup: Classic
   position: 10
+  details:
+    Affiliation: Department Intelligent Transport Systems, JKU
+    Team name:
+    Weblink (optional): <https://www.jku.at/en/intelligent-transport-systems/>
+    Country: Austria
+    e-mail:
+    members:
+    - Aida Rostamza
+    - Joshua Cherian Varughese
+    - Gaspar Alejandro Garcia Gutierrez
+    hidden_members: 0
 
 - id: 42
   name: Arcus
@@ -194,6 +431,14 @@
   points: 12
   cup: Classic
   position: 8
+  details:
+    Affiliation: Université de Sherbrooke
+    Team name:
+    Weblink (optional): <https://www.linkedin.com/company/arcus-robotique-udes/>
+    Country: Canada
+    e-mail:
+    members:
+    hidden_members: 6
 
 - id: 43
   name: Scuderia Segfault
@@ -202,6 +447,19 @@
   points: 34
   cup: Master
   position: 11
+  details:
+    Affiliation: TU Wien
+    Team name: Scuderia Segfault
+    Weblink (optional): <https://scuderia-segfault.at/>
+    Country: Austria
+    members:
+    - N.N.
+    - Agnes Poks
+    - N.N.
+    - Yelyzaveta Nikolaieva
+    - N.N.
+    - N.N.
+    - Piet Kaul
 
 - id: 46
   name: UPenn Autonomous Racing
@@ -210,6 +468,14 @@
   points: 52
   cup: Master
   position: 5
+  details:
+    Affiliation: University of Pennsylvania
+    Team name:
+    Weblink (optional):
+    Country: United States
+    e-mail:
+    members:
+    hidden_members: 2
 
 - id: 47
   name: Celeritas
@@ -218,6 +484,20 @@
   points: 21
   cup: Master
   position: 14
+  details:
+    Affiliation: German International University in Berlin
+    Team name:
+    Weblink (optional):
+    Country: Germany
+    e-mail:
+    members:
+    - Fam Shihata
+    - George Halim
+    - Mohammed Abdelazim
+    - Karim Shousha
+    - Nada Mahmoud
+    - Adam Elsayed
+    hidden_members: 0
 
 - id: 48
   name: E-yantra
@@ -229,6 +509,14 @@
   points: 14.2
   cup: Classic
   position: 4
+  details:
+    Affiliation: TU Dortmund University
+    Team name:
+    Weblink (optional):
+    Country: Germany
+    e-mail:
+    members:
+    hidden_members: 7
 
 - id: 54
   name: UNICORN_Racing
@@ -237,6 +525,14 @@
   points: 51
   cup: Master
   position: 1
+  details:
+    Affiliation: Ulsan National Institute of Science and Technology
+    Team name:
+    Weblink (optional):
+    Country: South Korea
+    e-mail:
+    members:
+    hidden_members: 4
 
 - id: 57
   name: NPU-TianRacer
@@ -245,3 +541,26 @@
   points: 10
   cup: Classic
   position: 6
+  details:
+    Affiliation: Northwestern Polytechnical University
+    Team name:
+    Weblink (optional):
+    Country: China
+    e-mail:
+    members:
+    - Kaixiao Ye
+    - Binhong Liu
+    - Linge Shi
+    - Ruixuan Chen
+    - Chengxuan Zhang
+    - Dongzheng Han
+    - Ziye Tao
+    - Xuanqi Xiang
+    - Xing Cheng
+    - Linghan Du
+    - Qingyu Wang
+    - Li’ao Deng
+    - Nuo Cheng
+    - Tong Zhang
+    - Tao Yang
+    hidden_members: 0
