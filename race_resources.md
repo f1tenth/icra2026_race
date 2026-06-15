@@ -48,6 +48,8 @@ span.filesize {
     - [Slides](https://tucloud.tuwien.ac.at/index.php/s/gwy9DFyGBiqimnt) <span class="filesize">(~28,8 MB .pptx)</span>
     - [PDF slides](https://tucloud.tuwien.ac.at/index.php/s/bZPNcDw5fGNEnwK)* <span class="filesize">(~1,8 MB .pdf)</span>
 - LAMARRacing
+    - [Slides online](https://docs.google.com/presentation/d/1E7CfVOhlY6bocKJk6yeWOccel4O3yqjJyoJTvacPKM8/edit) / [Exported file](https://tucloud.tuwien.ac.at/index.php/s/YCJy6jqZ6kBsaSL) <span class="filesize">(~66 MB .pptx)</span>
+    - [PDF slides](https://tucloud.tuwien.ac.at/index.php/s/Sy9bxEBJMHjr8i8)* <span class="filesize">(~3,6 MB .pdf)</span>
 
 
 ## Other presentations
