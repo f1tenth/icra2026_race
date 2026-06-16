@@ -44,6 +44,8 @@ span.filesize {
 ## Master Cup
 
 - UNICORN_Racing
+    - [Slides](https://tucloud.tuwien.ac.at/index.php/s/xoP83pnBpkaMg44) <span class="filesize">(~234,5 MB .pptx)</span>
+    - [PDF slides](https://tucloud.tuwien.ac.at/index.php/s/BwcoKXBHmwH92ww)* <span class="filesize">(~4,3 MB .pdf)</span>
 - UBM-Atlas + UBM-Tom
     - [Slides](https://tucloud.tuwien.ac.at/index.php/s/gwy9DFyGBiqimnt) <span class="filesize">(~28,8 MB .pptx)</span>
     - [PDF slides](https://tucloud.tuwien.ac.at/index.php/s/bZPNcDw5fGNEnwK)* <span class="filesize">(~1,8 MB .pdf)</span>
