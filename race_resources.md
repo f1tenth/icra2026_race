@@ -63,6 +63,9 @@ span.filesize {
     - [Slide 12 Video](https://tucloud.tuwien.ac.at/index.php/s/eaRWPaNt2awpfcg) <span class="filesize">(~1,7 MB .mp4)</span>
 - Sagol
     - [Slides](https://tucloud.tuwien.ac.at/index.php/s/bsnr3koH7tRAbGF) <span class="filesize">(~0,5 MB .pdf)</span>
+- UPenn Autonomous Racing
+    - [Slides](https://tucloud.tuwien.ac.at/index.php/s/dRXf2xKn29qTxbj) <span class="filesize">(~35,6 MB .pdf)</span>
+    - [PDF slides](https://tucloud.tuwien.ac.at/index.php/s/ak7SiPeDiXEn6NC)* <span class="filesize">(~1,4 MB .pdf)</span>
 
 
 <p style="font-size: smaller">
