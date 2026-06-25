@@ -33,12 +33,14 @@ span.filesize {
 ## Classic Cup
 
 - VAUL 2
+    - [Slides](https://tucloud.tuwien.ac.at/index.php/s/mXeS4yYTSMHHrj7) <span class="filesize">(~0,5 MB .pdf)</span>
 - Brake Check Buddies
     - [Slides](https://tucloud.tuwien.ac.at/index.php/s/KQo6LJiwinjXGxN) <span class="filesize">(~1,2 MB .pdf)</span>
 - tron racing
     - [Slides](https://tucloud.tuwien.ac.at/index.php/s/WyHLdTmyHfX3wiy) <span class="filesize">(~291,5 MB .key)</span>
     - [PDF slides](https://tucloud.tuwien.ac.at/index.php/s/obgoXX9XB6SDcyr)* <span class="filesize">(~3,1 MB .pdf)</span>
 - PhoenixRacing
+    - [Slides](https://tucloud.tuwien.ac.at/index.php/s/Ap6eLWjbqE9yi7C) <span class="filesize">(~2,8 MB .pdf)</span>
 
 
 ## Master Cup
