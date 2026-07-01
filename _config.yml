@@ -28,6 +28,14 @@ collections:
     link: https://jottacloud.com/s/321484396d2e369424588708c56dc5f68f8/thumbs/2026.06.03.%20ICRA%20day3/
     credit: ©Denes Erdos - Your Event Photographer https://youreventphoto.com/
     permalink: /photos/:collection
+  classic:
+    output: true
+    photos: true
+    name: Classic Cup
+    links:
+      IMG_0856.jpg: https://drive.google.com/file/d/1POtR8hoWrmLhZUyw7peImfngZaSscksQ/view
+      IMG_0857.jpg: https://drive.google.com/file/d/1yBDSEqh4zPmgsZMlyTEMWsV0FFyaCCrE/view
+    permalink: /photos/:collection
 
 # Site configuration
 RACE_NUMBER: 27th
