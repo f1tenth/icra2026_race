@@ -4,6 +4,10 @@ short_title: Gallery
 ---
 <style>
 div.gallery {
+    margin-bottom: 3rem;
+}
+
+div.gallery-flex {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -26,13 +30,15 @@ div.gallery a {
 # {{ coll.name }}
 
 <div class="gallery">
+<div class="gallery-flex">
 {% for file in coll.files %}
     <a class="image" href="{{coll.link}}{{file.name}}" target="_blank">
         <img src="/photos/{{file.name}}" />
     </a>
 {% endfor %}
 </div>
-<div style="text-align: right; font-size: 0.6rem">{{ coll.credit }}</div>
+<div style="text-align: right; font-size: 0.6rem; margin-top: 0.5rem">{{ coll.credit }}</div>
+</div>
 
 {%- endif -%}
 {%- endfor -%}
