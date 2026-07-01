@@ -58,6 +58,15 @@ table.sortable tbody tr::before {
 {:toc}
 
 <hr>
+{% for file in site.static_files %}
+  {{ file.path  }}
+  {% assign pageurl = page.url | replace: 'index.html', '' %}
+  {% if file.path contains pageurl %}
+    {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
+    <img src="{{ file.path }}" />
+    {% endif %}
+  {% endif %}
+{% endfor %}
 
 # Live Stream
 
