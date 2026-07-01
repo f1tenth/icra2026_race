@@ -17,10 +17,18 @@ div.gallery-flex {
 
 div.gallery a {
     width: 20%;
-    min-width: 200px;
+    min-width: 200px; /* This is maybe not needed. */
+
+    img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1000px) {
+        width: 30%;
+    }
 
     @media screen and (max-width: 736px) {
-        width: 30%;
+        width: 45%;
     }
 }
 </style>
