@@ -11,8 +11,16 @@ exclude:
   - RUN_LOCALLY.md
 
 # Additional files
+collections_dir: photos
+
 collections:
-  - photos
+  icra_day2:
+    output: true
+    photos: true
+    name: ICRA 2026 Day 2
+    link: https://jottacloud.com/s/321484396d2e369424588708c56dc5f68f8/thumbs/2026.06.02.%20ICRA%20day2/
+    credit: ©Denes Erdos - Your Event Photographer https://youreventphoto.com/
+    permalink: /photos/:collection
 
 # Site configuration
 RACE_NUMBER: 27th
