@@ -27,7 +27,7 @@ div.gallery a {
 
 <div class="gallery">
 {% for file in coll.files %}
-    <a class="image" href="{{coll.link}}{{file.name}}">
+    <a class="image" href="{{coll.link}}{{file.name}}" target="_blank">
         <img src="/photos/{{file.name}}" />
     </a>
 {% endfor %}
