@@ -40,7 +40,7 @@ div.gallery a {
 <div class="gallery">
 <div class="gallery-flex">
 {% for file in coll.files %}
-    <a class="image" href="{%- if coll.link -%}{{coll.link}}{{file.name}}{%- endif -%}{%- if coll.links and coll.links[file.name] -%}{{coll.links[file.name]}}{%- endif -%}" target="_blank">
+    <a class="image" href="{%- if coll.link -%}{{coll.link}}{{file.name}}{%- endif -%}{%- if coll.links and coll.links[file.basename] -%}{{coll.links[file.basename]}}{%- endif -%}" target="_blank">
         <img src="/photos/{{file.name}}" />
     </a>
 {% endfor %}
