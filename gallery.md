@@ -40,21 +40,38 @@ div.gallery a {
     }
 }
 </style>
-
+{%- assign previous_collection = "" -%}
+{%- assign combined_credit = "" -%}
 {%- for coll in site.collections -%}
 {%- if coll.photos -%}
+{%- if previous_collection != coll.name -%}
+{%- unless forloop.first -%}
+</div>
+<div style="text-align: right; font-size: 0.6rem; margin-top: 0.5rem">{{ combined_credit }}</div>
+</div>
+{%- endunless -%}
 # {{ coll.name }}
 
 <div class="gallery">
 <div class="gallery-flex">
+{%- assign combined_credit = coll.credit | default: "" -%}
+{%- else -%}
+{%- if combined_credit == "" or coll.credit == "" -%}
+{%- assign combined_credit = coll.credit | default: combined_credit -%}
+{%- else -%}
+{%- assign combined_credit = combined_credit | append: "<br />" | append: coll.credit -%}
+{%- endif -%}
+{%- endif -%}
 {% for file in coll.files %}
     <a class="image" href="{%- if coll.link -%}{{coll.link}}{{file.name}}{%- endif -%}{%- if coll.links and coll.links[file.basename] -%}{{coll.links[file.basename]}}{%- endif -%}" target="_blank">
         <img src="/photos/{{file.name}}" />
     </a>
 {% endfor %}
+{% if forloop.last %}
 </div>
-<div style="text-align: right; font-size: 0.6rem; margin-top: 0.5rem">{{ coll.credit }}</div>
+<div style="text-align: right; font-size: 0.6rem; margin-top: 0.5rem">{{ combined_credit }}</div>
 </div>
-
+{% endif %}
+{%- assign previous_collection = coll.name -%}
 {%- endif -%}
 {%- endfor -%}
