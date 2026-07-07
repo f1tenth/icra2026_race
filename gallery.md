@@ -63,7 +63,7 @@ div.gallery a {
 {%- endif -%}
 {%- endif -%}
 {% for file in coll.files %}
-    <a class="image" href="{%- if coll.link -%}{{coll.link}}{{file.name}}{%- endif -%}{%- if coll.links and coll.links[file.basename] -%}{{coll.links[file.basename]}}{%- endif -%}" target="_blank">
+    <a class="image" {% if coll.link %}href="{{coll.link}}{{file.name}}"{% endif %} {% if coll.links and coll.links[file.basename] %}href="{{coll.links[file.basename]}}"{% endif %} target="_blank">
         <img src="/photos/{{file.name}}" />
     </a>
 {% endfor %}
