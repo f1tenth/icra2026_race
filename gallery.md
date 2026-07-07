@@ -17,18 +17,26 @@ div.gallery-flex {
 
 div.gallery a {
     width: 20%;
-    min-width: 200px; /* This is maybe not needed. */
+    /*min-width: 200px; /* This is maybe not needed. */
 
     img {
         width: 100%;
+        /*height: 100%;*/
+        object-fit: cover;
+        aspect-ratio: 1/1;
     }
 
     @media screen and (max-width: 1000px) {
-        width: 30%;
+        width: 29%;
     }
 
     @media screen and (max-width: 736px) {
         width: 45%;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 90%;
+        aspect-ratio: 3/2;
     }
 }
 </style>
