@@ -21,6 +21,7 @@ collections:
     link: https://jottacloud.com/s/321484396d2e369424588708c56dc5f68f8/thumbs/2026.06.02.%20ICRA%20day2/
     credit: ©Denes Erdos - Your Event Photographer https://youreventphoto.com/
     permalink: /photos/:collection
+    source: https://jottacloud.com/s/321484396d2e369424588708c56dc5f68f8/thumbs
   icra_day3:
     output: true
     photos: true
@@ -28,6 +29,7 @@ collections:
     link: https://jottacloud.com/s/321484396d2e369424588708c56dc5f68f8/thumbs/2026.06.03.%20ICRA%20day3/
     credit: ©Denes Erdos - Your Event Photographer https://youreventphoto.com/
     permalink: /photos/:collection
+    source: https://jottacloud.com/s/321484396d2e369424588708c56dc5f68f8/thumbs
   classic:
     output: true
     photos: true
@@ -61,7 +63,9 @@ collections:
       IMG_5637: https://drive.google.com/file/d/1L7Dmw04KsE8YLV5j75v51yXXVpcqkh37/view
       IMG_E0892: https://drive.google.com/file/d/1XGa-lcRphDM_w7K-oHBgQrEPzAgtXqHR/view
       IMG_E0893: https://drive.google.com/file/d/1rJCoCqovLY-kn6mT3m6ozla8nVtQ2VVW/view
+    credit: ©Tanmay Samak & Chinmay Samak
     permalink: /photos/:collection
+    source: https://drive.google.com/drive/folders/1cMhsYZRjnXAgmdQLt88smURulzBpU93O
   master:
     output: true
     photos: true
@@ -85,27 +89,141 @@ collections:
       IMG_E1077: https://drive.google.com/file/d/1NDvvKfuADLzUgERBBcuLffjYcMAH2wyV/view
       IMG_E1078: https://drive.google.com/file/d/1Qd2vO2CImrL22Mi3LduyWkBwnuk61MBe/view
       IMG_E1079: https://drive.google.com/file/d/1JK7O9cG38yF2Mf0nyzNwKsv6RisWXB1r/view
+    credit: ©Tanmay Samak & Chinmay Samak
     permalink: /photos/:collection
+    source: https://drive.google.com/drive/folders/1cMhsYZRjnXAgmdQLt88smURulzBpU93O
   various:
     output: true
     photos: true
     name: Various Photos
+    links:
+      P1033298: https://drive.google.com/file/d/1sqe3SaG31-KDlnplxuh3l_auABCCbDgU/view
+      P1033304: https://drive.google.com/file/d/1aivc2jrB1MuV0cHo-vOxiE8ss_lv7vUj/view
+    credit: ©Felix Jahncke
     permalink: /photos/:collection
+    source: https://drive.google.com/drive/folders/1cMhsYZRjnXAgmdQLt88smURulzBpU93O
   social_dinner:
     output: true
     photos: true
     name: Social Dinner & Award Ceremony
+    links:
+      P1033308: https://drive.google.com/file/d/1fykZUp_vSlRArOyCitQvF1iwWzMmHevU/view
+      P1033316: https://drive.google.com/file/d/1I3WE_NsUdJnIBlth4_5AmZvlv8b_xLss/view
+      P1033317: https://drive.google.com/file/d/1SncU199UgoensqAWjOmKDlJrzd05I5-g/view
+      P1033336: https://drive.google.com/file/d/1_vUf8DNRLBbinbLj-3kpOo9yKOE-gcJE/view
+      P1033340: https://drive.google.com/file/d/1Ufi6lT5GbpqGTIByABBPFId-GI0Up0fK/view
+      P1033342: https://drive.google.com/file/d/14XElX1KErCGyQP_tEA6auGTBm2DIyylv/view
+      P1033344: https://drive.google.com/file/d/1UZQdaAHjocVygEYTHYYWkpxjLdJGEWSs/view
+      P1033349: https://drive.google.com/file/d/1DgGACJT_tIgJ4WvWTBvpXhdwgiD7Wce5/view
+      P1033352: https://drive.google.com/file/d/1NyntAiIAxq4HEkXXjHqHp_LZuzIhk4PX/view
+      P1033371: https://drive.google.com/file/d/1HB5SyApQU3K4T3aIG-x3p3m7LHkOWeK4/view
+      P1033376: https://drive.google.com/file/d/1htOnB1kdsUbTnTlBnk4zFj4qZVCySRWo/view
+      P1033384: https://drive.google.com/file/d/1hRzK3BPeenIn7PO6QrvTRProBqaH1vZq/view
+      P1033390: https://drive.google.com/file/d/1LdSAfcasvAm5Vy2Yvqcem2gJSAHG_Qrl/view
+      P1033395: https://drive.google.com/file/d/15heUg7VU8ZnTT9Yem4NNQP6F5Fzg2E8k/view
+      P1033404: https://drive.google.com/file/d/1cYCFJu0BW7-gB5zQumDLQMonXTzuqLtk/view
+      P1033408: https://drive.google.com/file/d/1tKOu88cfOsXiPsM1OiemXDxblG1PDzWZ/view
+      P1033410: https://drive.google.com/file/d/1rh-yOHZKzNiBwOiS5-p9G9ZpEUTqxt_C/view
+      P1033421: https://drive.google.com/file/d/1-zXWt6WCDZJakl32vN2M6EoSMf_52jD2/view
+      P1033430: https://drive.google.com/file/d/1IjVXPm9gTIT9xBBL7APpk_uTSJjB5_7i/view
+      P1033443: https://drive.google.com/file/d/1RNV3ihAkAEL8DgTZVfsVH6elqU1ZLifw/view
+      P1033460: https://drive.google.com/file/d/1AdoH8a_bxeVSZIFprOw6le_OGqsuV_yI/view
+      P1033465: https://drive.google.com/file/d/1UoJhGiTYUlVCKjqSpI32H8MGhZCpOr1K/view
+      P1033478: https://drive.google.com/file/d/1o38LzqferkDw2QBBA9ShSbbFBsN22HBf/view
+      P1033485: https://drive.google.com/file/d/1jYPB7WxiMsfzVh_m9nuCC4Na6KzjjscD/view
+      P1033489: https://drive.google.com/file/d/1puRXIptUaFSU3UxODo1jfA-VlXlNY2Xe/view
+      P1033512: https://drive.google.com/file/d/1ae0kwXNXha1gNT2VuYY-RyW8ha19ROmW/view
+      P1033515: https://drive.google.com/file/d/1D4O7xdWn93DcQO_H7RBqcG9bMvwPE9j5/view
+      P1033529: https://drive.google.com/file/d/1ktgoXILeSTqpGEz6XFc4Jqp4_65353Si/view
+      P1033536: https://drive.google.com/file/d/1ca9ceZcTaTF3IhXYadhKL8O2N0itAIBo/view
+      P1033540: https://drive.google.com/file/d/1Broej0H9R6wCF0K_2yrhsASI59ZDJs0e/view
+      P1033554: https://drive.google.com/file/d/1vIp833b2gFpHxewDQhINk8zyBgLQveYG/view
+      P1033570: https://drive.google.com/file/d/1Jfi36sCaMfAHOnAxxYo7iqcoG712QTZI/view
+      P1033585: https://drive.google.com/file/d/1guCS0KqVO_RNTa6bCiU4L99NquC8P4mf/view
+      P1033606: https://drive.google.com/file/d/1ymDoy97tru5E7xXLI66Ya3clqXkNQKSv/view
+      P1033621: https://drive.google.com/file/d/1tIDXKzxHrnqOrFQ1Z8nzE63e5jyilNep/view
+      P1033624: https://drive.google.com/file/d/1utDA4fnjzbInfc-TJMJROwwm4jWi1_cb/view
+      P1033643: https://drive.google.com/file/d/1ZPMS1nElkKRpKWGHJqGbTYGEH1SoEGbk/view
+      P1033652: https://drive.google.com/file/d/1RRacqmbwCNcscs2opq2byLMFOw1vfo_H/view
+    credit: ©Felix Jahncke
     permalink: /photos/:collection
+    source: https://drive.google.com/drive/folders/1cMhsYZRjnXAgmdQLt88smURulzBpU93O
   classic2:
     output: true
     photos: true
     name: Day 3 (Classic Cup)
+    links:
+      P1022595: https://drive.google.com/file/d/1QXbsXykJOei0-KlgIpCByI7W7e_Y7yAI/view
+      P1022596: https://drive.google.com/file/d/1Pg7L3ODXfcYdGrhMBn98QbVg2rk7PdEi/view
+      P1022607: https://drive.google.com/file/d/19gfzecvg1lmuOKZLqtcgmuGMHCAfPjNC/view
+      P1022608: https://drive.google.com/file/d/16ImQq6Z67OGqnFKENctKL9Ph1yXtECHP/view
+      P1022610: https://drive.google.com/file/d/1ofZ2FXs5gJoOMlo2Lsx2gWVMB_zO8RiR/view
+      P1022612: https://drive.google.com/file/d/1X0xRs6bmpeATWvBjphAgO5uG4SWZGLL7/view
+      P1022623: https://drive.google.com/file/d/1srDlm9OqHdRuHUHhE8fauPLYwlH3GwAD/view
+      P1022628: https://drive.google.com/file/d/1Ii882OVTT0EOwz2R9pDm92Yf-GQNHehR/view
+      P1022629: https://drive.google.com/file/d/1bmeTNNuBAukMhY-DEsQejkkqBmO9udqa/view
+      P1022635: https://drive.google.com/file/d/1unJyJmjc8oDeZLdBkM8X2KTHCeRpBlyd/view
+      P1022760: https://drive.google.com/file/d/1cfoO23OpMymQ8r1NeG24IUVF0w_ACI87/view
+      P1022795: https://drive.google.com/file/d/1OYoOpSjxrIuF5kFKtDFy0V_YUrW1tZdf/view
+      P1022796: https://drive.google.com/file/d/1PHLRzte6qSJLQqoT_u0lElaxquvbwHyx/view
+      P1022803: https://drive.google.com/file/d/1uCsxBUMuhEuBpcEHZe1Quwz9z4t2bg2S/view
+      P1022805: https://drive.google.com/file/d/1z9xWUpHv_Uek4jhqE8_zarWt_MNYQDdR/view
+      P1022809: https://drive.google.com/file/d/1EnZIEbf0xiUigG-d28isq7NtZCLgNUrL/view
+      P1022811: https://drive.google.com/file/d/1sgXtZ7X1p9f9A_5OBMTGVy5aIiKMghXa/view
+      P1022814: https://drive.google.com/file/d/11nnxwzlBjFtw538xyXxkSHMvzi9QCwsk/view
+      P1022888: https://drive.google.com/file/d/1E41E2HFr6ReXoqNXEvliwRQ3OGIolFtu/view
+      P1022892: https://drive.google.com/file/d/1SOD_EOGBT1Hr_hH3klFG-Y9Hn1MWXE5W/view
+      P1022894: https://drive.google.com/file/d/1TjGOgXR9_nA1QvhlF4mgg5Z6RvN8FUO4/view
+      P1022897: https://drive.google.com/file/d/1gwaszOkorbbGTuLjAkM4eF1GPCkimRxy/view
+      P1022900: https://drive.google.com/file/d/12KuGtbAjsVHPud5smylXHN58uVHaAgED/view
+      P1022908: https://drive.google.com/file/d/1pdhwey26Yc9-Ewyle-aFWnksqx-23G-e/view
+      P1022909: https://drive.google.com/file/d/17PwpyAcvDWAK5aovRAse4QxJQjvMQwt4/view
+      P1022919: https://drive.google.com/file/d/1YY_531xT8WESwFS3UDNmBPzTMCS65Zpb/view
+      P1022921: https://drive.google.com/file/d/1VCyqCsi5Hb5lxJBsNDQVPYIg64uc5Vif/view
+    credit: ©Felix Jahncke
     permalink: /photos/:collection
+    source: https://drive.google.com/drive/folders/1cMhsYZRjnXAgmdQLt88smURulzBpU93O
   master2:
     output: true
     photos: true
     name: Day 4
+    links:
+      P1022925: https://drive.google.com/file/d/1Sko3WFDxaoYpCuaiL_swlP2aKCJUZKzu/view
+      P1022926: https://drive.google.com/file/d/1Sko3WFDxaoYpCuaiL_swlP2aKCJUZKzu/view
+      P1022928: https://drive.google.com/file/d/1-wriDC5QM7BSAtT67tVJ1BJg0QOLpybl/view
+      P1022929: https://drive.google.com/file/d/1NmTfIDF4Lzk9NoYC5UYBNWYpWHqDB3LE/view
+      P1022933: https://drive.google.com/file/d/17QAOKNiNIbSqZitgZARJqPgq6uoyq6bV/view
+      P1022954: https://drive.google.com/file/d/1C4jaJoOym3tYaiN8sIy8b8gava_iDKq7/view
+      P1022956: https://drive.google.com/file/d/1TfyHP7CQBuDuY_ab2o7RQUJd12WWO74t/view
+      P1022958: https://drive.google.com/file/d/1aGkjIYSYFrNRYzcqNtzg8Xfp6ZUaqjvL/view
+      P1022961: https://drive.google.com/file/d/14RJcKTwnuI3SDj_Iekx3fC3sCo0K6HOE/view
+      P1022963: https://drive.google.com/file/d/18PPEeL77NwRuawFrifWg1dvieF0zH0_s/view
+      P1022968: https://drive.google.com/file/d/1mBYziYMAFDlZGY-jz5MmILPpi4qZ6ZHy/view
+      P1022971: https://drive.google.com/file/d/1qUMfawl0EHoHEdLQmOfZ79lhbLbn0Uur/view
+      P1022973: https://drive.google.com/file/d/1juEj0kM0u-Zz3s4dPoUWnHSWUd1p_Mzb/view
+      P1022981: https://drive.google.com/file/d/1i82SVLL4sprs12PisgMl1byFqfC-pXOd/view
+      P1022984: https://drive.google.com/file/d/1P1N083OyXyf4gulyIBQaeHgGX_IIixB0/view
+      P1022988: https://drive.google.com/file/d/1qpWjyUf9cOZYqO9tsJUfjtzVuELaw5pM/view
+      P1022990: https://drive.google.com/file/d/1xe6pbVxteRbUxP0cA6og0F7aSc1LkUVP/view
+      P1022992: https://drive.google.com/file/d/1VxJA-VvySL4osaKIPUXptmJlNBDqK8_-/view
+      P1023012: https://drive.google.com/file/d/1e3MdNCSKPO_0eYtEMalE4f7agWOYwfbx/view
+      P1023016: https://drive.google.com/file/d/1LwlfkNTsxNK-GIDPNwS7X_6sBCQ_typ_/view
+      P1023017: https://drive.google.com/file/d/1SaexURnxtNlNSrxS_YHRKvkA8nCwbqfP/view
+      P1023020: https://drive.google.com/file/d/1UEfnJacpQ4aSl-RrCNCCABz3rImS1PZZ/view
+      P1023021: https://drive.google.com/file/d/1AEMnwdAN5M3PUZkW2H2GbmnreV8M_Zqw/view
+      P1023049: https://drive.google.com/file/d/1TYpVb9HY26NmEpCG3dfNoTqZ3S0xgkin/view
+      P1033125: https://drive.google.com/file/d/1vUlwvIk2eo_nz7Sdd2R_1lZibq3iOjHb/view
+      P1033142: https://drive.google.com/file/d/1cUrYBNQaEFQrDp_JfriKOXHbhc_Gzvwa/view
+      P1033161: https://drive.google.com/file/d/11VQNK5JqvK1y7bUVO-bEAus-eIzd9IAc/view
+      P1033198: https://drive.google.com/file/d/1I6hBmOUhz0bQQMI46e4rozEatQrRXyx7/view
+      P1033211: https://drive.google.com/file/d/1kLseLPQJLAILvwLh8ypgDaf6VKk6Kh9O/view
+      P1033220: https://drive.google.com/file/d/1ltMsAm557DlFl5TuRws7EAF0-kYBacLr/view
+      P1033246: https://drive.google.com/file/d/1El4gst9xm1Q-kKkZOfW_RjBx5ZRtKtvR/view
+      P1033259: https://drive.google.com/file/d/1lqWHQ85NnGnPZJfxivY-oNzQtsf0MTcw/view
+      P1033306: https://drive.google.com/file/d/1JDVATLLi2v8E7bVYZU2KjUdcGJ7Ixrey/view
+    credit: ©Felix Jahncke
     permalink: /photos/:collection
+    source: https://drive.google.com/drive/folders/1cMhsYZRjnXAgmdQLt88smURulzBpU93O
 
 
 # Site configuration

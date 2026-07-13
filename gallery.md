@@ -76,3 +76,21 @@ div.gallery a {
 {%- assign previous_collection = coll.name -%}
 {%- endif -%}
 {%- endfor -%}
+
+<br />
+
+<div style="font-size: smaller">
+More photos and videos are available here:
+
+<ul>
+{% assign links = "" %}
+{%- for coll in sorted_collections -%}
+{%- if coll.source -%}
+{% unless links contains coll.source %}
+{%- assign links = links | append: coll.source -%}
+<li><a href="{{coll.source}}">{{coll.source}}</a></li>
+{% endunless %}
+{%- endif -%}
+{%- endfor -%}
+</ul>
+</div>
