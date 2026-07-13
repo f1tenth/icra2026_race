@@ -42,7 +42,8 @@ div.gallery a {
 </style>
 {%- assign previous_collection = "" -%}
 {%- assign combined_credit = "" -%}
-{%- for coll in site.collections -%}
+{%- assign sorted_collections = site.collections | sort: "name" | where: "photos", true -%}
+{%- for coll in sorted_collections -%}
 {%- if coll.photos -%}
 {%- if previous_collection != coll.name -%}
 {%- unless forloop.first -%}
