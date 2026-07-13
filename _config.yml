@@ -17,21 +17,21 @@ collections:
   icra_day2:
     output: true
     photos: true
-    name: ICRA 2026 Day 2
+    name: Day 2
     link: https://jottacloud.com/s/321484396d2e369424588708c56dc5f68f8/thumbs/2026.06.02.%20ICRA%20day2/
     credit: ©Denes Erdos - Your Event Photographer https://youreventphoto.com/
     permalink: /photos/:collection
   icra_day3:
     output: true
     photos: true
-    name: ICRA 2026 Day 3
+    name: Day 3
     link: https://jottacloud.com/s/321484396d2e369424588708c56dc5f68f8/thumbs/2026.06.03.%20ICRA%20day3/
     credit: ©Denes Erdos - Your Event Photographer https://youreventphoto.com/
     permalink: /photos/:collection
   classic:
     output: true
     photos: true
-    name: Classic Cup
+    name: Day 3 (Classic Cup)
     links:
       IMG_0856: https://drive.google.com/file/d/1POtR8hoWrmLhZUyw7peImfngZaSscksQ/view
       IMG_0857: https://drive.google.com/file/d/1yBDSEqh4zPmgsZMlyTEMWsV0FFyaCCrE/view
@@ -65,7 +65,7 @@ collections:
   master:
     output: true
     photos: true
-    name: Master Cup
+    name: Day 4
     links:
       IMG_1046: https://drive.google.com/file/d/1xITME5lSoN1Ae2gVEq6nPa4YBuExC5eh/view
       IMG_1047: https://drive.google.com/file/d/1GGBtu3nJbLEWesWejfsMpSn81vbKRLIl/view
@@ -99,12 +99,12 @@ collections:
   classic2:
     output: true
     photos: true
-    name: Classic Cup
+    name: Day 3 (Classic Cup)
     permalink: /photos/:collection
   master2:
     output: true
     photos: true
-    name: Master Cup
+    name: Day 4
     permalink: /photos/:collection
 
 
