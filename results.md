@@ -57,7 +57,6 @@ table.sortable tbody tr::before {
 - ToC
 {:toc}
 
-<hr>
 
 # Live Stream
 
