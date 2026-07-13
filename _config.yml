@@ -62,6 +62,51 @@ collections:
       IMG_E0892: https://drive.google.com/file/d/1XGa-lcRphDM_w7K-oHBgQrEPzAgtXqHR/view
       IMG_E0893: https://drive.google.com/file/d/1rJCoCqovLY-kn6mT3m6ozla8nVtQ2VVW/view
     permalink: /photos/:collection
+  master:
+    output: true
+    photos: true
+    name: Master Cup
+    links:
+      IMG_1046: https://drive.google.com/file/d/1xITME5lSoN1Ae2gVEq6nPa4YBuExC5eh/view
+      IMG_1047: https://drive.google.com/file/d/1GGBtu3nJbLEWesWejfsMpSn81vbKRLIl/view
+      IMG_1069: https://drive.google.com/file/d/1LtZOV4jPt8xWCTyRrnvRzIzu1fHRjf0b/view
+      IMG_1071: https://drive.google.com/file/d/1WW4mY_kOquVCOQv2VoqSbOq-TGDvB9yV/view
+      IMG_1072: https://drive.google.com/file/d/1w-Gk1JjZFkvILXrPvwntBzcvc5RRctAE/view
+      IMG_1073: https://drive.google.com/file/d/1yvTryvIYoMQvAozDXAOHwwiFfWdf15zf/view
+      IMG_1074: https://drive.google.com/file/d/1To_htiz9GRDHSohWPXU9o16y4oD-iajY/view
+      IMG_1075: https://drive.google.com/file/d/1iriWuPIvCe9K7UBlF9zJlUZKj9VRjOe9/view
+      IMG_1076: https://drive.google.com/file/d/1buYDb4LyutfeqJIZYne-dfKaXJnehf-2/view
+      IMG_1077: https://drive.google.com/file/d/1lYwLt_apMvGW8yWSVkM_IMio6Bw0xyQQ/view
+      IMG_1078: https://drive.google.com/file/d/1L-yiDBv0LPtx0RmiMbhHEDRyHmOWXLyi/view
+      IMG_1079: https://drive.google.com/file/d/1rR4avItO6s3xcH8NGBHMUfIp4OQ4K_6x/view
+      IMG_E1069: https://drive.google.com/file/d/1sc7ywvfTfNvqmo8fwndcnDPsHYxGXZcc/view
+      IMG_E1075: https://drive.google.com/file/d/1eylS4UXZDuL6dbL3KPrSo4EP0rddKZs8/view
+      IMG_E1076: https://drive.google.com/file/d/1dc9UH_PqyM3lWik_Qw7WgT7KyDFM3Xik/view
+      IMG_E1077: https://drive.google.com/file/d/1NDvvKfuADLzUgERBBcuLffjYcMAH2wyV/view
+      IMG_E1078: https://drive.google.com/file/d/1Qd2vO2CImrL22Mi3LduyWkBwnuk61MBe/view
+      IMG_E1079: https://drive.google.com/file/d/1JK7O9cG38yF2Mf0nyzNwKsv6RisWXB1r/view
+    permalink: /photos/:collection
+  various:
+    output: true
+    photos: true
+    name: Various Photos
+    permalink: /photos/:collection
+  social_dinner:
+    output: true
+    photos: true
+    name: Social Dinner & Award Ceremony
+    permalink: /photos/:collection
+  classic2:
+    output: true
+    photos: true
+    name: Classic Cup
+    permalink: /photos/:collection
+  master2:
+    output: true
+    photos: true
+    name: Master Cup
+    permalink: /photos/:collection
+
 
 # Site configuration
 RACE_NUMBER: 27th
