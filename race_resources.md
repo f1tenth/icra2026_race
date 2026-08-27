@@ -19,6 +19,10 @@ simulation environments and track data will be displayed here.
 - [Track2Vehicle Module]({% link t2v.md %})
 - [Bridge]({% link competition_rules.md %}#bridge)
 - [Qualisys Motion Capture]({% link competition_rules.md %}#qualisys-motion-capture)
+- Tracks
+    - Classic Cup ([.pgm]({% link track/icra2026_classic.pgm %}), [.yaml]({% link track/icra2026_classic.yaml %}))
+    - Master Cup ([.pgm]({% link track/icra2026_master.pgm %}), [.yaml]({% link track/icra2026_master.yaml %}))
+
 
 <hr>
 

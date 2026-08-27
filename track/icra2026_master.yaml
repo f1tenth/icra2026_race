@@ -1,0 +1,6 @@
+image: icra2026_master.pgm
+resolution: 0.019
+origin: [-18.658, -1.805, 0.0]
+occupied_thresh: 0.65
+free_thresh: 0.196
+negate: 0
