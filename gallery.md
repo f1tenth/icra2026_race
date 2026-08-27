@@ -1,5 +1,6 @@
 ---
 layout: page
+section: gallery
 short_title: Gallery
 ---
 <style>
