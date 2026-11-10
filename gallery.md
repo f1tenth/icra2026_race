@@ -64,8 +64,21 @@ div.gallery a {
 {%- assign combined_credit = combined_credit | append: "<br />" | append: coll.credit -%}
 {%- endif -%}
 {%- endif -%}
+{%- assign coll_oq_label = coll.label | append: "_oq" -%}
+{%- assign coll_oq = site.collections | where: "label", coll_oq_label | first -%}
 {% for file in coll.files %}
+    {%- assign oq_available = false -%}
+    {%- unless coll_oq == null -%}
+        {%- assign oq_files = coll_oq.files | where: "name", file.name -%}
+        {%- if oq_files.size > 0 -%}
+            {%- assign oq_available = true -%}
+        {%- endif -%}
+    {%- endunless -%}
+    {%- unless oq_available -%}
     <a class="image" {% if coll.link %}href="{{coll.link}}{{file.name}}"{% endif %} {% if coll.links and coll.links[file.basename] %}href="{{coll.links[file.basename]}}"{% endif %} target="_blank">
+    {%- else -%}
+    <a class="image" href="/photos_oq/{{file.name}}" target="_blank">
+    {%- endunless -%}
         <img src="/photos/{{file.name}}" />
     </a>
 {% endfor %}

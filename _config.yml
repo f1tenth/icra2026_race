@@ -22,6 +22,9 @@ collections:
     credit: ©Denes Erdos - Your Event Photographer https://youreventphoto.com/
     permalink: /photos/:collection
     source: https://jottacloud.com/s/321484396d2e369424588708c56dc5f68f8/thumbs
+  icra_day2_oq:
+    output: true
+    permalink: /photos_oq/:collection
   icra_day3:
     output: true
     photos: true
@@ -30,6 +33,9 @@ collections:
     credit: ©Denes Erdos - Your Event Photographer https://youreventphoto.com/
     permalink: /photos/:collection
     source: https://jottacloud.com/s/321484396d2e369424588708c56dc5f68f8/thumbs
+  icra_day3_oq:
+    output: true
+    permalink: /photos_oq/:collection
   classic:
     output: true
     photos: true
